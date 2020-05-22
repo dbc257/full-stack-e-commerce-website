@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "postgres",
-    "password": null,
-    "database": "groupecommerce",
-    "host": "127.0.0.1",
+    "username": "ubpvnile",
+    "password": "IgVqWbh4VGD2HB7fh9GEONfFDM9cYmbV",
+    "database": "ubpvnile",
+    "host": "postgres://ubpvnile:IgVqWbh4VGD2HB7fh9GEONfFDM9cYmbV@hanno.db.elephantsql.com:5432/ubpvnile",
     "dialect": "postgres",
     "operatorsAliases": false
   },
@@ -16,11 +16,11 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
+    "username": "ubpvnile",
+    "password": "IgVqWbh4VGD2HB7fh9GEONfFDM9cYmbV",
+    "database": "ubpvnile",
+    "host": "postgres://ubpvnile:IgVqWbh4VGD2HB7fh9GEONfFDM9cYmbV@hanno.db.elephantsql.com:5432/ubpvnile",
+    "dialect": "postgres",
     "operatorsAliases": false
   }
 }
