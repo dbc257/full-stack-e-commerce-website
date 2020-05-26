@@ -1,0 +1,18 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="POST" action='/login'>
+        <input type='text' name='username' placeHolder="username" />
+        <input type='password' name='password' placeHolder="password" />
+        <button>Login</button>
+    </form>
+    <p></p>
+        <a href="http://localhost:3000/register"><button>Register</button></a>
+    <p></p>
+    <b>{{messageError}}</b>
+
+</body>
+</html>

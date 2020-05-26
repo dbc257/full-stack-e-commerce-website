@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/style.css" />
+    
+    <title>Book•Smart - Homepage</title>
+  </head>
+  <body>
+      <div class="search-bar-container">
+        <input
+          id="input"
+          type="text"
+          class="search-input"
+          placeholder="Enter a book title or author name."
+        />
+        <button type="button" class="search-button">SEARCH</button>
+      </div>
+      <div class="cards-container"></div>
+    </main>
+    <p></p>
+    <div>
+    <img class="card--avatar" src=${Image} />
+    <h4>{{title}}</h4>
+    <p>By: {{author}}</p>
+    <p>Description: {{description}}</p>
+    <p>ISBN_10: {{ISBN_10}}</p>
+    <form method='POST' action='/admin'>
+    <input type='hidden' value='{{${Image}}}' name='bookImage'>
+    <input type='hidden' value='{{${Title}}}' name='bookTitle'>
+    <input type='hidden' value='{{${Author}}}' name='bookAuthor'>
+    <input type='hidden' value='{{${Description}}}' name='bookDescription'>
+    <input type='hidden' value='{{${ISBN_10}}}' name='bookISBN_10'>
+    <input type='double' placeHolder='Enter Book Price' name='bookPrice'>
+    
+    <button>Sumbit to Products Page</button>
+    </form>
+    </div>
+    <p></p>
+           
+    <script src="/keys.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <h1>Add Blog Post</h1>
+    <div>
+        <a href="http://localhost:3000/products"><button>View All Products</button></a>
+    </div>
+    <p></p>
+    <form method="POST" action="/add-product">
+        <input type="text" placeHolder="Enter a title" name="bookTitle" />
+        <input type="text" placeHolder="Enter the body" name="newBody" />
+        <input type="text" placeHolder="Enter a category" name="newCategory" />
+        <button>Save</button>
+    </form>
+    <form method='POST' action='/add-product'>
+    <input type='url' placeHolder="Enter book image URL" name="bookImage">
+    <input type="text" placeHolder="Enter book title" name="bookTitle" />
+    <input type="text" placeHolder="Enter book author(s)" name="bookAuthor" />
+    <input type="text" placeHolder="Enter book category" name="bookCategory" />    
+    <input type="text" placeHolder="Enter book description" name="bookDescription" />
+    <input type="integer" placeHolder="Enter book ISBN_10" name="bookISBN_10" />
+    <input type="double" placeHolder="Enter book price" name="bookPrice" />
+    <button>Sumbit to Products Page</button>
+    </form>
+    {{#title}}
+        {{title}} product has been added.
+    {{/title}}
+</body>
+</html>

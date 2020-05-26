@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dbc257/full-stack-e-commerce-website#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "mustache-express": "^1.3.0",

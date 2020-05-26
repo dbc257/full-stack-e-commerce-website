@@ -1,0 +1,34 @@
+<html>
+<head></head>
+<body>
+<h1>Blog Posts</h1>
+    <div>
+    <a href="http://localhost:3000/admin"><button>Admin Page</button></a>
+    </div>
+        <div>
+    <a href="http://localhost:3000/filter"><button>Filter by Category</button></a>
+    </div>
+    {{#title}}
+        {{title}} product has been added to your shopping cart.
+    {{/title}}
+    <ul>
+    {{#allProducts}} 
+        <li>
+        <img scr="{{image}}" />
+        <p><b>Title: </b>{{title}}</p>
+        <p><b>Author(s): </b>{{author}}</p>
+        <p><b>Category: </b>{{category}}</p>
+        <p><b>Description: </b>{{description}}</p>
+        <p><b>ISBN_10: </b>{{ISBN_10}}</p>
+        <p><b>Price: </b>${{price}}</p>
+        <form method="POST" action="/products"> 
+        <input type="hidden" value="{{id}}"  name="productID"/>
+        <button>Add to Cart</button> 
+        </form>
+        </li>
+
+    {{/allProducts}}
+    </ul>
+
+</body>
+</html>

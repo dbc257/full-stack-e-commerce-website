@@ -1,0 +1,41 @@
+<html>
+<head></head>
+<body>
+    <h1>Filter Products by Category</h1>
+    <div>
+    <a href="http://localhost:3000/products"><button>View All Products</button></a>
+    </div>
+    <p></p>
+    <h3>Filter by Category</h3>
+    <p></p>
+    <form method="POST" action="/filter">
+        <select name="pick">
+            <option value="Adventure stories">Python</option>
+            {{! <option value="JavaScript">JavaScript</option>
+            <option value="iOS">iOS</option>
+            <option value="Android">Android</option> }}
+        </select>
+    <button>Submit</button>
+    </form>
+    <p></p>
+    <ul>
+    {{#productFilter}}
+        <img scr="{{image}}" />
+        <p><b>Title: </b>{{title}}</p> 
+        <p><b>Author(s): </b>{{author}}</p> 
+        <p><b>Category: </b>{{category}}</p>
+        <p><b>Description: </b>{{description}}</p> 
+        <p><b>ISBN_10: </b>{{ISBN_10}}</p>     
+        <p><b>Price: </b>{{price}}</p>
+        <form method="POST" action="/ordersummary"> 
+        <input type="hidden" value="{{id}}"  name="productID"/>
+        <button>Add to Cart</button> 
+        </form>
+    {{/productFilter}}
+    </ul>
+    <div>
+        <form method="POST" action="/signout"><button>Signout</button></form>
+    </div>
+
+    </body>
+</html>
