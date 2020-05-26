@@ -1,6 +1,7 @@
 let express = require("express");
 let router = express.Router();
 let models = require("../models");
+
 // GET route to display all products
 router.get("/", (req, res) => {
   models.Product.findAll().then((products) => {
@@ -9,23 +10,12 @@ router.get("/", (req, res) => {
 });
 // POST route to add a product to Order Summary Page
 router.post("/", (req, res) => {
-  let image = req.body.bookImage;
-  let title = req.body.bookTitle;
-  let author = req.body.bookAuthor;
-  let category = req.body.bookCategory;
-  let description = req.body.bookDescription;
-  let ISBN_10 = req.body.bookISBN_10;
-  let price = req.body.bookPrice;
-  let product = models.Product.build({
-    image: image,
-    title: title,
-    author: author,
-    category: category,
-    description: description,
-    ISBN_10: ISBN_10,
-    price: price,
+  let title = req.body.product_title;
+  let product_id = req.body.product_id;
+  let order = models.Order.build({
+    product_id: product_id,
   });
-  product.save().then(() => {
+  order.save().then(() => {
     res.render("products", { title: title });
   });
 });

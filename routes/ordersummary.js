@@ -2,45 +2,38 @@ let express = require("express");
 let router = express.Router();
 let models = require("../models");
 // GET route to display Order Summary Page
-
-// router.get("/", auth, (req, res) => {
-//   let userProducts = orderArray.filter(
-//     (orderProduct) => orderProduct.username == req.session.username
-//   );
-//   res.render("ordersummary", {
-//     userProducts: products,
-//     username: req.session.username,
-//   });
-// });
-
-// app.post("/", (req, res) => {
-//   let category = req.body.pick;
-//   models.Post.findAll({
-//     where: {
-//       category: category,
-//     },
-//   }).then((filterResult) =>
-//     res.render("filter", { productFilter: filterResult })
-//   );
-// });
-
-// POST route to add a product to Order Summary Page
-
-// router.post("/", (req, res) => {
-//   let title = req.body.title;
-//   let category = req.body.category;
-//   let price = req.body.price;
-//   let username = req.session.username;
-//   let userProduct = {
-//     title: title,
-//     category: category,
-//     price: price,
-//     username: username,
-//   };
-//   req.session.price += parseFloat(price);
-//   req.session.itemCount += 1;
-//   orderArray.push(userProduct);
-//   res.redirect("/ordersummary");
-// });
+router.get("/", (req, res) => {
+  models.Order.findAll({
+    where: {
+      user_id: 1,
+    },
+  }).then((user_order) => {
+    let order_id = user_order.map((o) => {
+      return o.dataValues.product_id;
+    });
+    console.log(order_id);
+    models.Product.findAll({
+      where: {
+        id: order_id,
+      },
+    }).then((order_products) => {
+      res.render("ordersummary", {
+        userOrders: order_products,
+        username: req.session.username,
+      });
+    });
+  });
+});
+// POST route to remove a product from Order Summary Page
+router.post("/remove", (req, res) => {
+  let order_id = req.body.order_id;
+  models.Order.destroy({
+    where: {
+      id: order_id,
+    },
+  }).then(() => {
+    res.render("ordersummary");
+  });
+});
 
 module.exports = router;

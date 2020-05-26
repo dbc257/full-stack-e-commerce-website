@@ -5,25 +5,23 @@
     <div>
     <a href="http://localhost:3000/products"><button>All Products</button></a>
     </div>
-    <div>
-    <a href="http://localhost:3000/filter"><button>Filter by Brand</button></a>
-    </div>
     <ul>
-         {{#userProducts}} <!-- Start of the loop --> 
+         {{#userOrders}} <!-- Start of the loop --> 
         <br/>
-            <p><b>Product: </b>{{title}}</p> 
-            <p><b>Brand: </b>{{category}}</p>      
-            <p><b>Price: </b>{{price}}</p>
+        <li>
+            <img src={{image}} />
+            <p><b>Title: </b>{{title}}</p>
+            <p><b>Author(s): </b>{{author}}</p>
+            <p><b>Category: </b>{{category}}</p>
+            <p><b>Description: </b>{{description}}</p>
+            <p><b>ISBN_10: </b>{{ISBN_10}}</p>
+            <p><b>Price: </b>${{price}}</p>
             <form method="POST" action="/remove"> 
-            <input type="hidden" value="{{title}}"  name="title"/> 
-            <input type="hidden" value="{{category}}"  name="category"/> 
-            <input type="hidden" value="{{price}}"  name="price"/> 
-            <input type="hidden" value="{{username}}"  name="username"/>
-            <input type="hidden" value="{{itemCount}}"  name="itemCount"/>
+            <input type="hidden" value="{{id}}"  name="order_id"/> 
             <button>Remove from Cart</button> 
             </form>
     
-         {{/userProducts}} <!-- End of the loop -->
+         {{/userOrders}} <!-- End of the loop -->
     </ul>
 <div>
 Balance: ${{balance}}

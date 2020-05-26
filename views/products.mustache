@@ -6,10 +6,10 @@
     <a href="http://localhost:3000/admin"><button>Admin Page</button></a>
     </div>
         <div>
-    <a href="http://localhost:3000/filter"><button>Filter by Category</button></a>
+    <a href="http://localhost:3000/ordersummary"><button>Order Summary</button></a>
     </div>
     {{#title}}
-        {{title}} product has been added to your shopping cart.
+        {{title}} has been added to your shopping cart.
     {{/title}}
     <ul>
     {{#allProducts}} 
@@ -21,8 +21,10 @@
         <p><b>Description: </b>{{description}}</p>
         <p><b>ISBN_10: </b>{{ISBN_10}}</p>
         <p><b>Price: </b>${{price}}</p>
-        <form method="POST" action="/products"> 
-        <input type="hidden" value="{{id}}"  name="productID"/>
+        <form method="POST" action="/products">
+        <input type="hidden" value="{{title}}"  name="product_title"/> 
+        <input type="hidden" value="{{id}}"  name="product_id"/>
+        
         <button>Add to Cart</button> 
         </form>
         </li>

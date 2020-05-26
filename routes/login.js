@@ -20,6 +20,8 @@ router.post("/", (req, res) => {
     } else {
       if (bcrypt.compareSync(password, user.password)) {
         // user password is correct
+        // req.session.username = user.username;
+        // req.session.userid = user.id;
         res.redirect("/products");
       } else {
         // password not correct
@@ -29,9 +31,9 @@ router.post("/", (req, res) => {
   });
 });
 // POST route to signout
-// router.post("/signout", (req, res) => {
-//   req.session.destroy();
-//   res.redirect("login");
-// });
+router.post("/signout", (req, res) => {
+  req.session.destroy();
+  res.redirect("login");
+});
 
 module.exports = router;
