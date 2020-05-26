@@ -11,25 +11,15 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
   let username = req.body.username;
   let password = bcrypt.hashSync(req.body.password, 10);
-  // check is username has already been taken
-  models.User.findOne({
-    where: {
-      username: username,
-    },
-  }).then((user) => {
-    if (user == username) {
+  let user = models.User.build({ username: username, password: password });
+  user
+    .save()
+    .then((savedUser) => {
+      res.redirect("/login");
+    })
+    .catch(() => {
       res.render("register", { message: "Username is already registered." });
-    } else {
-      let user = models.User.build({ username: username, password: password });
-      user.save().then((savedUser) => {
-        res.redirect("/login");
-      });
-    }
-  });
+    });
 });
-// let user = models.User.build({ username: username, password: password });
-// user.save().then((savedUser) => {
-//   res.redirect("/login");
-// });
 
 module.exports = router;

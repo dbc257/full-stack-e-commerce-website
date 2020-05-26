@@ -1,5 +1,6 @@
 let express = require("express");
 let router = express.Router();
+let models = require("../models");
 // GET route to display all products
 router.get("/", (req, res) => {
   models.Product.findAll().then((products) => {
@@ -15,7 +16,7 @@ router.post("/", (req, res) => {
   let description = req.body.bookDescription;
   let ISBN_10 = req.body.bookISBN_10;
   let price = req.body.bookPrice;
-  let product = models.Post.build({
+  let product = models.Product.build({
     image: image,
     title: title,
     author: author,

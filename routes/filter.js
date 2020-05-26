@@ -1,5 +1,6 @@
 let express = require("express");
 let router = express.Router();
+let models = require("../models");
 // GET route to display filter page
 router.get("/", (req, res) => {
   res.render("filter");
