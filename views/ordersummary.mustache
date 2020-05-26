@@ -1,0 +1,40 @@
+<html>
+<head></head>
+<body>
+    <h1>Order Summary</h1>
+    <div>
+    <a href="http://localhost:3000/products"><button>All Products</button></a>
+    </div>
+    <div>
+    <a href="http://localhost:3000/filter"><button>Filter by Brand</button></a>
+    </div>
+    <ul>
+         {{#userProducts}} <!-- Start of the loop --> 
+        <br/>
+            <p><b>Product: </b>{{title}}</p> 
+            <p><b>Brand: </b>{{category}}</p>      
+            <p><b>Price: </b>{{price}}</p>
+            <form method="POST" action="/remove"> 
+            <input type="hidden" value="{{title}}"  name="title"/> 
+            <input type="hidden" value="{{category}}"  name="category"/> 
+            <input type="hidden" value="{{price}}"  name="price"/> 
+            <input type="hidden" value="{{username}}"  name="username"/>
+            <input type="hidden" value="{{itemCount}}"  name="itemCount"/>
+            <button>Remove from Cart</button> 
+            </form>
+    
+         {{/userProducts}} <!-- End of the loop -->
+    </ul>
+<div>
+Balance: ${{balance}}
+<form method="POST" action="/checkout">
+
+<button>Checkout</button>
+</form>
+</div>
+<div>
+<form method="POST" action="/signout"><button>Signout</button></form>
+</div>
+
+</body>
+</html>

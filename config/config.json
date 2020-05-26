@@ -3,7 +3,7 @@
     "username": "ubpvnile",
     "password": "IgVqWbh4VGD2HB7fh9GEONfFDM9cYmbV",
     "database": "ubpvnile",
-    "host": "postgres://ubpvnile:IgVqWbh4VGD2HB7fh9GEONfFDM9cYmbV@hanno.db.elephantsql.com:5432/ubpvnile",
+    "host": "hanno.db.elephantsql.com",
     "dialect": "postgres",
     "operatorsAliases": false
   },
@@ -19,7 +19,7 @@
     "username": "ubpvnile",
     "password": "IgVqWbh4VGD2HB7fh9GEONfFDM9cYmbV",
     "database": "ubpvnile",
-    "host": "postgres://ubpvnile:IgVqWbh4VGD2HB7fh9GEONfFDM9cYmbV@hanno.db.elephantsql.com:5432/ubpvnile",
+    "host": "hanno.db.elephantsql.com",
     "dialect": "postgres",
     "operatorsAliases": false
   }
