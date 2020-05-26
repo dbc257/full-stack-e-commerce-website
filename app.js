@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 // const adminRouter = require('./routes/admin')
-
+const session = require("express-session");
 const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const adminRouter = require("./routes/admin");
@@ -19,13 +19,13 @@ app.set("views", "./views");
 // extension will be .mustache
 app.set("view engine", "mustache");
 
-// app.use(
-//   session({
-//     secret: "redrum",
-//     resave: false,
-//     saveUninitialized: true,
-//   })
-// );
+app.use(
+  session({
+    secret: "redrum",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 
 // authentication function
 function auth(req, res, next) {

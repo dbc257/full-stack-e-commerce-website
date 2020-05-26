@@ -7,8 +7,8 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.STRING,
       author: DataTypes.STRING,
       category: DataTypes.STRING,
-      description: DataTypes.STRING,
-      isbn_10: DataTypes.INTEGER,
+      description: DataTypes.TEXT,
+      isbn_10: DataTypes.STRING,
       price: DataTypes.DOUBLE,
     },
     {}

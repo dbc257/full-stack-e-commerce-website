@@ -5,8 +5,7 @@ let initialGoogleObjects = [];
 let valuableGoogleObjects = [];
 let valuableGoogleObjects2 = [];
 
-//////////Google
-//Functions
+//////////Google Functions
 function drillDownGoogle() {
   for (let index = 0; index < 9; index++) {
     let tryObject = {};
@@ -49,7 +48,7 @@ function drillDownGoogle() {
       tryObject.ISBN_10 =
         initialGoogleObjects[0].items[
           index
-        ].volumeInfo.industryIdentifiers[0].identifier;
+        ].volumeInfo.industryIdentifiers[1].identifier;
     } catch {
       tryObject.ISBN_10 = "ISBN unavaliable.";
     }
@@ -83,12 +82,12 @@ function createBookCards(objToCreateFrom) {
                 <p>Description: ${Description}</p>
                 <p>ISBN_10: ${ISBN_10}</p>
                 <form method='POST' action='/admin'>
-                <input type='hidden' value='{{${Image}}}' name='bookImage'>
-                <input type='hidden' value='{{${Title}}}' name='bookTitle'>
-                <input type='hidden' value='{{${Author}}}' name='bookAuthor'>
-                <input type='hidden' value='{{${Category}}}' name='bookCategory'>                
-                <input type='hidden' value='{{${Description}}}' name='bookDescription'>
-                <input type='hidden' value='{{${ISBN_10}}}' name='bookISBN_10'>
+                <input type='hidden' value='${Image}' name='bookImage'>
+                <input type='hidden' value='${Title}' name='bookTitle'>
+                <input type='hidden' value='${Author}' name='bookAuthor'>
+                <input type='hidden' value='${Category}' name='bookCategory'>                
+                <input type='hidden' value='${Description}' name='bookDescription'>
+                <input type='hidden' value='${ISBN_10}' name='bookISBN_10'>
                 <input type='double' placeHolder='Enter Book Price' name='bookPrice'>
                 <button>Sumbit to Products Page</button>
                 </form>
@@ -97,31 +96,6 @@ function createBookCards(objToCreateFrom) {
               `)
   );
   container.innerHTML = output;
-}
-
-function populateModal(populatingItem) {
-  modalContent = `
-  <div id='open-modal' class='modal-window'>
-    <div>
-      <a href='#modal-close' title='Close' class='modal-close'>
-        close &times;
-      </a>
-      <h1>${populatingItem.Title || "Title not avaliable."}</h1>
-      <div>${populatingItem.Subtitle || "Subtitle not avaliable."}</div><br>
-      <div>Description: ${
-        populatingItem.Description || "Description not avaliable."
-      }</div><br>
-      <div>By: ${populatingItem.Author || "Author not avaliable."}</div><br>
-      <div>Page count: ${
-        populatingItem.Pages || "Page count unknown."
-      }</div><br> 
-      <div>Published on: ${
-        populatingItem.Published || "Publishing date unknown."
-      }</div><br>
-      <div>ISBN: ${populatingItem.ISBN_10 || "ISBN unknown."}
-    </div>
-  </div>`;
-  cardsContainer.insertAdjacentHTML("afterend", modalContent);
 }
 
 //Event listeners
@@ -151,28 +125,4 @@ searchButton.addEventListener("click", (e) => {
     .catch(() => {
       console.log("error");
     });
-});
-
-cardsContainer.addEventListener("click", (e) => {
-  let cardButton = document.querySelectorAll(".card--link");
-  console.log(valuableGoogleObjects2);
-  if (e.target.className == "card--link" && e.target == cardButton[0]) {
-    populateModal(valuableGoogleObjects2[0]);
-  } else if (e.target.className == "card--link" && e.target == cardButton[1]) {
-    populateModal(valuableGoogleObjects2[1]);
-  } else if (e.target.className == "card--link" && e.target == cardButton[2]) {
-    populateModal(valuableGoogleObjects2[2]);
-  } else if (e.target.className == "card--link" && e.target == cardButton[3]) {
-    populateModal(valuableGoogleObjects2[3]);
-  } else if (e.target.className == "card--link" && e.target == cardButton[4]) {
-    populateModal(valuableGoogleObjects2[4]);
-  } else if (e.target.className == "card--link" && e.target == cardButton[5]) {
-    populateModal(valuableGoogleObjects2[5]);
-  } else if (e.target.className == "card--link" && e.target == cardButton[6]) {
-    populateModal(valuableGoogleObjects2[6]);
-  } else if (e.target.className == "card--link" && e.target == cardButton[7]) {
-    populateModal(valuableGoogleObjects2[7]);
-  } else if (e.target.className == "card--link" && e.target == cardButton[8]) {
-    populateModal(valuableGoogleObjects2[8]);
-  }
 });

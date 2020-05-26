@@ -12,17 +12,19 @@ router.post("/", (req, res) => {
   let author = req.body.bookAuthor;
   let category = req.body.bookCategory;
   let description = req.body.bookDescription;
-  let ISBN_10 = req.body.bookISBN_10;
+  let isbn_10 = req.body.bookISBN_10;
   let price = req.body.bookPrice;
-  let product = models.Post.build({
+  let product = models.Product.build({
     image: image,
     title: title,
     author: author,
     category: category,
     description: description,
-    ISBN_10: ISBN_10,
+    isbn_10: isbn_10,
     price: price,
   });
+
+  console.log(product);
   product.save().then((products) => {
     res.render("admin", products);
   });
