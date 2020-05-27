@@ -1,0 +1,50 @@
+/*===================================================================================*/
+/*  PAGINATION LESS
+/*===================================================================================*/
+.book-pagination {
+      > li {
+        &.active{
+            a{
+                -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+                 -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+                box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+               color:#FFF; 
+            }
+        }
+         > a {
+            background-color: #f3f3f3;
+            border: 1px solid #f3f3f3;
+            -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+            -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+            box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+            color: #666666;
+            float: left;
+            font-size: 15px;
+            margin-left: 8px;
+            padding: 12px 15px;
+            position: relative;
+            text-decoration: none;
+             -webkit-border-radius:0px;
+            -moz-border-radius:0px;
+            border-radius:0px;
+            line-height:1.6;
+            &:hover,
+            &:focus{
+               -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+                -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+               box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+               color:#FFF; 
+           }
+        }
+    }
+}
+.pagination{
+     > li:first-child,
+     > li:last-child{
+          > a {
+            -webkit-border-radius:0px;
+            -moz-border-radius:0px;
+            border-radius:0px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+/*===================================================================================*/
+/*  RADIO BUTTON LESS
+/*===================================================================================*/
+.book-radio,.checkbox-button {
+    display:none;
+}
+.book-radio:checked {
+    & + {
+        label {
+            .radio-background {
+                .icon {
+                    -moz-transition: all 0.3s ease-in 0s;
+                    -webkit-transition: all 0.3s ease-in 0s;
+                    -o-transition: all 0.3s ease-in 0s;
+                    transition: all 0.3s ease-in 0s;
+                    right:-25px;
+                    top: -6px;
+                }
+            }
+        }
+    }
+}
+.radio-background {
+    background: none repeat scroll 0 0 #f0f4f3;
+    border: 3px solid #f0f4f3;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    height: 20px;
+    width: 45px;
+    margin-right:10px;
+    display:inline-block;
+    color:#d0d0d0;
+    -moz-transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+    vertical-align:middle;
+    .icon {
+        top:-6px;
+        position: relative;
+        right:-2px;
+    }
+}
+.book-radio-label {
+    font-weight:normal;
+}
+.checkout-radio-option {
+    margin-bottom:20px;
+}
+.checkout-checkbox-option {
+    margin-top:20px;
+}
+label a,label a:hover,label a:focus {
+    color:#999;
+}

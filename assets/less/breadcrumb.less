@@ -1,0 +1,47 @@
+/*===================================================================================*/
+/*  BREADCRUMB LESS
+/*===================================================================================*/
+.breadcrumb-container {
+    -moz-box-shadow:0px 5px rgba(0,0,0,0.1) inset;
+         -webkit-box-shadow:0px 5px rgba(0,0,0,0.1) inset;
+          box-shadow:0px 5px rgba(0,0,0,0.1) inset;
+}
+.breadcrumb {
+    background-color: rgba(0, 0, 0, 0);
+    font-size:18px;
+    padding:0px;
+    margin-bottom:0px;
+    li {
+        text-transform:uppercase;
+        padding:30px 0px;
+        font-family: 'RobotoBlack';
+    }
+      > li {
+      text-transform:uppercase;
+        padding:30px 0px;
+        font-family: 'RobotoBlack';
+       + li:before {
+            
+            content: "\f054";
+            padding: 0 10px;
+            font-family:'FontAwesome';
+        
+        }
+    }
+}
+
+.breadcrumb {
+    li{
+        &.active{
+             color: #FFFFFF;
+        }
+        a{
+          color: #FFFFFF;
+          &:hover,
+          &:focus{
+            text-decoration:none;
+           color:#f7f5f2;
+          }
+        }
+    }
+}

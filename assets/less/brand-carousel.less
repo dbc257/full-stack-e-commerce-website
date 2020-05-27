@@ -1,0 +1,59 @@
+/*===================================================================================*/
+/*  BRAND CAROUSEL LESS
+/*===================================================================================*/
+.brand-carousel {
+    margin:60px 0px;
+    .owl-controls {
+        .owl-buttons {
+            .owl-prev {
+                top: 10px;
+                 position:absolute;
+                 .icon{
+                    font-size:30px;
+                 }
+            }
+            .owl-next {
+                right:0px;
+                top:10px;
+                 position:absolute;
+                 .icon{
+                    font-size:30px;
+                 }
+            }
+        }
+    }
+    .owl-item {
+        padding:0px 22px;
+    }
+    .item {
+        background-image: url("../images/brandhover.png");
+        cursor:pointer;
+        h4 {
+            font-size:24px;
+            font-weight:bold;
+             margin:0px;
+            text-transform:uppercase;
+        }
+        h5{
+             margin:0px;
+            text-transform:uppercase;
+        }
+    }
+    .brand-logo {
+        display: inline-block;
+        padding: 5px 41px;
+        text-align: center;
+    }
+}
+
+
+
+.desat {
+    filter: url("../filters.svg#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    &:hover{
+        filter: none;
+    -webkit-filter: grayscale(0);
+    }
+}

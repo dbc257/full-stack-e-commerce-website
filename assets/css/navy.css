@@ -1,0 +1,296 @@
+/*===================================================================================*/
+/*  Navy Color
+/*===================================================================================*/
+/* Typography */
+/*d75f33*/
+/*cb5a30*/
+a,
+a:hover,
+a:focus,
+a:active {
+  color: #34495e;
+}
+.logo-fill-1 {
+  fill: #33485d;
+}
+.logo-fill-2 {
+  fill: #3f5871;
+}
+.logo-fill-3 {
+  fill: #7190b0;
+}
+::-moz-selection {
+  background-color: #34495e;
+}
+::selection {
+  background-color: #34495e;
+}
+.primary-bg {
+  background-color: #34495e;
+}
+.btn-primary {
+  background-color: #34495e;
+  border-color: #34495e;
+}
+.header .navbar-top-bar .navbar-nav > li.active > a {
+  color: #34495e;
+}
+.header .navbar-top-bar .navbar-nav > li > a:hover,
+.header .navbar-top-bar .navbar-nav > li > a:focus {
+  color: #34495e;
+}
+.header .navbar-default .navbar-nav li.active a.hover,
+.header .navbar-default .navbar-nav li.active a.focus {
+  color: #34495e;
+}
+.header .navbar-default .navbar-nav > li a:hover,
+.header .navbar-default .navbar-nav > li a:focus {
+  color: #34495e;
+}
+.module .module-title {
+  color: #34495e;
+}
+.page-header .page-title {
+  color: #34495e;
+}
+.section-title {
+  color: #34495e;
+}
+.brand-carousel .item {
+  color: #34495e;
+}
+.book-details .book-title a {
+  color: #34495e;
+}
+#my-cart .module-heading h4 {
+  color: #34495e;
+}
+#my-cart .module .module-body .order-detail .table-cart > tbody > .cart-book .media .media-heading a {
+  color: #34495e;
+}
+#my-cart .module .module-body .order-detail .table-cart > tfoot > tr:last-child {
+  color: #34495e;
+}
+#my-cart .module .module-body .order-detail .table-cart > tfoot > tr:nth-child(2) {
+  color: #34495e;
+}
+.book-detail-header .book-title {
+  color: #34495e;
+}
+.book-detail-header .book-author-name {
+  color: #34495e;
+}
+.navbar-nav .dropdown-menu .menu-header {
+  color: #34495e;
+}
+.block-featured-author .module-title {
+  color: #34495e;
+}
+.block-featured-author .module-body .author-details .author-name a {
+  color: #34495e;
+}
+.star-rating .fa-star.color {
+  color: #34495e;
+}
+.home.page .slider {
+  background: #34495e;
+}
+.btn-navigation:hover,
+.btn-navigation:focus {
+  background: #34495e;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background: #34495e;
+  border: 1px solid #263545;
+}
+.breadcrumb-container {
+  background: #263545;
+}
+.breadcrumb > li + li:before {
+  color: #19232d;
+}
+#search .form-control,
+#notFound-search .form-control {
+  background: #263545;
+  border: #263545;
+}
+#search .btn-search,
+#notFound-search .btn-search {
+  background: #212e3c;
+  border: #212e3c;
+}
+#search .select-wrapper button,
+#notFound-search .select-wrapper button {
+  background: #212e3c;
+  border: #212e3c;
+}
+.form-control::-moz-placeholder {
+  color: #435e79;
+}
+.book-detail-quantity .txt-quantity {
+  background: #202d3a;
+}
+.book-detail-quantity .quant-input .arrow.plus {
+  background: #212e3c;
+}
+.book-detail-quantity .quant-input .arrow.minus {
+  background: #263545;
+}
+.btn-primary-dark {
+  background: #212e3c;
+}
+.btn-primary-light {
+  background: #263545;
+}
+.btn-primary-light:hover,
+.btn-primary-light:focus {
+  background: #212e3c;
+}
+.book-additional-details .book-detail-tab {
+  background: #212e3c;
+}
+.book-detail-tab li.active a,
+.book-detail-tab li.active a:hover,
+.book-detail-tab li.active a:focus,
+.book-detail-tab li a:hover,
+.book-detail-tab li a:focus {
+  background: #111920;
+}
+.subscribe-form .subscriber-name {
+  background: #263545;
+  border: #263545;
+}
+.navbar-footer .navbar-inner-text {
+  color: #263545;
+}
+.btn.dropdown-toggle.selectpicker.btn-default {
+  background: #263545;
+  border: #263545;
+}
+.bootstrap-select.btn-default:hover,
+.bootstrap-select.btn-default:focus,
+.bootstrap-select.btn-default:active,
+.bootstrap-select.btn-default.active,
+.bootstrap-select.open .dropdown-toggle.btn-default {
+  background: #263545;
+  border: #263545;
+}
+.header .navbar-default .btn-cart:hover,
+.header .navbar-default .btn-cart:focus {
+  background: #34495e;
+}
+.navbar-footer .language-block .bootstrap-select button:hover,
+.navbar-footer .language-block .bootstrap-select button:focus {
+  background: #34495e;
+  border: #34495e;
+}
+#accordion > .panel-default > .panel-heading .collapsed .step {
+  background: #202d3a;
+}
+.input-group .input-group-addon-book {
+  background: #263545;
+  border: #263545;
+}
+.book-radio:checked + label .radio-background .icon {
+  color: #202d3a;
+}
+.panel-collapse .forgot-password a {
+  color: #212e3c;
+  border-bottom: 1px dotted #212e3c;
+}
+.table-cart.cart-detail th.dark {
+  background: #212e3c;
+}
+.table-cart.cart-detail th {
+  background: #263545;
+}
+.table-cart .quant-input .arrow.gradient span:before {
+  background: #263545;
+}
+.table-cart .txt-quantity,
+.table-cart > tbody .price.subtotal {
+  color: #263545;
+}
+.table-cart tfoot tr:last-child {
+  color: #34495e;
+}
+.sidebar .module .module-header {
+  background: #263545;
+}
+.category-list > li > ul > .active,
+.category-list > .sub-category-list > a {
+  color: #202d3a;
+}
+#owl-main .owl-controls .owl-pagination .owl-page span {
+  background: #587ca0;
+}
+#owl-main .owl-controls .owl-pagination .owl-page.active span {
+  background: #98afc6;
+}
+.author-details .author-name > a:hover,
+.author-details .author-name > a:focus {
+  color: #222f3d !important;
+}
+.book-details .book-title a:hover,
+.book-details .book-title a:focus {
+  color: #222f3d;
+}
+.footer-widgets .module .module-body .list-link a:hover,
+.footer-widgets .module .module-body .list-link a:focus {
+  color: #34495e;
+}
+.navbar-static-bottom #example li a:hover,
+.navbar-static-bottom #example li a:focus {
+  color: #34495e;
+}
+.book .book-cover:hover {
+  background: #34495e;
+}
+.list-kybook > li:before {
+  background-color: #7292b1;
+}
+#owl-main .item {
+  background: #34495e;
+}
+.slider-caption .btn-price {
+  box-shadow: 0px 3px #222f3d;
+}
+.selectpicker.dropdown-menu > li > a:hover,
+.selectpicker.dropdown-menu > li > a:focus {
+  color: #34495e;
+}
+.grid-list-view-buttons li.active span,
+.grid-list-view-buttons li.active span:hover {
+  color: #263545;
+}
+.grid-list-view-buttons li a span:hover,
+.grid-list-view-buttons li a span:focus {
+  color: #263545;
+}
+.book-pagination .active a,
+.book-pagination .active a:hover,
+.book-pagination .active a:focus,
+.book-pagination > li > a:hover,
+.book-pagination > li > a:focus {
+  background: #34495e;
+  border: #212e3c;
+}
+.scrollup {
+  background: #34495e;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: url("images/ui-bg_glass_75_d75f33_1x400.png") repeat-x scroll 50% 50% #263545 !important;
+  border: #263545 !important;
+}
+.ui-widget-header {
+  background: url("images/ui-bg_highlight-soft_75_d75f33_1x100.png") repeat-x scroll 50% 50% #263545 !important;
+}
+.table-cart > tbody .price.subtotal {
+  color: #263545;
+}

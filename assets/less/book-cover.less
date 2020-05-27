@@ -1,0 +1,156 @@
+/*===================================================================================*/
+/*  BOOK COVER LESS
+/*===================================================================================*/
+.book-cover {
+    background-repeat: repeat;
+    -webkit-border-radius: 0 1px 1px 0;
+    -moz-border-radius: 0 1px 1px 0;
+    border-radius: 0 1px 1px 0;
+    -moz-box-shadow: 1px -1px 0 #fff, 2px -2px 0 #e5e5e5, 3px -3px 0 #fff, 4px -4px 0 #e5e5e5, 5px -5px 0 #fff, 6px -6px 0 #b7b7b7, 0 -1px 0 #bababa, 2px -3px 0 #bababa, 4px -5px 0 #bababa,  0 0 1px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 1px -1px 0 #fff, 2px -2px 0 #e5e5e5, 3px -3px 0 #fff, 4px -4px 0 #e5e5e5, 5px -5px 0 #fff, 6px -6px 0 #b7b7b7, 0 -1px 0 #bababa, 2px -3px 0 #bababa, 4px -5px 0 #bababa,  0 0 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 1px -1px 0 #fff, 2px -2px 0 #e5e5e5, 3px -3px 0 #fff, 4px -4px 0 #e5e5e5, 5px -5px 0 #fff, 6px -6px 0 #b7b7b7, 0 -1px 0 #bababa, 2px -3px 0 #bababa, 4px -5px 0 #bababa,  0 0 1px rgba(0, 0, 0, 0.8);
+    position:relative;
+    .book-inner{
+        position:relative;
+        overflow:hidden;
+    }
+    .fade {
+        background-color: rgba(0,0,0,0);
+        -webkit-border-radius: 0 3px 3px 0;
+        -moz-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;
+        -moz-box-shadow: -8px 0 0 rgba(0,0,0,0.1);
+        -webkit-box-shadow: -8px 0 0 rgba(0,0,0,0.1);
+        box-shadow: -8px 0 0 rgba(0,0,0,0.1);
+        height:263px;
+        left:6px;
+        padding: 20px 40px;
+        position: relative;
+        width:100%;
+        position:absolute;
+        top:-1px;
+        opacity:1;
+    }
+}
+.slider-book-cover {
+    .fade {
+        height:353px;
+        left:10px;
+        -moz-box-shadow: -10px 0 0 rgba(0,0,0,0.1);
+        -webkit-box-shadow: -10px 0 0 rgba(0,0,0,0.1);
+        box-shadow: -10px 0 0 rgba(0,0,0,0.1);
+    }
+}
+.detail-book-cover {
+    .fade {
+        height:414px;
+        left:10px;
+        -moz-box-shadow: -10px 0 0 rgba(0,0,0,0.1);
+        -webkit-box-shadow: -10px 0 0 rgba(0,0,0,0.1);
+        box-shadow: -10px 0 0 rgba(0,0,0,0.1);
+    }
+}
+.book-cover:after {
+    background-color: rgba(48, 49, 54, 0);
+    -webkit-border-radius: 80px 70px 70px 80px / 8px 8px 7px 7px;
+    -moz-border-radius: 80px 70px 70px 80px / 8px 8px 7px 7px;
+    border-radius: 80px 70px 70px 80px / 8px 8px 7px 7px;
+    -moz-box-shadow: 0 24px 8px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 0 24px 8px rgba(0, 0, 0, 0.17);
+    box-shadow: 0 24px 8px rgba(0, 0, 0, 0.17);
+    content: "";
+    height: 13px;
+    left:-4px;/* -9px;*/
+    position: absolute;
+    top: 226px;
+    width:210px;/* 215px;*/
+    z-index: -1;
+}
+.slider-book-cover:after {
+    width:290px;
+    left:-17px;
+    top:323px;
+}
+.detail-book-cover:after {
+    top:381px;
+    width:317px;
+}
+.book-cover:before {
+    border-left: 1px solid #bababa;
+    content: "";
+    height: 9px;
+    left:1px;/* 2px;*/
+    position: absolute;
+    top:-3px;/*-5px;*/
+    width:13px;/* 8px;*/
+    -ms-transform: rotate(48deg);
+    -webkit-transform: rotate(48deg);
+    transform: rotate(48deg);
+}
+.detail-book-cover:before {
+   left:0px;
+}
+.small-book-cover {
+    .fade {
+        height:100px;
+        padding:0px;
+    }
+}
+.books {
+    display:block;
+}
+.book {
+    display:inline-block;
+}
+.map {
+    iframe {
+        border:none;
+    }
+}
+
+.book {
+    .book-cover {
+        .cart {
+            .action {
+                background-color: #d3e36a;
+                 -webkit-border-radius: 30px 0 0 30px;
+                 -moz-border-radius: 30px 0 0 30px;
+                  border-radius: 30px 0 0 30px;
+                bottom: 75px;
+                color: #FFFFFF;
+                font-family: 'RobotoBlack';
+                padding: 10px 19px;
+                position: absolute;
+                right: -90px;
+                 -moz-box-shadow: 0 3px #b7b7b7;
+                -webkit-box-shadow: 0 3px #b7b7b7;
+                box-shadow: 0 3px #b7b7b7;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+                opacity:0;
+                a {
+                    font-size:20px;
+                    color:#fff;
+                    &:hover,
+                    &:focus{
+                        text-decoration:none;
+                      color:#a2b718;
+
+                    }
+                }
+                a:first-child {
+                    margin-right:10px;
+                }
+            }
+        }
+    }
+    .book-cover:hover {
+        .cart {
+            .action {
+                    right: 0px;
+                    opacity:1;
+                    overflow:hidden;
+            }
+        }
+    }
+}
