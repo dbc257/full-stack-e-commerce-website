@@ -30,7 +30,7 @@ app.use(
 // authentication function
 function auth(req, res, next) {
   if (req.session) {
-    if (req.session.userAuth) {
+    if (req.session.userid) {
       next();
     } else {
       res.redirect("/login");
@@ -42,6 +42,7 @@ function auth(req, res, next) {
 
 app.use(express.static("js"));
 app.use(express.static("css"));
+app.use(express.static("images"));
 
 app.use("/register", registerRouter);
 app.use("/login", loginRouter);

@@ -74,7 +74,7 @@ function createBookCards(objToCreateFrom) {
   objToCreateFrom.forEach(
     ({ Image, Title, Author, Category, Description, ISBN_10 }) =>
       (output += `
-              <div class="card" id=>
+              <div class="card">
                 <img class="card--avatar" src=${Image} />
                 <h4>${Title}</h4>
                 <p>By: ${Author}</p>
