@@ -10,13 +10,14 @@ router.get("/", (req, res) => {
 });
 // POST route to add a product to Order Summary Page
 router.post("/", (req, res) => {
-  let title = req.body.product_title;
   let product_id = req.body.product_id;
+  let user_id = req.session.userid;
   let order = models.Order.build({
     product_id: product_id,
+    user_id: user_id,
   });
   order.save().then(() => {
-    res.render("products", { title: title });
+    res.redirect("/products");
   });
 });
 

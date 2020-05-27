@@ -5,37 +5,41 @@
     <div>
     <a href="http://localhost:3000/products"><button>View All Products</button></a>
     </div>
+    <div>
+    <a href="http://localhost:3000/ordersummary"><button>Order Summary</button></a>
+    </div>
+    <div>
+        <form method="POST" action="/signout"><button>Signout</button></form>
+    </div>
     <p></p>
     <h3>Filter by Category</h3>
     <p></p>
     <form method="POST" action="/filter">
         <select name="pick">
-            <option value="Adventure stories">Python</option>
-            {{! <option value="JavaScript">JavaScript</option>
-            <option value="iOS">iOS</option>
-            <option value="Android">Android</option> }}
+            <option value="Adventure stories">Adventure stories</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Juvenile Fiction">Juvenile Fiction</option>
+            <option value="Young Adult Nonfiction">Young Adult Nonfiction</option>
+            <option value="Biography & Autobiography">Biography & Autobiography</option>
         </select>
     <button>Submit</button>
     </form>
     <p></p>
     <ul>
     {{#productFilter}}
-        <img scr="{{image}}" />
+        <img src="{{image}}" />
         <p><b>Title: </b>{{title}}</p> 
         <p><b>Author(s): </b>{{author}}</p> 
         <p><b>Category: </b>{{category}}</p>
         <p><b>Description: </b>{{description}}</p> 
-        <p><b>ISBN_10: </b>{{ISBN_10}}</p>     
+        <p><b>ISBN_10: </b>{{isbn_10}}</p>     
         <p><b>Price: </b>{{price}}</p>
-        <form method="POST" action="/ordersummary"> 
-        <input type="hidden" value="{{id}}"  name="productID"/>
+        <form method="POST" action="/products">
+        <input type="hidden" value="{{title}}"  name="product_title"/> 
+        <input type="hidden" value="{{id}}"  name="product_id"/>
         <button>Add to Cart</button> 
         </form>
     {{/productFilter}}
     </ul>
-    <div>
-        <form method="POST" action="/signout"><button>Signout</button></form>
-    </div>
-
     </body>
 </html>

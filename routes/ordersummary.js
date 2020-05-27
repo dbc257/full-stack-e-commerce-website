@@ -3,24 +3,28 @@ let router = express.Router();
 let models = require("../models");
 // GET route to display Order Summary Page
 router.get("/", (req, res) => {
+  let user_id = req.session.userid;
   models.Order.findAll({
     where: {
-      user_id: 1,
+      user_id: user_id,
     },
-  }).then((user_order) => {
-    let order_id = user_order.map((o) => {
-      return o.dataValues.product_id;
-    });
-    console.log(order_id);
-    models.Product.findAll({
-      where: {
-        id: order_id,
+    include: [
+      {
+        model: models.Product,
+        as: "order_products",
       },
-    }).then((order_products) => {
-      res.render("ordersummary", {
-        userOrders: order_products,
-        username: req.session.username,
-      });
+    ],
+  }).then((results) => {
+    let myProducts = results.map((o) => {
+      // console.log(o.dataValues.id);
+      return {
+        order_id: o.dataValues.id,
+        product: o.dataValues.order_products.dataValues,
+      };
+    });
+    console.log(myProducts);
+    res.render("ordersummary", {
+      userOrders: myProducts,
     });
   });
 });
@@ -32,7 +36,7 @@ router.post("/remove", (req, res) => {
       id: order_id,
     },
   }).then(() => {
-    res.render("ordersummary");
+    res.redirect("/ordersummary");
   });
 });
 

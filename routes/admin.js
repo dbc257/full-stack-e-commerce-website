@@ -23,10 +23,9 @@ router.post("/", (req, res) => {
     isbn_10: isbn_10,
     price: price,
   });
-
-  console.log(product);
-  product.save().then((products) => {
-    res.render("admin", products);
+  // console.log(product);
+  product.save().then(() => {
+    res.render("admin", { title: title });
   });
 });
 

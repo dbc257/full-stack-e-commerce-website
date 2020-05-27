@@ -1,11 +1,17 @@
 <html>
 <head>
-<link rel="stylesheet" href="/style.css" />
+{{! <link rel="stylesheet" href="/style.css" /> }}
 </head>
 <body>
-    <h1>Add Blog Post</h1>
+    <h1>Add Product Manually</h1>
+    <div>
+    <a href="http://localhost:3000/admin"><button>Admin Page</button></a>
+    </div>
     <div>
         <a href="http://localhost:3000/products"><button>View All Products</button></a>
+    </div>
+    <div>
+    <form method="POST" action="/signout"><button>Signout</button></form>
     </div>
     <p></p>
     <form method='POST' action='/add-product'>
@@ -21,5 +27,7 @@
     {{#title}}
         {{title}} product has been added.
     {{/title}}
+    <p></p>
+
 </body>
 </html>

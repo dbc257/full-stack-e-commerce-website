@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+require("dotenv").config();
 // const adminRouter = require('./routes/admin')
 const session = require("express-session");
 const registerRouter = require("./routes/register");
@@ -21,7 +22,7 @@ app.set("view engine", "mustache");
 
 app.use(
   session({
-    secret: "redrum",
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
   })
@@ -30,7 +31,7 @@ app.use(
 // authentication function
 function auth(req, res, next) {
   if (req.session) {
-    if (req.session.userAuth) {
+    if (req.session.userid) {
       next();
     } else {
       res.redirect("/login");
@@ -50,6 +51,11 @@ app.use("/add-product", addProductRouter);
 app.use("/ordersummary", ordersummaryRouter);
 app.use("/products", productsRouter);
 
+// POST route to signout
+app.post("/signout", (req, res) => {
+  req.session.destroy();
+  res.redirect("/login");
+});
 // Check to see if the server is running
 app.listen(3000, () => {
   console.log("Server is on the run!");

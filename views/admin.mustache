@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {{! <link rel="stylesheet" href="/style.css" /> }}
-    
-    <title>Book•Smart - Homepage</title>
+    <title>Search Google Books</title>
   </head>
   <body>
+    <div>
+    <a href="http://localhost:3000/products"><button>View All Products</button></a>
+    </div>
+    <div>
+    <a href="http://localhost:3000/add-product"><button>Add Product Manually</button></a>
+    </div>
+    <div>
+    <form method="POST" action="/signout"><button>Signout</button></form>
+    </div>
+    <main>
       <div class="search-bar-container">
         <input
           id="input"
           type="text"
           class="search-input"
-          placeholder="Enter a book title or author name."
+          placeholder="Enter a book title or author name"
         />
         <button type="button" class="search-button">SEARCH</button>
       </div>
+      <p></p>
+      {{#title}}
+        {{title}} has been added to the Products Table.
+      {{/title}}
+      <p></p>
       <div class="cards-container"></div>
     </main>
     <p></p>
 
-           
-    <script src="/keys.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>
+
+<!DOCTYPE html>
