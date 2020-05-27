@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>KYBook</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Customizable CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/green.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Icons/Glyphs -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- ============================================================= MY CART HEADER ============================================================= -->
+        <div id="my-cart" class="collapse">
+            <div class="container">
+                <div class="module">
+                    <div class="module-heading">
+                        <h4>My Cart</h4>
+                    </div><!-- /.module-heading -->
+                    <div class="module-body">
+                        <p>DO eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <div class="order-detail table-responsive">
+                            <table class="table table-cart index-dropdown-table">
+                                <thead>
+                                    <tr>
+                                        <th class="dark">Book Name</th>
+                                        <th>Unit Price</th>
+                                        <th class="dark text-center">Qty</th>
+                                        <th>Subtotal</th>
+                                        <th class="dark"></th>
+                                    </tr>
+                                </thead><!-- /thead-->
+
+                                <tbody class="index-dropdown-body">
+                                    <tr class="cart-book">
+                                        <td>
+                                            <div class="media">
+                                                <a href="detail" class="cart-thumbnail-image media-left">
+                                                    <div class="book-cover small-book-cover">
+                                                        <img src="images/books/small-image1.jpg" alt="" class="media-object">
+                                                        <div class="fade"></div>
+                                                    </div>
+                                                </a>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading"><a href="detail">Adipisicing</a></h3>
+                                                </div><!-- /.media-body -->
+                                            </div><!-- /.media -->
+                                        </td>
+                                        <td>
+                                            <span class="price">$9.99</span>
+                                        </td>
+                                        <td class="quantity dark text-center">            
+                                            <div class="quant-input">
+                                                <div class="arrows">
+                                                    <div class="arrow plus gradient"><span class="ir"></span></div>
+                                                    <div class="arrow minus gradient"><span class="ir"></span></div>
+                                                </div>
+                                                <input class="txt-quantity" type="text" value="2"/>
+                                            </div>              
+                                        </td>
+                                        <td>
+                                            <span class="price subtotal">$9.99</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary btn-flat" type="button">X</button>
+                                        </td>
+                                    </tr><!-- /.cart-book -->
+
+                                    <tr class="cart-book">
+                                        <td>
+                                            <div class="media">
+                                                <a href="detail" class="cart-thumbnail-image media-left">
+                                                    <div class="book-cover small-book-cover">
+                                                        <img src="images/books/small-image2.jpg" alt="" class="media-object">
+                                                        <div class="fade"></div>
+                                                    </div>
+                                                </a>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading"><a href="detail">Adipisicing</a></h3>
+                                                </div><!-- /.media-body -->
+                                            </div><!-- /.media -->
+                                        </td>
+                                        <td>
+                                            <span class="price">$9.99</span>
+                                        </td>
+                                        <td class="quantity dark text-center">            
+                                            <div class="quant-input">
+                                                <div class="arrows">
+                                                    <div class="arrow plus gradient"><span class="ir"></span></div>
+                                                    <div class="arrow minus gradient"><span class="ir"></span></div>
+                                                </div>
+                                                <input class="txt-quantity" type="text" value="2"/>
+                                            </div>              
+                                        </td>
+                                        <td>
+                                            <span class="price subtotal">$9.99</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary btn-flat" type="button">X</button>
+                                        </td>
+                                    </tr><!-- /.cart-book -->
+                                </tbody><!-- /tbody -->
+
+                            </table><!-- /.table -->
+                        </div><!-- /.order-detail -->
+
+                        <div class="row">
+                            <div class="col-sm-offset-3 col-sm-3 center-sm">
+                                <input type="text" class="form-control discount-name index-dropdown-discount-name" placeholder="Enter your coupon..">
+                            </div><!-- /.col -->
+
+                            <div class="col-xs-12 col-sm-6 center-sm">
+                                <div class="table-responsive">
+                                    <table class="table table-cart">
+                                        <tfoot>
+                                            <tr>
+                                                <td ><i class="icon-chevron fa fa-chevron-right"></i>&nbsp;Subtotal:</td>
+                                                <td >$ 20.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td ><i class="icon-chevron fa fa-chevron-right"></i>&nbsp;Grandtotal:</td>
+                                                <td >$ 20.00</td>
+                                            </tr>
+                                        </tfoot><!-- /tfoot -->
+                                    </table><!-- /.table -->
+                                </div><!-- /.table-responsive -->
+                            </div> <!-- /.col -->   
+                            <div class="col-md-12">
+                                <a href="checkout" class="pull-right btn btn-primary btn-checkout">Continued Checkout &nbsp;<i class="fa fa-chevron-right"></i></a>    
+                            </div>    
+                        </div><!-- /.row -->
+
+                    </div><!-- /.module-body -->
+                </div><!-- /.module -->
+            </div><!-- /.container -->
+        </div><!-- /#my-cart -->
+
+        <!-- ============================================================= MY CART HEADER : END ============================================================= -->
+        <!-- ============================================================= HEADER ============================================================= -->
+        <header class="header">
+            <!-- ============================================================= NAVBAR TOPBAR ============================================================= -->
+            <nav class="navbar navbar-top-bar navbar-static-top">
+                <div class="container">
+                    <ul class="navbar-nav nav">
+                        <li><a href="home">Home</a></li>
+                        <li><a href="contact">About Us</a></li>
+                        <li><a href="contact">Customer Service</a></li>
+                        <li><a href="contact">Terms</a></li>
+                    </ul><!-- /.navbar-nav -->
+
+                    <ul class="navbar-nav nav navbar-right">
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="checkout">Login</a></li>
+                        <li><a href="checkout">Checkout</a></li>
+                        <li class="active"><a data-toggle="collapse" href="#my-cart">Total : $200.00</a></li>
+                    </ul><!-- /.navbar-nav -->
+                </div><!-- /.container-->
+            </nav><!-- /.navbar-->
+            <!-- ============================================================= NAVBAR TOPBAR : END ============================================================= -->    <div class="yamm navbar navbar-default navbar-default-book animate-dropdown" role="navigation">
+            <div class="container">
+                <!-- ============================================================= NAVBAR PRIMARY ============================================================= -->
+
+                <div class="header-mast">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#KYbook-navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a class="navbar-brand" href="home">
+                            <svg class="svg-circle" version="1.1" id="Layer_1" 
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="255.232px"
+                            height="66.132px" viewBox="161.754 390.232 255.232 66.132">
+                            <g>
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <path id="SVGID_1_" d="M166.747,403.078l35.506-20.5c3.108-1.793,7.084-0.729,8.879,2.38l0.501,0.866
+                                            c1.793,3.109,0.729,7.084-2.379,8.88l-35.508,20.5c-3.107,1.795-7.083,0.729-8.878-2.379l-0.501-0.866
+                                            C162.572,408.849,163.637,404.874,166.747,403.078L166.747,403.078z"/>
+                                        </defs>
+                                        <clipPath id="SVGID_2_">
+                                            <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                                        </clipPath>
+                                    </g>
+                                    <g>
+                                        <defs>
+                                            <path id="SVGID_3_" d="M166.747,403.078l35.506-20.5c3.108-1.793,7.084-0.729,8.879,2.38l0.501,0.866
+                                            c1.793,3.109,0.729,7.084-2.379,8.88l-35.508,20.5c-3.107,1.795-7.083,0.729-8.878-2.379l-0.501-0.866
+                                            C162.572,408.849,163.637,404.874,166.747,403.078L166.747,403.078z"/>
+                                        </defs>
+                                        <defs>
+                                            <path id="SVGID_4_" d="M186,391.891h2c16.568,0,29.999,13.431,29.999,29.999v2c0,16.568-13.431,30-29.999,30h-2
+                                            c-16.569,0-29.999-13.432-29.999-30v-2C156.001,405.322,169.431,391.891,186,391.891L186,391.891z"/>
+                                        </defs>
+                                        <clipPath id="SVGID_5_">
+                                            <use xlink:href="#SVGID_3_"  overflow="visible"/>
+                                        </clipPath>
+                                        <clipPath id="SVGID_6_" clip-path="url(#SVGID_5_)">
+                                            <use xlink:href="#SVGID_4_"  overflow="visible"/>
+                                        </clipPath>
+                                        <path clip-path="url(#SVGID_6_)" class="logo-color" d="M217.207,382.118c1.937,3.341,0.918,7.55-2.274,9.4l-40.993,23.584
+                                        c-3.546,1.968-7.483,0.833-9.287-2.7l0,0c-2.226-3.839-1.166-7.406,2.274-9.4l40.993-23.585c3.191-1.85-8.65,8.36-6.714,11.701
+                                        L217.207,382.118z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <path id="SVGID_7_" d="M166.747,425.078l35.506-20.5c3.108-1.793,7.084-0.729,8.879,2.379l0.501,0.866
+                                            c1.793,3.108,0.729,7.085-2.379,8.88l-35.508,20.5c-3.107,1.797-7.083,0.73-8.878-2.379l-0.501-0.865
+                                            C162.572,430.847,163.637,426.873,166.747,425.078L166.747,425.078z"/>
+                                        </defs>
+                                        <clipPath id="SVGID_8_">
+                                            <use xlink:href="#SVGID_7_"  overflow="visible"/>
+                                        </clipPath>
+                                    </g>
+                                    <g>
+                                        <defs>
+                                            <path id="SVGID_9_" d="M166.747,425.078l35.506-20.5c3.108-1.793,7.084-0.729,8.879,2.379l0.501,0.866
+                                            c1.793,3.108,0.729,7.085-2.379,8.88l-35.508,20.5c-3.107,1.797-7.083,0.73-8.878-2.379l-0.501-0.865
+                                            C162.572,430.847,163.637,426.873,166.747,425.078L166.747,425.078z"/>
+                                        </defs>
+                                        <defs>
+                                            <path id="SVGID_10_" d="M186,391.891h2c16.568,0,29.999,13.431,29.999,29.999v2c0,16.568-13.431,30-29.999,30h-2
+                                            c-16.569,0-29.999-13.432-29.999-30v-2C156.001,405.322,169.431,391.891,186,391.891L186,391.891z"/>
+                                        </defs>
+                                        <clipPath id="SVGID_11_">
+                                            <use xlink:href="#SVGID_9_"  overflow="visible"/>
+                                        </clipPath>
+                                        <clipPath id="SVGID_12_" clip-path="url(#SVGID_11_)">
+                                            <use xlink:href="#SVGID_10_"  overflow="visible"/>
+                                        </clipPath>
+                                        <path clip-path="url(#SVGID_12_)" class="logo-color" d="M215.219,405.368c1.919,3.337,0.77,7.598-2.568,9.518l-38.709,22.26
+                                        c-3.337,1.92-7.598,0.771-9.517-2.566l0,0c-1.919-3.338-0.771-7.598,2.568-9.52l38.709-22.259
+                                        C209.039,400.881,213.299,402.03,215.219,405.368L215.219,405.368z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <defs>
+                                            <path id="SVGID_13_" d="M166.747,449.078l35.506-20.498c3.108-1.795,7.084-0.73,8.879,2.377l0.501,0.867
+                                            c1.793,3.107,0.729,7.084-2.379,8.879l-35.508,20.5c-3.107,1.797-7.083,0.73-8.878-2.379l-0.501-0.865
+                                            C162.572,454.847,163.637,450.873,166.747,449.078L166.747,449.078z"/>
+                                        </defs>
+                                        <clipPath id="SVGID_14_">
+                                            <use xlink:href="#SVGID_13_"  overflow="visible"/>
+                                        </clipPath>
+                                    </g>
+                                    <g>
+                                        <defs>
+                                            <path id="SVGID_15_" d="M166.747,449.078l35.506-20.498c3.108-1.795,7.084-0.73,8.879,2.377l0.501,0.867
+                                            c1.793,3.107,0.729,7.084-2.379,8.879l-35.508,20.5c-3.107,1.797-7.083,0.73-8.878-2.379l-0.501-0.865
+                                            C162.572,454.847,163.637,450.873,166.747,449.078L166.747,449.078z"/>
+                                        </defs>
+                                        <defs>
+                                            <path id="SVGID_16_" d="M186,391.891h2c16.568,0,29.999,13.431,29.999,29.999v2c0,16.568-13.431,30-29.999,30h-2
+                                            c-16.569,0-29.999-13.432-29.999-30v-2C156.001,405.322,169.431,391.891,186,391.891L186,391.891z"/>
+                                        </defs>
+                                        <clipPath id="SVGID_17_">
+                                            <use xlink:href="#SVGID_15_"  overflow="visible"/>
+                                        </clipPath>
+                                        <clipPath id="SVGID_18_" clip-path="url(#SVGID_17_)">
+                                            <use xlink:href="#SVGID_16_"  overflow="visible"/>
+                                        </clipPath>
+                                        <path clip-path="url(#SVGID_18_)" class="logo-color" d="M147.339,476.402c-3.679,2.127-8.232,1.139-10.17-2.211l20-10
+                                        c-1.939-3.348-20.527,2.211-16.85,0.082l61.008-35.156c3.679-2.129,8.23-1.141,10.169,2.209l0,0
+                                        c1.938,3.348,0.527,7.789-3.151,9.918L147.339,476.402z"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path fill="#463F39" d="M239.653,425.763h-3.655v13.688h-7.945v-34.125h7.945v13.358h2.694l7.5-13.358h9.845l-10.57,15.445
+                                    l11.484,18.679h-9.656L239.653,425.763z"/>
+                                    <path fill="#463F39" d="M271.692,420.232h0.142l6.797-14.906h8.602l-11.602,22.125v12h-7.898v-12.398l-11.367-21.725h8.556
+                                    L271.692,420.232z"/>
+                                    <path class="logo-color" d="M289.81,439.451v-34.125h11.719c4.234,0,7.539,0.785,9.914,2.354c2.375,1.57,3.563,3.91,3.563,7.021
+                                    c0,1.625-0.384,3.07-1.148,4.336s-1.945,2.219-3.539,2.859c2,0.453,3.478,1.363,4.43,2.73c0.953,1.367,1.431,2.941,1.431,4.723
+                                    c0,3.328-1.117,5.844-3.353,7.547c-2.234,1.703-5.438,2.555-9.608,2.555H289.81z M297.755,419.553h3.938
+                                    c1.797-0.03,3.142-0.379,4.031-1.043s1.336-1.637,1.336-2.918c0-1.453-0.453-2.512-1.358-3.176
+                                    c-0.906-0.664-2.298-0.996-4.173-0.996h-3.772L297.755,419.553L297.755,419.553z M297.755,424.802v8.555h5.461
+                                    c1.688,0,2.953-0.332,3.797-0.996s1.266-1.684,1.266-3.059c0-1.484-0.363-2.605-1.09-3.363s-1.901-1.137-3.526-1.137H297.755z"/>
+                                    <path class="logo-color" d="M348.849,425.458c0,4.203-1.332,7.668-3.996,10.395s-6.146,4.09-10.441,4.09
+                                    c-4.327,0-7.836-1.363-10.522-4.09c-2.688-2.727-4.031-6.191-4.031-10.395v-6.14c0-4.188,1.34-7.648,4.021-10.384
+                                    c2.68-2.734,6.176-4.102,10.487-4.102c4.281,0,7.767,1.367,10.453,4.102c2.688,2.735,4.031,6.195,4.031,10.384L348.849,425.458
+                                    L348.849,425.458z M340.949,419.271c0-2.438-0.573-4.438-1.723-6c-1.149-1.563-2.77-2.345-4.863-2.345
+                                    c-2.141,0-3.776,0.777-4.91,2.332c-1.133,1.556-1.698,3.56-1.698,6.013v6.187c0,2.469,0.573,4.484,1.723,6.047
+                                    s2.793,2.344,4.934,2.344c2.078,0,3.688-0.781,4.828-2.344c1.141-1.563,1.711-3.578,1.711-6.047L340.949,419.271L340.949,419.271z
+                                    "/>
+                                    <path class="logo-color" d="M381.66,425.458c0,4.203-1.332,7.668-3.996,10.395c-2.663,2.727-6.145,4.09-10.44,4.09
+                                    c-4.328,0-7.836-1.363-10.523-4.09c-2.687-2.727-4.03-6.191-4.03-10.395v-6.14c0-4.188,1.34-7.648,4.02-10.384
+                                    c2.68-2.734,6.176-4.102,10.488-4.102c4.281,0,7.766,1.367,10.453,4.102c2.687,2.735,4.03,6.195,4.03,10.384L381.66,425.458
+                                    L381.66,425.458z M373.763,419.271c0-2.438-0.574-4.438-1.724-6c-1.148-1.563-2.77-2.345-4.862-2.345
+                                    c-2.142,0-3.777,0.777-4.91,2.332c-1.133,1.556-1.699,3.56-1.699,6.013v6.187c0,2.469,0.574,4.484,1.723,6.047
+                                    c1.149,1.563,2.794,2.344,4.935,2.344c2.078,0,3.688-0.781,4.828-2.344c1.14-1.563,1.711-3.578,1.711-6.047L373.763,419.271
+                                    L373.763,419.271z"/>
+                                    <path class="logo-color" d="M397.856,425.763h-3.656v13.688h-7.944v-34.125h7.944v13.358h2.695l7.5-13.358h9.844l-10.569,15.445
+                                    l11.483,18.679h-9.656L397.856,425.763z"/>
+                                </g>
+                            </g>
+                        </svg>     </a>
+
+                    </div><!-- /.navbar-header -->
+                    <div class="collapse navbar-collapse" id="KYbook-navbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown yamm-fw active">
+                                <a href="category" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle trigger">Books</a>
+                                <ul class="list-unstyled dropdown-menu dropdown-megamenu">
+                                    <li>
+                                        <div class="yamm-content">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <ul>
+                                                        <li class="menu-header" role="presentation">
+                                                            <strong>Customer Favorites</strong>
+                                                        </li>
+                                                        <li><a href="category">Lorem ipsum</a></li>
+                                                        <li><a href="category">Dolor sit amet</a></li>
+                                                        <li><a href="category">Consectetur adipi</a></li>
+                                                        <li><a href="category">sicing elit</a></li>
+                                                        <li><a href="category">sed do eiusmod</a></li>
+                                                    </ul>
+                                                </div><!-- /.col -->
+                                                <div class="col-sm-6">
+                                                    <ul>
+                                                        <li class="menu-header" role="presentation">
+                                                            <strong>Departments</strong>
+                                                        </li>
+                                                        <li><a href="category">Lorem ipsum</a></li>
+                                                        <li><a href="category">Dolor sit amet</a></li>
+                                                        <li><a href="category">Consectetur adipi</a></li>
+                                                        <li><a href="category">sicing elit</a></li>
+                                                        <li><a href="category">sed do eiusmod</a></li>
+                                                    </ul>
+                                                </div><!-- /.col -->
+
+                                                <div class="margin-top col-sm-6">
+                                                    <ul>
+                                                        <li class="menu-header" role="presentation">
+                                                            <strong>Subjects</strong>
+                                                        </li>
+                                                        <li><a href="category">Lorem ipsum</a></li>
+                                                        <li><a href="category">Dolor sit amet</a></li>
+                                                        <li><a href="category">Consectetur adipi</a></li>
+                                                        <li><a href="category">sicing elit</a></li>
+                                                        <li><a href="category">sed do eiusmod</a></li>
+                                                    </ul>
+                                                </div><!-- /.col -->
+
+                                                <div class="margin-top col-sm-6">
+                                                    <ul>
+                                                        <li class="menu-header" role="presentation">
+                                                            <strong>Schools</strong>
+                                                        </li>
+                                                        <li><a href="category">Lorem ipsum</a></li>
+                                                        <li><a href="category">Dolor sit amet</a></li>
+                                                        <li><a href="category">Consectetur adipi</a></li>
+                                                        <li><a href="category">sicing elit</a></li>
+                                                        <li><a href="category">sed do eiusmod</a></li>
+                                                    </ul>
+                                                </div><!-- /.col -->
+                                                <div class="clearfix visible-xs"></div>
+                                            </div><!-- /.row -->
+                                        </div><!-- /.yamm-content -->
+                                    </li>
+                                </ul><!-- /.dropdown-menu -->
+                            </li>
+                            <li class="hidden-sm"><a href="category">Textbooks</a></li>
+                            <li  class="hidden-sm"><a href="category">Audiobooks</a></li>
+                            <li ><a href="category">Magazines</a></li>
+                            <li class="dropdown">
+                                <a href="category" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle trigger">Pages <b class="caret"></b></a>
+                                <ul class="dropdown-menu pages-dropdown">
+                                    <li><a href="category">Category</a></li>
+                                    <li><a href="detail">Single Product</a></li>
+                                    <li><a href="checkout">Checkout</a></li>
+                                    <li><a href="cart">Shopping Cart</a></li>
+                                    <li><a href="contact">Contact</a></li>
+                                    <li><a href="404">404</a></li>
+                                </ul><!-- /.dropdown-menu -->
+                            </li> <!-- /.dropdown -->      
+                        </ul><!-- /.nav -->
+                    </div><!-- /.collapse -->
+                    <a href="#my-cart" class="navbar-btn btn btn-cart" data-toggle="collapse"><img src="images/shopping-cart.png" alt="" /><span class="badge-cart-items-count">4</span></a>
+                </div><!-- /.header-mast -->
+                <!-- ============================================================= NAVBAR PRIMARY : END ============================================================= -->           
+            </div><!-- /.container -->
+        </div><!-- /.yamm -->
+
+    </header><!-- /.header -->
+
+    <!-- ============================================================= HEADER : END ============================================================= -->
+
+
+
+    <div class="content">
+        <div class="breadcrumb-container">
+            <div class="container">
+                <ul class="breadcrumb pull-left">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="category">Books</a></li>
+                    <li class="active">Teen Books</li>
+                </ul><!-- /.breadcrumb -->
+
+                <!-- ========================================= BREADCRUMB SEARCH BOX ========================================= -->
+                <ul class="list-unstyled search-box pull-right">
+                    <li data-target="#search" data-toggle="sub-header"><button type="button" class="btn btn-primary-dark search-button"><i class="fa fa-search icon"></i></button>
+                        <div class="row search-action sub-header" id="search">
+                            <div class="col-sm-8 col-xs-12 no-padding-right">
+                                <div class="input-group">
+                                    <span class="input-group-btn"><button class="btn btn-search" type="button"><i class="fa fa-search icon"></i></button></span>
+                                    <input type="text" class="form-control search-book" placeholder="Search books...">
+                                </div><!-- /.input-group -->
+                            </div><!-- /.col -->
+
+                            <div class="col-sm-4 col-xs-12 select-wrapper" style="padding:0px;">
+                                <select id="id_select" class="selectpicker">
+                                    <option selected>All Category</option>
+                                    <option>Books</option>
+                                    <option>Textbooks</option>
+                                    <option>Audiobooks</option>
+                                    <option>Magazines</option>
+                                    <option>Kids</option>
+                                </select>
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </li>
+                </ul><!-- /.search-box -->
+                <!-- ========================================= BREADCRUMB SEARCH BOX : END ========================================= -->        
+
+            </div><!-- /.container -->
+        </div><!-- /.breadcrumb-container -->
+
+        <div class="book-detail page">
+            <div class="container">
+                <div class="primary-block clearfix">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="book-cover book detail-book-cover">
+                                <img src="images/blank.gif" class="img-responsive" data-echo="images/books/detail-book.jpg" alt="">
+                                <div class="fade"></div>
+                            </div><!-- /.book-cover -->
+                        </div><!-- /.col -->
+
+                        <div class="col-sm-8">
+                            <div class="book-detail-header">
+                                <h2 class="book-title">The Chalet school reunion</h2>
+                                <p class="book-author">By <span class="book-author-name">E.M.Brent-dyer</span></p>
+                                <div class="star-rating">
+                                    <i class="fa fa-star color"></i>
+                                    <i class="fa fa-star color"></i>
+                                    <i class="fa fa-star color"></i>
+                                    <i class="fa fa-star color"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!-- /.star-rating -->    
+                            </div><!-- /.book-detail-header -->
+
+                            <div class="book-detail-body">
+
+                                <div class="detail-cart-button row clearfix">
+                                    <div class="pull-left col-md-6 col-sm-5 col-xs-12">
+                                        <div class="detail-book-price">
+                                            <span class="price">$ 9.99</span>
+                                        </div><!-- /.detail-book-price -->
+                                    </div><!-- /.pull-left -->
+
+                                    <div class="pull-right col-md-6 col-sm-7 col-xs-12">
+                                        <div class="row product-actions">
+
+                                            <a href="checkout" class="col-sm-6 btn btn-primary btn-addToCart"><i class="icon-plus fa fa-plus-circle"></i>Add to Cart</a>
+                                            <div class="quantity book-detail-quantity col-xs-4 col-lg-3">  
+                                                <div class="quantity-block">          
+                                                    <div class="quant-input">
+                                                        <div class="arrows">
+                                                            <div class="arrow plus gradient"><span class="ir"></span></div>
+                                                            <div class="arrow minus gradient"><span class="ir"></span></div>
+                                                        </div><!-- /.arrows -->
+                                                        <input class="txt-quantity" type="text" value="1"/>
+                                                    </div><!-- /.quant-input -->  
+                                                </div><!-- /.quantity-block -->                             
+                                            </div><!-- /.col -->   
+                                            <button title="favourite" class="hidden-xs btn btn-secondary btn-add-to-wishlist col-xs-2 " type="button"><span class="icon glyphicon glyphicon-heart"></span></button>
+
+                                        </div><!-- /.row -->
+                                    </div><!-- /.pull-right -->
+                                </div><!-- /.detail-cart-button -->
+
+                                <div class="clearfix"></div>
+
+                                <div class="product-description">
+                                    <h3>Quick Overview</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices.Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices</p>
+                                </div><!-- /.product-description -->
+
+                            </div><!-- /.book-detail-body -->
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+
+                    <div class="tab-holder clearfix">
+                        <div class="book-additional-details">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs book-detail-tab">
+                                <li class="active" role="presentation"><a href="#more" data-toggle="tab">More About This Book</a></li>
+                                <li role="presentation"><a href="#product-details" data-toggle="tab">Product Details</a></li>
+                                <li role="presentation"><a href="#shipping" data-toggle="tab">Shipping</a></li>
+                                <li role="presentation"><a href="#first-chapter" data-toggle="tab">First Chapter</a></li>
+                            </ul><!-- /.nav -->
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="more" role="tabpanel">
+                                    <h3>Consectetur adipisicing elit, sed do eiusmod</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis.</p>
+                                    <p>Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
+                                </div><!-- /.tab-pane -->
+
+                                <div class="tab-pane" id="product-details" role="tabpanel">
+                                    <ul class="list-unstyled list-kybook uppercase">
+                                        <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                        <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                        <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                        <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane" id="shipping" role="tabpanel">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p> 
+                                </div><!-- /.tab-pane -->
+
+                                <div class="tab-pane" id="first-chapter" role="tabpanel">
+                                    <h3>Consectetur adipisicing elit, sed do eiusmod</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis.</p>
+                                    <p>Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
+                                </div><!-- /.tab-pane -->
+
+                            </div><!-- /.tab-content -->
+                        </div><!-- /.book-additional-details -->
+                    </div><!-- /.col -->
+                </div><!-- /.primary-block -->
+            </div><!-- /.container -->
+
+            <!-- ========================================= RELATE BOOKS MODULE ========================================= -->
+            <div class="container">
+                <div class="wow fadeInUp">
+                    <div class="module block-relate-books module-block">
+                        <div class="module-heading">
+                            <h2 class="module-title">Relate Books</h2>
+                            <div class="customNavigation">
+                                <a href="#" data-target="#relate-book-carousel" class="btn btn-navigation left-nav-arrow owl-prev"><i class='icon fa fa-caret-left'></i></a>
+                                <a href="#" data-target="#relate-book-carousel" class="btn btn-navigation right-nav-arrow owl-next"><i class='icon fa fa-caret-right'></i></a>  
+                            </div><!-- /.customNavigation -->
+                            <p class="module-subtitle">Do eiusmod tempor incid... et dolore magna aliqua</p>
+                        </div><!-- /.module-heading -->
+
+                        <div class="module-body">
+                            <div class="books">
+
+                                <div id="relate-book-carousel" class="owl-carousel home-owl-carousel relate-books">
+
+                                    <div class="item item-carousel single-book">
+                                        <div class="book">
+                                            <div class="book-cover">
+                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/1.jpg">
+                                                <div class="fade"></div>
+                                                <div class="book-price">
+                                                    <span class="price">$ 9.99</span>
+                                                </div><!-- /.book-price -->
+                                            </div><!-- /.book-cover -->
+
+                                            <div class="book-details">
+                                                <h3 class="book-title">
+                                                    <a href="detail">duis aute</a>
+                                                </h3>
+                                                <p class="book-author">dolor sit</p>
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div><!-- /.star-rating -->
+                                            </div><!-- /.book-details -->
+                                        </div><!-- /.book -->                       
+                                    </div><!-- /.item -->
+
+                                    <div class="item item-carousel single-book">
+                                        <div class="book">
+                                            <div class="hot-ribbon"><div class="hot-ribbon-content">hot</div></div>
+                                            <div class="book-cover">
+                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/2.jpg">
+                                                <div class="fade"></div>
+                                                <div class="book-price">
+                                                    <span class="price">$ 9.99</span>
+                                                </div>
+                                            </div><!-- /.item -->
+                                            <div class="book-details">
+                                                <h3 class="book-title">
+                                                    <a href="detail">voluptate</a>
+                                                </h3>
+                                                <p class="book-author">dolor sit</p>
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div><!-- /.star-rating -->
+                                            </div><!-- /.book-details -->
+                                        </div><!-- /.book -->                           
+                                    </div><!-- /.item -->
+
+                                    <div class="item item-carousel single-book">
+                                        <div class="book">
+                                            <div class="sale-ribbon"><div class="sale-ribbon-content">sale off</div></div>
+                                            <div class="book-cover">
+                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/3.jpg">
+                                                <div class="fade"></div>
+                                                <div class="book-price">
+                                                    <span class="price"><span class="price-before-discount">$ 9.99</span> $ 4.99</span>
+                                                </div><!-- /.book-price -->
+                                            </div><!-- /.book-cover -->
+
+                                            <div class="book-details">
+                                                <h3 class="book-title">
+                                                    <a href="detail">fugiat nulla</a>
+                                                </h3>
+                                                <p class="book-author">dolor sit</p>
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div><!-- /.star-rating -->
+                                            </div><!-- /.book-details -->
+                                        </div><!-- /.book -->                           
+                                    </div><!-- /.item -->
+
+                                    <div class="item item-carousel single-book">
+                                        <div class="book">
+                                            <div class="book-cover">
+                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/4.jpg">
+                                                <div class="fade"></div>
+                                                <div class="book-price">
+                                                    <span class="price">$ 9.99</span>
+                                                </div><!-- /.book-price -->
+                                            </div><!-- /.book-cover -->
+
+                                            <div class="book-details">
+                                                <h3 class="book-title">
+                                                    <a href="detail">sunt</a>
+                                                </h3>
+                                                <p class="book-author">dolor sit</p>
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div><!-- /.star-rating -->
+                                            </div><!-- /.book-details -->
+                                        </div><!-- /.book -->                           
+                                    </div><!-- /.item -->
+
+                                    <div class="item item-carousel single-book">
+                                        <div class="book">
+                                            <div class="book-cover">
+                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/5.jpg">
+                                                <div class="fade"></div>
+                                                <div class="book-price">
+                                                    <span class="price">$ 9.99</span>
+                                                </div><!-- /.book-price -->
+                                            </div><!-- /.book-cover -->
+
+                                            <div class="book-details">
+                                                <h3 class="book-title">
+                                                    <a href="detail">sunt</a>
+                                                </h3>
+                                                <p class="book-author">dolor sit</p>
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div><!-- /.star-rating -->
+                                            </div><!-- /.book-details -->
+                                        </div><!-- /.book -->                           
+                                    </div><!-- /.item -->
+
+                                    <div class="item item-carousel single-book">
+                                        <div class="book">
+                                            <div class="hot-ribbon"><div class="hot-ribbon-content">hot</div></div>
+                                            <div class="book-cover">
+                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/6.jpg">
+                                                <div class="fade"></div>
+                                                <div class="book-price">
+                                                    <span class="price">$ 9.99</span>
+                                                </div><!-- /.book-price -->
+                                            </div><!-- /.book-cover -->
+
+                                            <div class="book-details">
+                                                <h3 class="book-title">
+                                                    <a href="detail">sunt</a>
+                                                </h3>
+                                                <p class="book-author">dolor sit</p>
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div><!-- /.star-rating -->
+                                            </div><!-- /.book-details -->
+                                        </div><!-- /.book -->                           
+                                    </div><!-- /.item -->
+
+                                    <div class="item item-carousel single-book">
+                                        <div class="book">
+                                            <div class="sale-ribbon"><div class="sale-ribbon-content">sale off</div></div>
+                                            <div class="book-cover">
+                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/7.jpg">
+                                                <div class="fade"></div>
+                                                <div class="book-price">
+                                                    <span class="price"><span class="price-before-discount">$ 9.99</span> $ 4.99</span>
+                                                </div><!-- /.book-price -->
+                                            </div><!-- /.book-cover -->
+
+                                            <div class="book-details">
+                                                <h3 class="book-title">
+                                                    <a href="detail">sunt</a>
+                                                </h3>
+                                                <p class="book-author">dolor sit</p>
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div><!-- /.star-rating -->
+                                            </div><!-- /.book-details -->
+                                        </div><!-- /.book -->                           
+                                    </div><!-- /.item -->
+
+                                    <div class="item item-carousel single-book">
+                                        <div class="book">
+                                            <div class="book-cover">
+                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/8.jpg">
+                                                <div class="fade"></div>
+                                                <div class="book-price">
+                                                    <span class="price">$ 9.99</span>
+                                                </div><!-- /.book-price -->
+                                            </div><!-- /.book-cover -->
+
+                                            <div class="book-details">
+                                                <h3 class="book-title">
+                                                    <a href="detail">sunt</a>
+                                                </h3>
+                                                <p class="book-author">dolor sit</p>
+                                                <div class="star-rating">
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star color"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div><!-- /.star-rating -->
+                                            </div><!-- /.book-details -->
+                                        </div><!-- /.book -->                           
+                                    </div><!-- /.item -->
+
+                                </div><!-- /#relate-book-carousel -->                   
+                            </div><!-- /.books -->
+                        </div><!-- /.module-body -->
+                    </div><!-- /.module -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+            <!-- ========================================= RELATE BOOKS MODULE : END ========================================= --></div><!-- /.book-detail page -->
+            <a class="scrollup hidden-xs hidden-sm" href="#" style="display: none;"><img src="images/top-scroll.png" alt="" ></a>
+        </div>
+
+        <div class="container">
+            <!-- ============================================================= BRANDS ============================================================= -->
+            <div class="row brands-block wow fadeInUp">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2 class="page-title">Brands</h2>
+                        <p class="page-subtitle">DO eiusmod tempor incid... et dolore magna aliqua</p>
+                    </div><!-- /.page-header -->
+
+                    <div class="page-body">
+                        <div id="owl-demo" class="owl-carousel brand-carousel">
+                            <div class="item desat">
+                                <div class="brand-logo">
+                                    <h5>brand</h5>
+                                    <h4>logo</h4>
+                                </div>
+                            </div><!-- /.item -->
+
+                            <div class="item desat">
+                                <div class="brand-logo">
+                                    <h5>brand</h5>
+                                    <h4>logo</h4>
+                                </div>
+                            </div><!-- /.item -->
+
+                            <div class="item desat">
+                                <div class="brand-logo">
+                                    <h5>brand</h5>
+                                    <h4>logo</h4>
+                                </div>
+                            </div><!-- /.item -->
+
+                            <div class="item desat">
+                                <div class="brand-logo">
+                                    <h5>brand</h5>
+                                    <h4>logo</h4>
+                                </div>
+                            </div><!-- /.item -->
+
+                            <div class="item desat">
+                                <div class="brand-logo">
+                                    <h5>brand</h5>
+                                    <h4>logo</h4>
+                                </div>
+                            </div><!-- /.item -->
+
+                            <div class="item desat">
+                                <div class="brand-logo">
+                                    <h5>brand</h5>
+                                    <h4>logo</h4>
+                                </div>
+                            </div><!-- /.item -->
+
+                            <div class="item desat">
+                                <div class="brand-logo">
+                                    <h5>brand</h5>
+                                    <h4>logo</h4>
+                                </div>
+                            </div><!-- /.item -->
+
+                            <div class="item desat">
+                                <div class="brand-logo">
+                                    <h5>brand</h5>
+                                    <h4>logo</h4>
+                                </div>
+                            </div><!-- /.item -->
+
+                        </div><!-- /#owl-demo -->           
+                    </div><!-- /.page-body -->
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+            <!-- ============================================================= BRANDS : END ============================================================= -->       
+        </div><!-- /.container -->
+
+        <!-- ============================================================= FOOTER ============================================================= -->
+        <footer class="footer">
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="sub-footer-widget">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <!-- ============================================================= FOOTER SUBSCRIBE ============================================================= -->
+                                <div class="module">
+                                    <div class="module-heading">
+                                        <h2 class="module-title">Subscribe</h2>
+                                    </div><!-- /.module-heading -->
+
+                                    <div class="module-body">
+                                        <form role="form" class="subscribe-form">
+                                            <div class="row">
+                                                <div class="col-lg-10">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control subscriber-name" placeholder="Enter your email">
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-primary-dark  send-btn" type="submit">Send</button>
+                                                        </span>
+                                                    </div><!-- /.input-group -->
+                                                </div><!-- /.col -->
+                                            </div><!-- /.row -->
+                                        </form><!-- /.subscribe-form -->
+                                    </div><!-- /.module-body -->
+                                </div><!-- /.module -->
+
+                                <!-- ============================================================= FOOTER SUBSCRIBE : END ============================================================= -->                    </div><!-- /.col -->
+
+                                <div class="col-md-4 hidden-sm col-xs-12">
+                                    <!-- ============================================================= FOOTER BOOK TIPS ============================================================= -->
+                                    <div class="module">
+                                        <div class="module-heading">
+                                            <h2 class="module-title">Book Tips</h2>
+                                            <p class="module-subtitle">consectetur adipisicing elit, sed do</p>
+                                        </div><!-- /.module-heading -->
+
+                                        <div class="module-body subfooter-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+                                        </div><!-- /.module-body -->
+                                    </div><!-- /.module -->
+                                    <!-- ============================================================= FOOTER BOOK TIPS : END ============================================================= -->
+
+                                </div><!-- /.col -->
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <!-- ============================================================= FOOTER SOCIAL SITE ============================================================= -->
+                                    <div class="module">
+                                        <div class="module-heading">
+                                            <h2 class="module-title">Social</h2>
+                                            <p class="module-subtitle">Follow us in Social Site</p>
+                                        </div><!-- /.module-heading -->
+
+                                        <div class="module-body social-media">
+                                            <ul class="nav nav-pills social-media-list" id="tooltip">
+                                                <li style="background-color:#587aca;"><a data-toggle="tooltip" title="Facebook" data-placement="bottom"  href="http://facebook.com/transvelo/"><i class="icon fa fa-facebook"></i></a></li>
+                                                <li style="background-color:#f46899;"><a  data-toggle="tooltip" title="Dribble" data-placement="bottom"  href="http://dribbble.com/transvelo/"><i class="icon fa fa-dribbble"></i></a></li>
+                                                <li style="background-color:#5dc8ff;"><a  data-toggle="tooltip" title="Twitter" data-placement="bottom"  href="http://twitter.com/transvelo/"><i class="icon fa fa-twitter"></i></a></li>
+                                                <li style="background-color:#358aff;"><a  data-toggle="tooltip" data-placement="bottom" title="Btc" href="http://btc.com/transvelo/"><i class="icon fa fa-btc"></i></a></li>
+                                                <li style="background-color:#8e714b;"><a  data-toggle="tooltip" data-placement="bottom" title="Instagram" href="http://instagram.com/transvelo/"><i class="icon fa fa-instagram"></i></a></li>
+                                                <li style="background-color:#4d6982;"><a  data-toggle="tooltip" data-placement="bottom" title="Tumbler" href="http://tumbler.com/transvelo/"><i class="icon fa fa-tumblr"></i></a></li>
+                                            </ul><!-- /.nav -->
+                                        </div><!-- /.module-body -->
+                                    </div><!-- /.module -->
+
+                                    <!-- ============================================================= FOOTER SOCIAL SITE : END ============================================================= -->
+                                </div><!-- /.col -->
+                            </div><!-- /.row -->
+                        </div><!-- /.sub-footer-widget -->
+                    </div><!-- /.container -->
+                </div><!-- /.sub-footer -->
+
+                <div class="main-footer">
+                    <div class="container">
+                        <div class="row footer-widgets">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <!-- ============================================================= FOOTER SHIPPING DELIVERY ============================================================= -->
+                                <div class="module">
+                                    <div class="module-heading">
+                                        <h4 class="module-title">Shipping</h4>
+                                    </div><!-- /.module-heading -->
+
+                                    <div class="module-body">
+                                        <ul class="list-unstyled list-link">
+                                            <li><a href="checkout">About Free Shipping</a></li>
+                                            <li><a href="checkout">About Shipping</a></li>
+                                            <li><a href="checkout">Shipping Rates</a></li>
+                                            <li><a href="checkout">Store Returns</a></li>
+                                        </ul><!-- /.list-link -->
+                                    </div><!-- /.module-body -->
+                                </div><!-- /.module -->
+                                <!-- ============================================================= FOOTER SHIPPING DELIVERY : END ============================================================= -->                </div><!-- /.col -->
+
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <!-- ============================================================= FOOTER INFORMATION ============================================================= -->
+                                    <div class="module">
+                                        <div class="module-heading">
+                                            <h4 class="module-title">Information</h4>
+                                        </div><!-- /.module-heading -->
+
+                                        <div class="module-body">
+                                            <ul class="list-unstyled list-link">
+                                                <li><a href="checkout">Contact</a></li>
+                                                <li><a href="checkout">Delivery</a></li>
+                                                <li><a href="checkout">Legal Notice</a></li>
+                                                <li><a href="checkout">Terms and Conditions</a></li>
+                                            </ul><!-- /.list-link -->
+                                        </div><!-- /.module-body -->
+                                    </div><!-- /.module -->
+                                    <!-- ============================================================= FOOTER INFORMATION : END ============================================================= -->                </div><!-- /.col -->
+
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <!-- ============================================================= FOOTER QUICK HELP ============================================================= -->
+                                        <div class="module">
+                                            <div class="module-heading">
+                                                <h4 class="module-title">Quick Help</h4>
+                                            </div><!-- /.module-heading -->
+
+                                            <div class="module-body">
+                                                <ul class="list-unstyled list-link">
+                                                    <li><a href="contact">Customer Service</a></li>
+                                                    <li><a href="contact">Order Status</a></li>
+                                                    <li><a href="contact">Easy Returns</a></li>
+                                                    <li><a href="contact">Product Recall</a></li>
+                                                </ul><!-- /.list-link -->
+                                            </div><!-- /.module-body -->
+                                        </div><!-- /.module -->
+                                        <!-- ============================================================= FOOTER QUICK HELP : END ============================================================= -->
+                                    </div><!-- /.col -->
+
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <!-- ============================================================= FOOTER PAYMENT ============================================================= -->
+                                        <div class="module">
+                                            <div class="module-heading">
+                                                <h4 class="module-title">Payment</h4>
+                                                <p class="module-subtitle">We now accept payment</p>
+                                            </div><!-- /.module-heading -->
+
+                                            <div class="module-body">
+                                                <ul class="nav nav-pills payment-list">
+                                                    <li><img src="images/payments/visa.png" alt=""></li>
+                                                    <li><img src="images/payments/mastercard.png" alt=""></li>
+                                                    <li><img src="images/payments/paypal.png" alt=""></li>
+                                                    <li><img src="images/payments/ebay.png" alt=""></li>
+                                                    <li><img src="images/payments/americanexpress.png" alt=""></li>
+                                                </ul><!-- /.payment-list -->
+                                            </div><!-- /.module-body -->
+                                        </div><!-- /.module -->
+                                        <!-- ============================================================= FOOTER PAYMENT : END ============================================================= -->                </div><!-- /.col -->
+                                    </div><!-- /.row -->
+
+                                    <!-- ============================================================= FOOTER NAVBAR ============================================================= -->
+                                    <div class="navbar-footer navbar-static-bottom clearfix">
+                                        <p class="navbar-text">Copyright &copy; 2014 <span class="navbar-inner-text">KYBOOk</span></p>
+                                        <ul id="example" class="navbar-nav nav ">
+                                            <li><a href="home">Home</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">FAQS</a></li>
+                                            <li><a href="contact">Contact</a></li>
+                                            <li><a href="#">Support</a></li>
+                                            <li><a href="contact">Shipping</a></li>
+                                            <li>
+                                                <ul class="language-block">
+                                                    <li>
+                                                        <select class="selectpicker">
+                                                            <option selected>USD</option>
+                                                            <option>EUR</option>
+                                                            <option>INR</option>
+                                                        </select>
+                                                    </li>
+                                                    <li>
+                                                        <select class="selectpicker">
+                                                            <option selected>EN</option>
+                                                            <option>DE</option>
+                                                            <option>TA</option>
+                                                        </select>
+                                                    </li>
+                                                </ul><!-- /.language-block -->
+                                            </li>
+                                        </ul><!-- /.navbar-nav -->
+                                    </div><!-- /.navbar -->
+                                    <!-- ============================================================= FOOTER NAVBAR : END ============================================================= -->            
+                                </div><!-- /.container -->
+                            </div><!-- /.main-footer -->
+                        </footer><!-- /.footer -->
+
+                        <!-- ============================================================= FOOTER : END ============================================================= -->    </div><!-- /.wrapper -->
+
+
+
+                        <!-- JavaScripts placed at the end of the document so the pages load faster -->
+
+                        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+                        <script src="js/jquery-1.12.0.min.js"></script>
+                        <script src="js/bootstrap.min.js"></script>
+                        <script src="js/bootstrap-hover-dropdown.min.js"></script>
+                        <script src="js/echo.min.js"></script>
+                        <script src="js/jquery.easing.min.js"></script>
+                        <script src="js/owl.carousel.min.js"></script>
+                        <script src="js/wow.min.js"></script>
+                        <script src="js/bootstrap-select.min.js"></script>
+                        <script src="js/jquery-ui.min.js"></script>
+                        <script src="js/scripts.js"></script>
+                    </body>
+                    </html>

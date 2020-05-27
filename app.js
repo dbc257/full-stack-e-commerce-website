@@ -43,6 +43,7 @@ function auth(req, res, next) {
 
 app.use(express.static("js"));
 app.use(express.static("css"));
+app.use(express.static("assets"));
 
 app.use("/register", registerRouter);
 app.use("/login", loginRouter);
@@ -55,6 +56,22 @@ app.use("/products", productsRouter);
 app.post("/signout", (req, res) => {
   req.session.destroy();
   res.redirect("/login");
+});
+
+app.get("/cart", (req, res) => {
+  res.render("cart");
+});
+app.get("/category", (req, res) => {
+  res.render("category");
+});
+app.get("/checkout", (req, res) => {
+  res.render("checkout");
+});
+app.get("/detail", (req, res) => {
+  res.render("detail");
+});
+app.get("/index", (req, res) => {
+  res.render("index");
 });
 // Check to see if the server is running
 app.listen(3000, () => {

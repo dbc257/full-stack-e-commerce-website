@@ -1,0 +1,10 @@
+# Query: assets/
+# Flags: IgnoreExcludeSettings
+
+2 results - 2 files
+
+assets/css/main.css:
+  228: img[src="images/blank.gif"] {
+
+assets/less/general.less:
+  272: img[src="images/blank.gif"] {
