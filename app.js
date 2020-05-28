@@ -6,6 +6,7 @@ const session = require("express-session");
 const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const adminRouter = require("./routes/admin");
+const detailRouter = require("./routes/detail");
 const addProductRouter = require("./routes/add-product");
 // const ordersummaryRouter = require("./routes/cart");
 const cartRouter = require("./routes/cart");
@@ -55,6 +56,7 @@ app.use("/add-product", addProductRouter);
 app.use("/cart", cartRouter);
 // app.use("/products", productsRouter);
 app.use("/index", indexRouter);
+app.use("/detail", detailRouter);
 // POST route to signout
 app.post("/signout", (req, res) => {
   req.session.destroy();
@@ -70,9 +72,9 @@ app.get("/category", (req, res) => {
 app.get("/checkout", (req, res) => {
   res.render("checkout");
 });
-app.get("/detail", (req, res) => {
-  res.render("detail");
-});
+// app.get("/detail", (req, res) => {
+//   res.render("detail");
+// });
 // app.get("/index", (req, res) => {
 //   res.render("index");
 // });

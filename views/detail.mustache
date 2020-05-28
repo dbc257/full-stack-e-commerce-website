@@ -39,149 +39,22 @@
 <![endif]-->
 </head>
 <body>
-
-    <div class="wrapper">
-
-        <!-- ============================================================= MY CART HEADER ============================================================= -->
-        <div id="my-cart" class="collapse">
-            <div class="container">
-                <div class="module">
-                    <div class="module-heading">
-                        <h4>My Cart</h4>
-                    </div><!-- /.module-heading -->
-                    <div class="module-body">
-                        <p></p>
-                        <div class="order-detail table-responsive">
-                            <table class="table table-cart index-dropdown-table">
-                                <thead>
-                                    <tr>
-                                        <th class="dark">Book Name</th>
-                                        <th>Unit Price</th>
-                                        <th class="dark text-center">Qty</th>
-                                        <th>Subtotal</th>
-                                        <th class="dark"></th>
-                                    </tr>
-                                </thead><!-- /thead-->
-
-                                <tbody class="index-dropdown-body">
-                                    <tr class="cart-book">
-                                        <td>
-                                            <div class="media">
-                                                <a href="detail" class="cart-thumbnail-image media-left">
-                                                    <div class="book-cover small-book-cover">
-                                                        <img src="images/books/small-image1.jpg" alt="" class="media-object">
-                                                        <div class="fade"></div>
-                                                    </div>
-                                                </a>
-                                                <div class="media-body">
-                                                    <h3 class="media-heading"><a href="detail">Adipisicing</a></h3>
-                                                </div><!-- /.media-body -->
-                                            </div><!-- /.media -->
-                                        </td>
-                                        <td>
-                                            <span class="price">$9.99</span>
-                                        </td>
-                                        <td class="quantity dark text-center">            
-                                            <div class="quant-input">
-                                                <div class="arrows">
-                                                    <div class="arrow plus gradient"><span class="ir"></span></div>
-                                                    <div class="arrow minus gradient"><span class="ir"></span></div>
-                                                </div>
-                                                <input class="txt-quantity" type="text" value="2"/>
-                                            </div>              
-                                        </td>
-                                        <td>
-                                            <span class="price subtotal">$9.99</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-flat" type="button">X</button>
-                                        </td>
-                                    </tr><!-- /.cart-book -->
-
-                                    <tr class="cart-book">
-                                        <td>
-                                            <div class="media">
-                                                <a href="detail" class="cart-thumbnail-image media-left">
-                                                    <div class="book-cover small-book-cover">
-                                                        <img src="images/books/small-image2.jpg" alt="" class="media-object">
-                                                        <div class="fade"></div>
-                                                    </div>
-                                                </a>
-                                                <div class="media-body">
-                                                    <h3 class="media-heading"><a href="detail">Adipisicing</a></h3>
-                                                </div><!-- /.media-body -->
-                                            </div><!-- /.media -->
-                                        </td>
-                                        <td>
-                                            <span class="price">$9.99</span>
-                                        </td>
-                                        <td class="quantity dark text-center">            
-                                            <div class="quant-input">
-                                                <div class="arrows">
-                                                    <div class="arrow plus gradient"><span class="ir"></span></div>
-                                                    <div class="arrow minus gradient"><span class="ir"></span></div>
-                                                </div>
-                                                <input class="txt-quantity" type="text" value="2"/>
-                                            </div>              
-                                        </td>
-                                        <td>
-                                            <span class="price subtotal">$9.99</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-flat" type="button">X</button>
-                                        </td>
-                                    </tr><!-- /.cart-book -->
-                                </tbody><!-- /tbody -->
-
-                            </table><!-- /.table -->
-                        </div><!-- /.order-detail -->
-
-                        <div class="row">
-                            <div class="col-sm-offset-3 col-sm-3 center-sm">
-                                <input type="text" class="form-control discount-name index-dropdown-discount-name" placeholder="Enter your coupon..">
-                            </div><!-- /.col -->
-
-                            <div class="col-xs-12 col-sm-6 center-sm">
-                                <div class="table-responsive">
-                                    <table class="table table-cart">
-                                        <tfoot>
-                                            <tr>
-                                                <td ><i class="icon-chevron fa fa-chevron-right"></i>&nbsp;Subtotal:</td>
-                                                <td >$ 20.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td ><i class="icon-chevron fa fa-chevron-right"></i>&nbsp;Grandtotal:</td>
-                                                <td >$ 20.00</td>
-                                            </tr>
-                                        </tfoot><!-- /tfoot -->
-                                    </table><!-- /.table -->
-                                </div><!-- /.table-responsive -->
-                            </div> <!-- /.col -->   
-                            <div class="col-md-12">
-                                <a href="checkout" class="pull-right btn btn-primary btn-checkout">Continued Checkout &nbsp;<i class="fa fa-chevron-right"></i></a>    
-                            </div>    
-                        </div><!-- /.row -->
-
-                    </div><!-- /.module-body -->
-                </div><!-- /.module -->
-            </div><!-- /.container -->
-        </div><!-- /#my-cart -->
-
-        <!-- ============================================================= MY CART HEADER : END ============================================================= -->
         <!-- ============================================================= HEADER ============================================================= -->
         <header class="header">
             <!-- ============================================================= NAVBAR TOPBAR ============================================================= -->
             <nav class="navbar navbar-top-bar navbar-static-top">
                 <div class="container">
                     <ul class="navbar-nav nav">
-                        <li><a href="/index">Home</a></li>
-                        <li><a href="/products">Products</a></li>
+                        
+                        <li><a href="/index">Products</a></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Register</a></li>
                     </ul><!-- /.navbar-nav -->
                     <ul class="navbar-nav nav navbar-right">
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="/login">Login</a></li>
+                      
+                        <li><a href="/cart">My Cart</a></li>
                         <li><a href="checkout">Checkout</a></li>
-                        <li class="active"><a data-toggle="collapse" href="#my-cart">Total : $200.00</a></li>
+                        <li class="active"><a data-toggle="collapse" href="/cart">Total : $ {{balance}}</a></li>
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.container-->
             </nav><!-- /.navbar-->
@@ -332,45 +205,39 @@
                     </div><!-- /.navbar-header -->
                     <div class="collapse navbar-collapse" id="KYbook-navbar">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="hidden-sm"><a href="/products">Products</a></li>
+                            <li class="hidden-sm"><a href="/index">Products</a></li>
                             <li class="hidden-sm"><a href="/login">Login</a></li>
                             <li class="hidden-sm"><a href="/register">Register</a></li>
-                            <li  class="hidden-sm"><a href="category">Category</a></li>
-                            <li  class="hidden-sm"><a href="cart">My Cart</a></li>
+                            <li  class="hidden-sm"><a href="/cart">My Cart</a></li>
+                            <li  class="hidden-sm"><a href="/checkout">Checkout</a></li>
                         </ul><!-- /.nav -->
                     </div><!-- /.collapse -->
-                    <a href="#my-cart" class="navbar-btn btn btn-cart" data-toggle="collapse"><img src="images/shopping-cart.png" alt="" /><span class="badge-cart-items-count">4</span></a>
+                    <a href="/cart" class="navbar-btn btn btn-cart" data-toggle="collapse"><img src="images/shopping-cart.png" alt="" /><span class="badge-cart-items-count">{{quantity}}</span></a>
                 </div><!-- /.header-mast -->
                 <!-- ============================================================= NAVBAR PRIMARY : END ============================================================= -->           
             </div><!-- /.container -->
         </div><!-- /.yamm -->
     </header><!-- /.header -->
     <!-- ============================================================= HEADER : END ============================================================= -->
-
+    
 
         <div class="book-detail page">
             <div class="container">
+                {{#bookDetails}}
                 <div class="primary-block clearfix">
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="book-cover book detail-book-cover">
-                                <img src="images/blank.gif" class="img-responsive" data-echo="images/books/detail-book.jpg" alt="">
+                                <img src={{image}} class="img-responsive" alt="" />
                                 <div class="fade"></div>
                             </div><!-- /.book-cover -->
                         </div><!-- /.col -->
 
                         <div class="col-sm-8">
                             <div class="book-detail-header">
-                                <h2 class="book-title">The Chalet school reunion</h2>
-                                <p class="book-author">By <span class="book-author-name">E.M.Brent-dyer</span></p>
-                                <div class="star-rating">
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div><!-- /.star-rating -->    
-                            </div><!-- /.book-detail-header -->
+                                <h2 class="book-title">{{title}}</h2>
+                                <p class="book-author">By <span class="book-author-name">{{author}}</span></p>
+
 
                             <div class="book-detail-body">
 
@@ -383,20 +250,11 @@
 
                                     <div class="pull-right col-md-6 col-sm-7 col-xs-12">
                                         <div class="row product-actions">
-
-                                            <a href="checkout" class="col-sm-6 btn btn-primary btn-addToCart"><i class="icon-plus fa fa-plus-circle"></i>Add to Cart</a>
-                                            <div class="quantity book-detail-quantity col-xs-4 col-lg-3">  
-                                                <div class="quantity-block">          
-                                                    <div class="quant-input">
-                                                        <div class="arrows">
-                                                            <div class="arrow plus gradient"><span class="ir"></span></div>
-                                                            <div class="arrow minus gradient"><span class="ir"></span></div>
-                                                        </div><!-- /.arrows -->
-                                                        <input class="txt-quantity" type="text" value="1"/>
-                                                    </div><!-- /.quant-input -->  
-                                                </div><!-- /.quantity-block -->                             
+                                            <form method="POST" action="/cart">
+                                            <input type="text" value="{{id}}" name="id" />
+                                            <button class="pull-center btn btn-primary btn-checkout"><i class="icon-plus fa fa-plus-circle"></i>Add to Cart</button>
+                                            </form>    
                                             </div><!-- /.col -->   
-                                            <button title="favourite" class="hidden-xs btn btn-secondary btn-add-to-wishlist col-xs-2 " type="button"><span class="icon glyphicon glyphicon-heart"></span></button>
 
                                         </div><!-- /.row -->
                                     </div><!-- /.pull-right -->
@@ -405,561 +263,16 @@
                                 <div class="clearfix"></div>
 
                                 <div class="product-description">
-                                    <h3>Quick Overview</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices.Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices</p>
+                                    <h3>Description</h3>
+                                    <p>{{description}}</p>
                                 </div><!-- /.product-description -->
 
                             </div><!-- /.book-detail-body -->
                         </div><!-- /.col -->
                     </div><!-- /.row -->
-
-                    <div class="tab-holder clearfix">
-                        <div class="book-additional-details">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs book-detail-tab">
-                                <li class="active" role="presentation"><a href="#more" data-toggle="tab">More About This Book</a></li>
-                                <li role="presentation"><a href="#product-details" data-toggle="tab">Product Details</a></li>
-                                <li role="presentation"><a href="#shipping" data-toggle="tab">Shipping</a></li>
-                                <li role="presentation"><a href="#first-chapter" data-toggle="tab">First Chapter</a></li>
-                            </ul><!-- /.nav -->
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="more" role="tabpanel">
-                                    <h3>Consectetur adipisicing elit, sed do eiusmod</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis.</p>
-                                    <p>Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
-                                </div><!-- /.tab-pane -->
-
-                                <div class="tab-pane" id="product-details" role="tabpanel">
-                                    <ul class="list-unstyled list-kybook uppercase">
-                                        <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
-                                        <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
-                                        <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
-                                        <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
-                                    </ul>
-                                </div>
-
-                                <div class="tab-pane" id="shipping" role="tabpanel">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p> 
-                                </div><!-- /.tab-pane -->
-
-                                <div class="tab-pane" id="first-chapter" role="tabpanel">
-                                    <h3>Consectetur adipisicing elit, sed do eiusmod</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis.</p>
-                                    <p>Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
-                                </div><!-- /.tab-pane -->
-
-                            </div><!-- /.tab-content -->
-                        </div><!-- /.book-additional-details -->
-                    </div><!-- /.col -->
                 </div><!-- /.primary-block -->
+                {{/bookDetails}}
             </div><!-- /.container -->
-
-            <!-- ========================================= RELATE BOOKS MODULE ========================================= -->
-            <div class="container">
-                <div class="wow fadeInUp">
-                    <div class="module block-relate-books module-block">
-                        <div class="module-heading">
-                            <h2 class="module-title">Relate Books</h2>
-                            <div class="customNavigation">
-                                <a href="#" data-target="#relate-book-carousel" class="btn btn-navigation left-nav-arrow owl-prev"><i class='icon fa fa-caret-left'></i></a>
-                                <a href="#" data-target="#relate-book-carousel" class="btn btn-navigation right-nav-arrow owl-next"><i class='icon fa fa-caret-right'></i></a>  
-                            </div><!-- /.customNavigation -->
-                            <p class="module-subtitle">Do eiusmod tempor incid... et dolore magna aliqua</p>
-                        </div><!-- /.module-heading -->
-
-                        <div class="module-body">
-                            <div class="books">
-
-                                <div id="relate-book-carousel" class="owl-carousel home-owl-carousel relate-books">
-
-                                    <div class="item item-carousel single-book">
-                                        <div class="book">
-                                            <div class="book-cover">
-                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/1.jpg">
-                                                <div class="fade"></div>
-                                                <div class="book-price">
-                                                    <span class="price">$ 9.99</span>
-                                                </div><!-- /.book-price -->
-                                            </div><!-- /.book-cover -->
-
-                                            <div class="book-details">
-                                                <h3 class="book-title">
-                                                    <a href="detail">duis aute</a>
-                                                </h3>
-                                                <p class="book-author">dolor sit</p>
-                                                <div class="star-rating">
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div><!-- /.star-rating -->
-                                            </div><!-- /.book-details -->
-                                        </div><!-- /.book -->                       
-                                    </div><!-- /.item -->
-
-                                    <div class="item item-carousel single-book">
-                                        <div class="book">
-                                            <div class="hot-ribbon"><div class="hot-ribbon-content">hot</div></div>
-                                            <div class="book-cover">
-                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/2.jpg">
-                                                <div class="fade"></div>
-                                                <div class="book-price">
-                                                    <span class="price">$ 9.99</span>
-                                                </div>
-                                            </div><!-- /.item -->
-                                            <div class="book-details">
-                                                <h3 class="book-title">
-                                                    <a href="detail">voluptate</a>
-                                                </h3>
-                                                <p class="book-author">dolor sit</p>
-                                                <div class="star-rating">
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div><!-- /.star-rating -->
-                                            </div><!-- /.book-details -->
-                                        </div><!-- /.book -->                           
-                                    </div><!-- /.item -->
-
-                                    <div class="item item-carousel single-book">
-                                        <div class="book">
-                                            <div class="sale-ribbon"><div class="sale-ribbon-content">sale off</div></div>
-                                            <div class="book-cover">
-                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/3.jpg">
-                                                <div class="fade"></div>
-                                                <div class="book-price">
-                                                    <span class="price"><span class="price-before-discount">$ 9.99</span> $ 4.99</span>
-                                                </div><!-- /.book-price -->
-                                            </div><!-- /.book-cover -->
-
-                                            <div class="book-details">
-                                                <h3 class="book-title">
-                                                    <a href="detail">fugiat nulla</a>
-                                                </h3>
-                                                <p class="book-author">dolor sit</p>
-                                                <div class="star-rating">
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div><!-- /.star-rating -->
-                                            </div><!-- /.book-details -->
-                                        </div><!-- /.book -->                           
-                                    </div><!-- /.item -->
-
-                                    <div class="item item-carousel single-book">
-                                        <div class="book">
-                                            <div class="book-cover">
-                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/4.jpg">
-                                                <div class="fade"></div>
-                                                <div class="book-price">
-                                                    <span class="price">$ 9.99</span>
-                                                </div><!-- /.book-price -->
-                                            </div><!-- /.book-cover -->
-
-                                            <div class="book-details">
-                                                <h3 class="book-title">
-                                                    <a href="detail">sunt</a>
-                                                </h3>
-                                                <p class="book-author">dolor sit</p>
-                                                <div class="star-rating">
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div><!-- /.star-rating -->
-                                            </div><!-- /.book-details -->
-                                        </div><!-- /.book -->                           
-                                    </div><!-- /.item -->
-
-                                    <div class="item item-carousel single-book">
-                                        <div class="book">
-                                            <div class="book-cover">
-                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/5.jpg">
-                                                <div class="fade"></div>
-                                                <div class="book-price">
-                                                    <span class="price">$ 9.99</span>
-                                                </div><!-- /.book-price -->
-                                            </div><!-- /.book-cover -->
-
-                                            <div class="book-details">
-                                                <h3 class="book-title">
-                                                    <a href="detail">sunt</a>
-                                                </h3>
-                                                <p class="book-author">dolor sit</p>
-                                                <div class="star-rating">
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div><!-- /.star-rating -->
-                                            </div><!-- /.book-details -->
-                                        </div><!-- /.book -->                           
-                                    </div><!-- /.item -->
-
-                                    <div class="item item-carousel single-book">
-                                        <div class="book">
-                                            <div class="hot-ribbon"><div class="hot-ribbon-content">hot</div></div>
-                                            <div class="book-cover">
-                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/6.jpg">
-                                                <div class="fade"></div>
-                                                <div class="book-price">
-                                                    <span class="price">$ 9.99</span>
-                                                </div><!-- /.book-price -->
-                                            </div><!-- /.book-cover -->
-
-                                            <div class="book-details">
-                                                <h3 class="book-title">
-                                                    <a href="detail">sunt</a>
-                                                </h3>
-                                                <p class="book-author">dolor sit</p>
-                                                <div class="star-rating">
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div><!-- /.star-rating -->
-                                            </div><!-- /.book-details -->
-                                        </div><!-- /.book -->                           
-                                    </div><!-- /.item -->
-
-                                    <div class="item item-carousel single-book">
-                                        <div class="book">
-                                            <div class="sale-ribbon"><div class="sale-ribbon-content">sale off</div></div>
-                                            <div class="book-cover">
-                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/7.jpg">
-                                                <div class="fade"></div>
-                                                <div class="book-price">
-                                                    <span class="price"><span class="price-before-discount">$ 9.99</span> $ 4.99</span>
-                                                </div><!-- /.book-price -->
-                                            </div><!-- /.book-cover -->
-
-                                            <div class="book-details">
-                                                <h3 class="book-title">
-                                                    <a href="detail">sunt</a>
-                                                </h3>
-                                                <p class="book-author">dolor sit</p>
-                                                <div class="star-rating">
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div><!-- /.star-rating -->
-                                            </div><!-- /.book-details -->
-                                        </div><!-- /.book -->                           
-                                    </div><!-- /.item -->
-
-                                    <div class="item item-carousel single-book">
-                                        <div class="book">
-                                            <div class="book-cover">
-                                                <img alt="" src="images/blank.gif" data-echo="images/relate-books/8.jpg">
-                                                <div class="fade"></div>
-                                                <div class="book-price">
-                                                    <span class="price">$ 9.99</span>
-                                                </div><!-- /.book-price -->
-                                            </div><!-- /.book-cover -->
-
-                                            <div class="book-details">
-                                                <h3 class="book-title">
-                                                    <a href="detail">sunt</a>
-                                                </h3>
-                                                <p class="book-author">dolor sit</p>
-                                                <div class="star-rating">
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star color"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div><!-- /.star-rating -->
-                                            </div><!-- /.book-details -->
-                                        </div><!-- /.book -->                           
-                                    </div><!-- /.item -->
-
-                                </div><!-- /#relate-book-carousel -->                   
-                            </div><!-- /.books -->
-                        </div><!-- /.module-body -->
-                    </div><!-- /.module -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-            <!-- ========================================= RELATE BOOKS MODULE : END ========================================= --></div><!-- /.book-detail page -->
-            <a class="scrollup hidden-xs hidden-sm" href="#" style="display: none;"><img src="images/top-scroll.png" alt="" ></a>
-        </div>
-
-        <div class="container">
-            <!-- ============================================================= BRANDS ============================================================= -->
-            <div class="row brands-block wow fadeInUp">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <h2 class="page-title">Brands</h2>
-                        <p class="page-subtitle">DO eiusmod tempor incid... et dolore magna aliqua</p>
-                    </div><!-- /.page-header -->
-
-                    <div class="page-body">
-                        <div id="owl-demo" class="owl-carousel brand-carousel">
-                            <div class="item desat">
-                                <div class="brand-logo">
-                                    <h5>brand</h5>
-                                    <h4>logo</h4>
-                                </div>
-                            </div><!-- /.item -->
-
-                            <div class="item desat">
-                                <div class="brand-logo">
-                                    <h5>brand</h5>
-                                    <h4>logo</h4>
-                                </div>
-                            </div><!-- /.item -->
-
-                            <div class="item desat">
-                                <div class="brand-logo">
-                                    <h5>brand</h5>
-                                    <h4>logo</h4>
-                                </div>
-                            </div><!-- /.item -->
-
-                            <div class="item desat">
-                                <div class="brand-logo">
-                                    <h5>brand</h5>
-                                    <h4>logo</h4>
-                                </div>
-                            </div><!-- /.item -->
-
-                            <div class="item desat">
-                                <div class="brand-logo">
-                                    <h5>brand</h5>
-                                    <h4>logo</h4>
-                                </div>
-                            </div><!-- /.item -->
-
-                            <div class="item desat">
-                                <div class="brand-logo">
-                                    <h5>brand</h5>
-                                    <h4>logo</h4>
-                                </div>
-                            </div><!-- /.item -->
-
-                            <div class="item desat">
-                                <div class="brand-logo">
-                                    <h5>brand</h5>
-                                    <h4>logo</h4>
-                                </div>
-                            </div><!-- /.item -->
-
-                            <div class="item desat">
-                                <div class="brand-logo">
-                                    <h5>brand</h5>
-                                    <h4>logo</h4>
-                                </div>
-                            </div><!-- /.item -->
-
-                        </div><!-- /#owl-demo -->           
-                    </div><!-- /.page-body -->
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-            <!-- ============================================================= BRANDS : END ============================================================= -->       
-        </div><!-- /.container -->
-
-        <!-- ============================================================= FOOTER ============================================================= -->
-        <footer class="footer">
-            <div class="sub-footer">
-                <div class="container">
-                    <div class="sub-footer-widget">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <!-- ============================================================= FOOTER SUBSCRIBE ============================================================= -->
-                                <div class="module">
-                                    <div class="module-heading">
-                                        <h2 class="module-title">Subscribe</h2>
-                                    </div><!-- /.module-heading -->
-
-                                    <div class="module-body">
-                                        <form role="form" class="subscribe-form">
-                                            <div class="row">
-                                                <div class="col-lg-10">
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control subscriber-name" placeholder="Enter your email">
-                                                        <span class="input-group-btn">
-                                                            <button class="btn btn-primary-dark  send-btn" type="submit">Send</button>
-                                                        </span>
-                                                    </div><!-- /.input-group -->
-                                                </div><!-- /.col -->
-                                            </div><!-- /.row -->
-                                        </form><!-- /.subscribe-form -->
-                                    </div><!-- /.module-body -->
-                                </div><!-- /.module -->
-
-                                <!-- ============================================================= FOOTER SUBSCRIBE : END ============================================================= -->                    </div><!-- /.col -->
-
-                                <div class="col-md-4 hidden-sm col-xs-12">
-                                    <!-- ============================================================= FOOTER BOOK TIPS ============================================================= -->
-                                    <div class="module">
-                                        <div class="module-heading">
-                                            <h2 class="module-title">Book Tips</h2>
-                                            <p class="module-subtitle">consectetur adipisicing elit, sed do</p>
-                                        </div><!-- /.module-heading -->
-
-                                        <div class="module-body subfooter-content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
-                                        </div><!-- /.module-body -->
-                                    </div><!-- /.module -->
-                                    <!-- ============================================================= FOOTER BOOK TIPS : END ============================================================= -->
-
-                                </div><!-- /.col -->
-
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <!-- ============================================================= FOOTER SOCIAL SITE ============================================================= -->
-                                    <div class="module">
-                                        <div class="module-heading">
-                                            <h2 class="module-title">Social</h2>
-                                            <p class="module-subtitle">Follow us in Social Site</p>
-                                        </div><!-- /.module-heading -->
-
-                                        <div class="module-body social-media">
-                                            <ul class="nav nav-pills social-media-list" id="tooltip">
-                                                <li style="background-color:#587aca;"><a data-toggle="tooltip" title="Facebook" data-placement="bottom"  href="http://facebook.com/transvelo/"><i class="icon fa fa-facebook"></i></a></li>
-                                                <li style="background-color:#f46899;"><a  data-toggle="tooltip" title="Dribble" data-placement="bottom"  href="http://dribbble.com/transvelo/"><i class="icon fa fa-dribbble"></i></a></li>
-                                                <li style="background-color:#5dc8ff;"><a  data-toggle="tooltip" title="Twitter" data-placement="bottom"  href="http://twitter.com/transvelo/"><i class="icon fa fa-twitter"></i></a></li>
-                                                <li style="background-color:#358aff;"><a  data-toggle="tooltip" data-placement="bottom" title="Btc" href="http://btc.com/transvelo/"><i class="icon fa fa-btc"></i></a></li>
-                                                <li style="background-color:#8e714b;"><a  data-toggle="tooltip" data-placement="bottom" title="Instagram" href="http://instagram.com/transvelo/"><i class="icon fa fa-instagram"></i></a></li>
-                                                <li style="background-color:#4d6982;"><a  data-toggle="tooltip" data-placement="bottom" title="Tumbler" href="http://tumbler.com/transvelo/"><i class="icon fa fa-tumblr"></i></a></li>
-                                            </ul><!-- /.nav -->
-                                        </div><!-- /.module-body -->
-                                    </div><!-- /.module -->
-
-                                    <!-- ============================================================= FOOTER SOCIAL SITE : END ============================================================= -->
-                                </div><!-- /.col -->
-                            </div><!-- /.row -->
-                        </div><!-- /.sub-footer-widget -->
-                    </div><!-- /.container -->
-                </div><!-- /.sub-footer -->
-
-                <div class="main-footer">
-                    <div class="container">
-                        <div class="row footer-widgets">
-                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                <!-- ============================================================= FOOTER SHIPPING DELIVERY ============================================================= -->
-                                <div class="module">
-                                    <div class="module-heading">
-                                        <h4 class="module-title">Shipping</h4>
-                                    </div><!-- /.module-heading -->
-
-                                    <div class="module-body">
-                                        <ul class="list-unstyled list-link">
-                                            <li><a href="checkout">About Free Shipping</a></li>
-                                            <li><a href="checkout">About Shipping</a></li>
-                                            <li><a href="checkout">Shipping Rates</a></li>
-                                            <li><a href="checkout">Store Returns</a></li>
-                                        </ul><!-- /.list-link -->
-                                    </div><!-- /.module-body -->
-                                </div><!-- /.module -->
-                                <!-- ============================================================= FOOTER SHIPPING DELIVERY : END ============================================================= -->                </div><!-- /.col -->
-
-                                <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <!-- ============================================================= FOOTER INFORMATION ============================================================= -->
-                                    <div class="module">
-                                        <div class="module-heading">
-                                            <h4 class="module-title">Information</h4>
-                                        </div><!-- /.module-heading -->
-
-                                        <div class="module-body">
-                                            <ul class="list-unstyled list-link">
-                                                <li><a href="checkout">Contact</a></li>
-                                                <li><a href="checkout">Delivery</a></li>
-                                                <li><a href="checkout">Legal Notice</a></li>
-                                                <li><a href="checkout">Terms and Conditions</a></li>
-                                            </ul><!-- /.list-link -->
-                                        </div><!-- /.module-body -->
-                                    </div><!-- /.module -->
-                                    <!-- ============================================================= FOOTER INFORMATION : END ============================================================= -->                </div><!-- /.col -->
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <!-- ============================================================= FOOTER QUICK HELP ============================================================= -->
-                                        <div class="module">
-                                            <div class="module-heading">
-                                                <h4 class="module-title">Quick Help</h4>
-                                            </div><!-- /.module-heading -->
-
-                                            <div class="module-body">
-                                                <ul class="list-unstyled list-link">
-                                                    <li><a href="contact">Customer Service</a></li>
-                                                    <li><a href="contact">Order Status</a></li>
-                                                    <li><a href="contact">Easy Returns</a></li>
-                                                    <li><a href="contact">Product Recall</a></li>
-                                                </ul><!-- /.list-link -->
-                                            </div><!-- /.module-body -->
-                                        </div><!-- /.module -->
-                                        <!-- ============================================================= FOOTER QUICK HELP : END ============================================================= -->
-                                    </div><!-- /.col -->
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <!-- ============================================================= FOOTER PAYMENT ============================================================= -->
-                                        <div class="module">
-                                            <div class="module-heading">
-                                                <h4 class="module-title">Payment</h4>
-                                                <p class="module-subtitle">We now accept payment</p>
-                                            </div><!-- /.module-heading -->
-
-                                            <div class="module-body">
-                                                <ul class="nav nav-pills payment-list">
-                                                    <li><img src="images/payments/visa.png" alt=""></li>
-                                                    <li><img src="images/payments/mastercard.png" alt=""></li>
-                                                    <li><img src="images/payments/paypal.png" alt=""></li>
-                                                    <li><img src="images/payments/ebay.png" alt=""></li>
-                                                    <li><img src="images/payments/americanexpress.png" alt=""></li>
-                                                </ul><!-- /.payment-list -->
-                                            </div><!-- /.module-body -->
-                                        </div><!-- /.module -->
-                                        <!-- ============================================================= FOOTER PAYMENT : END ============================================================= -->                </div><!-- /.col -->
-                                    </div><!-- /.row -->
-
-                                    <!-- ============================================================= FOOTER NAVBAR ============================================================= -->
-                                    <div class="navbar-footer navbar-static-bottom clearfix">
-                                        <p class="navbar-text">Copyright &copy; 2014 <span class="navbar-inner-text">KYBOOk</span></p>
-                                        <ul id="example" class="navbar-nav nav ">
-                                            <li><a href="home">Home</a></li>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">FAQS</a></li>
-                                            <li><a href="contact">Contact</a></li>
-                                            <li><a href="#">Support</a></li>
-                                            <li><a href="contact">Shipping</a></li>
-                                            <li>
-                                                <ul class="language-block">
-                                                    <li>
-                                                        <select class="selectpicker">
-                                                            <option selected>USD</option>
-                                                            <option>EUR</option>
-                                                            <option>INR</option>
-                                                        </select>
-                                                    </li>
-                                                    <li>
-                                                        <select class="selectpicker">
-                                                            <option selected>EN</option>
-                                                            <option>DE</option>
-                                                            <option>TA</option>
-                                                        </select>
-                                                    </li>
-                                                </ul><!-- /.language-block -->
-                                            </li>
-                                        </ul><!-- /.navbar-nav -->
-                                    </div><!-- /.navbar -->
-                                    <!-- ============================================================= FOOTER NAVBAR : END ============================================================= -->            
-                                </div><!-- /.container -->
-                            </div><!-- /.main-footer -->
-                        </footer><!-- /.footer -->
-
-                        <!-- ============================================================= FOOTER : END ============================================================= -->    </div><!-- /.wrapper -->
-
-
 
                         <!-- JavaScripts placed at the end of the document so the pages load faster -->
 

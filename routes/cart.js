@@ -16,18 +16,32 @@ router.get("/", (req, res) => {
     ],
   }).then((results) => {
     let myProducts = results.map((o) => {
-      // console.log(o.dataValues.id);
+      console.log(o);
       return {
         order_id: o.dataValues.id,
-        product: o.dataValues.order_products.dataValues,
+        product_id: o.dataValues.order_products,
       };
     });
-    // console.log(myProducts);
+    console.log(myProducts);
     res.render("cart", {
       userOrders: myProducts,
     });
   });
 });
+
+// POST route to add a product to Cart
+router.post("/", (req, res) => {
+  let product_id = req.body.product_id;
+  let user_id = req.session.userid;
+  let order = models.Order.build({
+    product_id: product_id,
+    user_id: user_id,
+  });
+  order.save().then(() => {
+    res.redirect("/cart");
+  });
+});
+
 // POST route to remove a product from Order Summary Page
 router.post("/remove", (req, res) => {
   let order_id = req.body.order_id;

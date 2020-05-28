@@ -1,4 +1,3 @@
-    {{! <b>{{message }}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,149 +39,22 @@
 <![endif]-->
 </head>
 <body>
-
-    <div class="wrapper">
-
-        <!-- ============================================================= LOGIN HEADER ============================================================= -->
-        <div id="my-cart" class="collapse">
-            <div class="container">
-                <div class="module">
-                    <div class="module-heading">
-                        <h4>My Cart</h4>
-                    </div><!-- /.module-heading -->
-                    <div class="module-body">
-                        <p></p>
-                        <div class="order-detail table-responsive">
-                            <table class="table table-cart index-dropdown-table">
-                                <thead>
-                                    <tr>
-                                        <th class="dark">Book Name</th>
-                                        <th>Unit Price</th>
-                                        <th class="dark text-center">Qty</th>
-                                        <th>Subtotal</th>
-                                        <th class="dark"></th>
-                                    </tr>
-                                </thead><!-- /thead-->
-
-                                <tbody class="index-dropdown-body">
-                                    <tr class="cart-book">
-                                        <td>
-                                            <div class="media">
-                                                <a href="detail" class="cart-thumbnail-image media-left">
-                                                    <div class="book-cover small-book-cover">
-                                                        <img src="images/books/small-image1.jpg" alt="" class="media-object">
-                                                        <div class="fade"></div>
-                                                    </div>
-                                                </a>
-                                                <div class="media-body">
-                                                    <h3 class="media-heading"><a href="detail">Adipisicing</a></h3>
-                                                </div><!-- /.media-body -->
-                                            </div><!-- /.media -->
-                                        </td>
-                                        <td>
-                                            <span class="price">$9.99</span>
-                                        </td>
-                                        <td class="quantity dark text-center">            
-                                            <div class="quant-input">
-                                                <div class="arrows">
-                                                    <div class="arrow plus gradient"><span class="ir"></span></div>
-                                                    <div class="arrow minus gradient"><span class="ir"></span></div>
-                                                </div>
-                                                <input class="txt-quantity" type="text" value="2"/>
-                                            </div>              
-                                        </td>
-                                        <td>
-                                            <span class="price subtotal">$9.99</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-flat" type="button">X</button>
-                                        </td>
-                                    </tr><!-- /.cart-book -->
-
-                                    <tr class="cart-book">
-                                        <td>
-                                            <div class="media">
-                                                <a href="detail" class="cart-thumbnail-image media-left">
-                                                    <div class="book-cover small-book-cover">
-                                                        <img src="images/books/small-image2.jpg" alt="" class="media-object">
-                                                        <div class="fade"></div>
-                                                    </div>
-                                                </a>
-                                                <div class="media-body">
-                                                    <h3 class="media-heading"><a href="detail">Adipisicing</a></h3>
-                                                </div><!-- /.media-body -->
-                                            </div><!-- /.media -->
-                                        </td>
-                                        <td>
-                                            <span class="price">$9.99</span>
-                                        </td>
-                                        <td class="quantity dark text-center">            
-                                            <div class="quant-input">
-                                                <div class="arrows">
-                                                    <div class="arrow plus gradient"><span class="ir"></span></div>
-                                                    <div class="arrow minus gradient"><span class="ir"></span></div>
-                                                </div>
-                                                <input class="txt-quantity" type="text" value="2"/>
-                                            </div>              
-                                        </td>
-                                        <td>
-                                            <span class="price subtotal">$9.99</span>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-flat" type="button">X</button>
-                                        </td>
-                                    </tr><!-- /.cart-book -->
-                                </tbody><!-- /tbody -->
-
-                            </table><!-- /.table -->
-                        </div><!-- /.order-detail -->
-
-                        <div class="row">
-                            <div class="col-sm-offset-3 col-sm-3 center-sm">
-                                <input type="text" class="form-control discount-name index-dropdown-discount-name" placeholder="Enter your coupon..">
-                            </div><!-- /.col -->
-
-                            <div class="col-xs-12 col-sm-6 center-sm">
-                                <div class="table-responsive">
-                                    <table class="table table-cart">
-                                        <tfoot>
-                                            <tr>
-                                                <td ><i class="icon-chevron fa fa-chevron-right"></i>&nbsp;Subtotal:</td>
-                                                <td >$ 20.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td ><i class="icon-chevron fa fa-chevron-right"></i>&nbsp;Grandtotal:</td>
-                                                <td >$ 20.00</td>
-                                            </tr>
-                                        </tfoot><!-- /tfoot -->
-                                    </table><!-- /.table -->
-                                </div><!-- /.table-responsive -->
-                            </div> <!-- /.col -->   
-                            <div class="col-md-12">
-                                <a href="checkout" class="pull-right btn btn-primary btn-checkout">Continued Checkout &nbsp;<i class="fa fa-chevron-right"></i></a>    
-                            </div>    
-                        </div><!-- /.row -->
-
-                    </div><!-- /.module-body -->
-                </div><!-- /.module -->
-            </div><!-- /.container -->
-        </div><!-- /#my-cart -->
-
-        <!-- ============================================================= LOGIN HEADER : END ============================================================= -->
         <!-- ============================================================= HEADER ============================================================= -->
         <header class="header">
             <!-- ============================================================= NAVBAR TOPBAR ============================================================= -->
             <nav class="navbar navbar-top-bar navbar-static-top">
                 <div class="container">
                     <ul class="navbar-nav nav">
-                        <li><a href="/index">Home</a></li>
-                        <li><a href="/products">Products</a></li>
+                        
+                        <li><a href="/index">Products</a></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Register</a></li>
                     </ul><!-- /.navbar-nav -->
                     <ul class="navbar-nav nav navbar-right">
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="/login">Login</a></li>
+                      
+                        <li><a href="/cart">My Cart</a></li>
                         <li><a href="checkout">Checkout</a></li>
-                        <li class="active"><a data-toggle="collapse" href="#my-cart">Total : $200.00</a></li>
+                        <li class="active"><a data-toggle="collapse" href="/cart">Total : $ {{balance}}</a></li>
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.container-->
             </nav><!-- /.navbar-->
@@ -333,14 +205,14 @@
                     </div><!-- /.navbar-header -->
                     <div class="collapse navbar-collapse" id="KYbook-navbar">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="hidden-sm"><a href="/products">Products</a></li>
+                            <li class="hidden-sm"><a href="/index">Products</a></li>
                             <li class="hidden-sm"><a href="/login">Login</a></li>
                             <li class="hidden-sm"><a href="/register">Register</a></li>
-                            <li  class="hidden-sm"><a href="category">Category</a></li>
-                            <li  class="hidden-sm"><a href="cart">My Cart</a></li>
+                            <li  class="hidden-sm"><a href="/cart">My Cart</a></li>
+                            <li  class="hidden-sm"><a href="/checkout">Checkout</a></li>
                         </ul><!-- /.nav -->
                     </div><!-- /.collapse -->
-                    <a href="#my-cart" class="navbar-btn btn btn-cart" data-toggle="collapse"><img src="images/shopping-cart.png" alt="" /><span class="badge-cart-items-count">4</span></a>
+                    <a href="/cart" class="navbar-btn btn btn-cart" data-toggle="collapse"><img src="images/shopping-cart.png" alt="" /><span class="badge-cart-items-count">{{quantity}}</span></a>
                 </div><!-- /.header-mast -->
                 <!-- ============================================================= NAVBAR PRIMARY : END ============================================================= -->           
             </div><!-- /.container -->
@@ -348,8 +220,6 @@
     </header><!-- /.header -->
     <!-- ============================================================= HEADER : END ============================================================= -->
 
-
-        {{! <div class="checkout page"> }}
             <div class="container">
                 <div id="collapseOne" class="panel-collapse collapse in">
                     <div class="panel-body">
@@ -396,12 +266,7 @@
                         </div><!-- /.panel-body -->
                     </div><!-- /.panel-collapse -->
                 </div><!-- /.panel -->               
-        {{! </div><!-- /.checkout page --> }}
 
-        <a class="scrollup hidden-xs hidden-sm" href="#" style="display: none;"><img src="images/top-scroll.png" alt="" ></a>
-    </div>
-
-    
                     <!-- JavaScripts placed at the end of the document so the pages load faster -->
 
                     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
