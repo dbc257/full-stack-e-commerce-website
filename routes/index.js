@@ -5,7 +5,7 @@ let models = require("../models");
 // GET route to display all products
 router.get("/", (req, res) => {
   models.Product.findAll().then((products) => {
-    res.render("products", { allProducts: products });
+    res.render("index", { allProducts: products });
   });
 });
 // POST route to add a product to Order Summary Page
@@ -17,7 +17,7 @@ router.post("/", (req, res) => {
     user_id: user_id,
   });
   order.save().then(() => {
-    res.redirect("/products");
+    res.redirect("/index");
   });
 });
 

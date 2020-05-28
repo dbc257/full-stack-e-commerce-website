@@ -7,8 +7,10 @@ const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const adminRouter = require("./routes/admin");
 const addProductRouter = require("./routes/add-product");
-const ordersummaryRouter = require("./routes/ordersummary");
-const productsRouter = require("./routes/products");
+// const ordersummaryRouter = require("./routes/cart");
+const cartRouter = require("./routes/cart");
+// const productsRouter = require("./routes/products");
+const indexRouter = require("./routes/index");
 
 const mustacheExpress = require("mustache-express");
 const models = require("./models");
@@ -49,18 +51,19 @@ app.use("/register", registerRouter);
 app.use("/login", loginRouter);
 app.use("/admin", adminRouter);
 app.use("/add-product", addProductRouter);
-app.use("/ordersummary", ordersummaryRouter);
-app.use("/products", productsRouter);
-
+// app.use("/ordersummary", ordersummaryRouter);
+app.use("/cart", cartRouter);
+// app.use("/products", productsRouter);
+app.use("/index", indexRouter);
 // POST route to signout
 app.post("/signout", (req, res) => {
   req.session.destroy();
   res.redirect("/login");
 });
 
-app.get("/cart", (req, res) => {
-  res.render("cart");
-});
+// app.get("/cart", (req, res) => {
+//   res.render("cart");
+// });
 app.get("/category", (req, res) => {
   res.render("category");
 });
@@ -70,9 +73,9 @@ app.get("/checkout", (req, res) => {
 app.get("/detail", (req, res) => {
   res.render("detail");
 });
-app.get("/index", (req, res) => {
-  res.render("index");
-});
+// app.get("/index", (req, res) => {
+//   res.render("index");
+// });
 // Check to see if the server is running
 app.listen(3000, () => {
   console.log("Server is on the run!");

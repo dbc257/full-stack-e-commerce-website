@@ -22,8 +22,8 @@ router.get("/", (req, res) => {
         product: o.dataValues.order_products.dataValues,
       };
     });
-    console.log(myProducts);
-    res.render("ordersummary", {
+    // console.log(myProducts);
+    res.render("cart", {
       userOrders: myProducts,
     });
   });
@@ -31,12 +31,13 @@ router.get("/", (req, res) => {
 // POST route to remove a product from Order Summary Page
 router.post("/remove", (req, res) => {
   let order_id = req.body.order_id;
+  console.log("Button works");
   models.Order.destroy({
     where: {
       id: order_id,
     },
   }).then(() => {
-    res.redirect("/ordersummary");
+    res.redirect("/cart");
   });
 });
 

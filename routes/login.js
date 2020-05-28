@@ -22,7 +22,7 @@ router.post("/", (req, res) => {
         // user password is correct
         req.session.username = user.username;
         req.session.userid = user.id;
-        res.redirect("/products");
+        res.redirect("/index");
       } else {
         // password not correct
         res.render("login", { messageError: "Password is incorrect!" });
