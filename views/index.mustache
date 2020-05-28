@@ -50,7 +50,7 @@
                         <h4>My Cart</h4>
                     </div><!-- /.module-heading -->
                     <div class="module-body">
-                        <p>DO eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p></p>
                         <div class="order-detail table-responsive">
                             <table class="table table-cart index-dropdown-table">
                                 <thead>
@@ -174,15 +174,15 @@
             <nav class="navbar navbar-top-bar navbar-static-top">
                 <div class="container">
                     <ul class="navbar-nav nav">
-                        <li><a href="home">Home</a></li>
-                        <li><a href="contact">About Us</a></li>
-                        <li><a href="contact">Customer Service</a></li>
-                        <li><a href="contact">Terms</a></li>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/products">Products</a></li>
+                        {{! <li><a href="contact">Customer Service</a></li> }}
+                        {{! <li><a href="contact">Terms</a></li> }}
                     </ul><!-- /.navbar-nav -->
 
                     <ul class="navbar-nav nav navbar-right">
-                        <li><a href="#">Wishlist</a></li>
-                        <li><a href="checkout">Login</a></li>
+                        <li><a href="/register">Register</a></li>
+                        <li><a href="/login">Login</a></li>
                         <li><a href="checkout">Checkout</a></li>
                         <li class="active"><a data-toggle="collapse" href="#my-cart">Total : $200.00</a></li>
                     </ul><!-- /.navbar-nav -->
@@ -201,7 +201,7 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <a class="navbar-brand" href="home">
+                        <a class="navbar-brand" href="/index">
                             <svg class="svg-circle" version="1.1" id="Layer_1" 
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="255.232px"
                             height="66.132px" viewBox="161.754 390.232 255.232 66.132">
@@ -338,10 +338,13 @@
                     </div><!-- /.navbar-header -->
                     <div class="collapse navbar-collapse" id="KYbook-navbar">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown yamm-fw active">
-                                <a href="category" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle trigger">Books</a>
-                                <ul class="list-unstyled dropdown-menu dropdown-megamenu">
-                                    <li>
+                            {{! <li>
+                                <ul> }}
+                            {{! <li class="dropdown yamm-fw active"> }}
+                                {{! <a href="category" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle trigger">Books</a> }}
+                                
+                                {{! <ul class="list-unstyled dropdown-menu dropdown-megamenu"> }}
+                                    {{! <li>
                                         <div class="yamm-content">
                                             <div class="row">
                                                 <div class="col-sm-6">
@@ -396,14 +399,18 @@
                                                 </div><!-- /.col -->
                                                 <div class="clearfix visible-xs"></div>
                                             </div><!-- /.row -->
-                                        </div><!-- /.yamm-content -->
-                                    </li>
-                                </ul><!-- /.dropdown-menu -->
-                            </li>
-                            <li class="hidden-sm"><a href="category">Textbooks</a></li>
-                            <li  class="hidden-sm"><a href="category">Audiobooks</a></li>
-                            <li ><a href="category">Magazines</a></li>
-                            <li class="dropdown">
+                                        </div><!-- /.yamm-content --> }}
+                                    {{! </li> }}
+                                {{! </ul><!-- /.dropdown-menu --> }}
+                            {{! </li>  }}
+
+                            <li class="hidden-sm"><a href="/products">Products</a></li>
+                            <li class="hidden-sm"><a href="/login">Login</a></li>
+                            <li class="hidden-sm"><a href="/register">Register</a></li>
+                            <li  class="hidden-sm"><a href="category">Category</a></li>
+                            <li  class="hidden-sm"><a href="cart">My Cart</a></li>
+                            {{! <li ><a href="category">Magazines</a></li> }}
+                            {{! <li class="dropdown">
                                 <a href="category" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle trigger">Pages <b class="caret"></b></a>
                                 <ul class="dropdown-menu pages-dropdown">
                                     <li><a href="category">Category</a></li>
@@ -413,7 +420,7 @@
                                     <li><a href="contact">Contact</a></li>
                                     <li><a href="404">404</a></li>
                                 </ul><!-- /.dropdown-menu -->
-                            </li> <!-- /.dropdown -->      
+                            </li> <!-- /.dropdown -->       }}
                         </ul><!-- /.nav -->
                     </div><!-- /.collapse -->
                     <a href="#my-cart" class="navbar-btn btn btn-cart" data-toggle="collapse"><img src="images/shopping-cart.png" alt="" /><span class="badge-cart-items-count">4</span></a>
@@ -875,7 +882,7 @@
                         </div><!-- /.row -->
                         <!-- ========================================= NEW BOOKS MODULE : END ========================================= -->     <!-- /.block-new-books -->
 
-                        <!-- .block-best-sellers -->        
+                        {{! <!-- .block-best-sellers -->        
                         <!-- ========================================= BEST SELLER MODULE ========================================= -->
                         <div class="wow fadeInUp">
                             <div class="module block-best-sellers module-block">
@@ -1378,9 +1385,9 @@
                                     </div><!-- /.col -->
                                 </div><!-- /.row -->
                                 <!-- ============================================================= BRANDS : END ============================================================= -->       
-                            </div><!-- /.container -->
+                            </div><!-- /.container --> }}
 
-                            <!-- ============================================================= FOOTER ============================================================= -->
+                            {{! <!-- ============================================================= FOOTER ============================================================= -->
                             <footer class="footer">
                                 <div class="sub-footer">
                                     <div class="container">
@@ -1531,7 +1538,7 @@
                                                                 </div><!-- /.module-body -->
                                                             </div><!-- /.module -->
                                                             <!-- ============================================================= FOOTER PAYMENT : END ============================================================= -->                </div><!-- /.col -->
-                                                        </div><!-- /.row -->
+                                                        </div><!-- /.row --> }}
 
                                                         <!-- ============================================================= FOOTER NAVBAR ============================================================= -->
                                                         <div class="navbar-footer navbar-static-bottom clearfix">
