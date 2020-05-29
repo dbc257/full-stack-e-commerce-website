@@ -46,7 +46,7 @@ function auth(req, res, next) {
 }
 app.use(
   session({
-    secret: process.env.SECRET,
+    secret: "redrum",
     resave: false,
     saveUninitialized: true,
   })
