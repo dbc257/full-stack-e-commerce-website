@@ -219,100 +219,15 @@
         </div><!-- /.yamm -->
     </header><!-- /.header -->
     <!-- ============================================================= HEADER : END ============================================================= -->
-    
-        <div class="cart page">
-            <div class="container">
-                <div class="page-header">
-                    <h2 class="page-title">Shopping Cart</h2>
-                    <p class="page-subtitle"></p>
-                </div><!-- /.page-header -->
+<div class="container">      
+<section class="py-5">
+  <h1 class="display-3">Thank You</h1>
+  <p class="lead">Your books should be emailed to you within 1 business day!</p>
+  <a href="/index" class="pull-left btn btn-primary btn-checkout">Go Back Home</a>
+</section>
+</div>
 
-                <div class="page-body">
-                    <div class="order-detail table-responsive">
-                        <table class="table table-cart cart-detail ">
-                            <thead>
-                                <tr>
-                                    <th class="dark">Book Name</th>
-                                    <th>Unit Price</th>
-                                    <th class="dark"></th>
-                                    {{! <th class="dark text-center">Qty</th> }}
-                                    {{! <th>Subtotal</th>
-                                    <th class="dark"></th> }}
-                                </tr>
-                            </thead><!-- /thead -->                
-                            <tbody class="cart-body-content">
-                            {{#userOrders}}
-                                <tr class="cart-book">
-                                    <td>
-                                        <div class="media">
-                                            <a href="/index" class="cart-thumbnail-image media-left">
-                                                <div class="book-cover small-book-cover">
-                                                    <img src={{product.image}} alt="" class="media-object">
-                                                    <div class="fade"></div>
-                                                </div>
-                                                </a>
-                                            <div class="media-body">
-                                                <h3 class="media-heading"><a href="detail">{{product.title}}</a></h3>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="price">${{product.price}}</span>
-                                    </td>
-                                     
-                                    <td>
-                                        <form method="POST" action="/cart/remove">
-                                        <input type="hidden" value="{{order_id}}"  name="order_id"/> 
-                                        <button class="btn btn-primary-light btn-flat">X</button>
-                                        </form>
-                                    </td>
-                                    
-                                </tr>
-                            {{/userOrders}}    
-                            </tbody><!-- /.cart-body-content -->
-                        </table><!-- /.table -->
-                    </div><!-- /.order-detail -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-8 center-sm">
-                            <div class="table-responsive">
-                                <table class="table table-cart">
-                                    <tfoot>
-                                        <tr>
-                                            <td ><i class="icon-chevron fa fa-chevron-right"></i>&nbsp;Number of Items in Cart:</td>
-                                            <td >{{quantity}}</td>
-                                        </tr>
-                                        <tr>
-                                            <td ><i class="icon-chevron fa fa-chevron-right"></i>&nbsp;Grandtotal:</td>
-                                            <td >$ {{balance}}</td>
-                                        </tr>
-                                    </tfoot><!-- /tfoot -->
-                                </table><!-- /table -->
-                            </div><!-- /table-responsive -->
-                        </div><!-- /.col -->
-                        <div class="col-md-12">
-                            <form method="POST" action="/charge" >
-                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                            data-key="{{stripePublishableKey}}"
-                            data-name="Books"
-                            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-                            data-locale="auto">
-                            </script>
-                            <script>
-                            // Hide default stripe button
-                            document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
-                            </script>
-                            <input type="hidden" value="{{balance}}" name="amount" />
-                            <button type="submit" class="pull-right btn btn-primary btn-checkout">Checkout &nbsp;<i class="fa fa-chevron-right"></i></button>
-                            </form>
-                        </div>
-
-                    </div><!-- /.row -->
-                </div><!-- /.page-body -->
-            </div><!-- /.container -->
-        </div><!-- /.cart page -->            <a class="scrollup hidden-xs hidden-sm" href="#" style="display: none;"><img src="images/top-scroll.png" alt="" ></a>
-    </div>
-
-                    <!-- JavaScripts placed at the end of the document so the pages load faster -->
+<!-- JavaScripts placed at the end of the document so the pages load faster -->
 
                     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
