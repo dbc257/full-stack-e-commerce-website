@@ -13,6 +13,10 @@ module.exports = (sequelize, DataTypes) => {
     },
     {}
   );
-  Product.associate = function (models) {};
+  Product.associate = function (models) {
+    models.Product.belongsToMany(models.Order, {
+      through: "price",
+    });
+  };
   return Product;
 };

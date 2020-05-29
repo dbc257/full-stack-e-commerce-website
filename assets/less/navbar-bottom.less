@@ -1,0 +1,44 @@
+/*===================================================================================*/
+/*  NAVBAR BOTTOM LESS
+/*===================================================================================*/
+
+.navbar-footer {
+    .navbar-text {
+        font-size:18px;
+        text-transform:uppercase;
+        font-weight:bold;
+        color:#666;
+        margin-left:0px;
+    }
+    ul.nav {
+        float:right;
+    }
+}
+
+#example {
+     > li {
+         > a {
+            font-size:18px;
+            font-weight:bold;
+            text-transform:uppercase;
+            color:#666;
+            &:hover,
+            &:focus{
+                 background:rgba(0,0,0,0);
+            }
+        }
+         > ul {
+             > li {
+                float:left;
+                margin-right:17px;
+                margin-top:10px;
+                font-size:14px;
+                color:#FFF;
+            }
+        }
+    }
+}
+
+.language-block {
+    list-style:none;
+}

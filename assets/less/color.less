@@ -1,0 +1,568 @@
+/*===================================================================================*/
+/*  COLOR LESS
+/*===================================================================================*/
+@primary-color-light: darken(@primary-color, 7.7%);/*d75f33*/
+@primary-color-dark:  darken(@primary-color, 10.4%);/*cb5a30*/
+
+.primary-color{
+	color: @primary-color;
+}
+
+.logo-color{
+	fill: @primary-color;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    color: @primary-color;
+
+}
+
+.logo-fill-1{
+	fill: darken(@primary-color, 0.3%);
+}
+
+.logo-fill-2{
+	fill: lighten( @primary-color, 5.8%);
+}
+
+.logo-fill-3{
+	fill: lighten( @primary-color, 28%);
+}
+
+
+::-moz-selection {
+    background-color: @primary-color;
+}
+
+::selection {
+    background-color: @primary-color;
+}
+
+.primary-bg {
+  background-color: @primary-color;
+}
+
+.btn-primary{
+  background-color: @primary-color;
+  border-color: @primary-color;
+}
+
+.header{
+	.navbar-top-bar{
+		.navbar-nav{
+			> li{
+				&.active{
+					> a{
+						color: @primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.header{
+	.navbar-top-bar{
+		.navbar-nav{
+			> li{
+				> a{
+					&:hover,
+					&:focus{
+						color: @primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.header{
+	.navbar-default{
+		.navbar-nav{
+			li{
+				&.active{
+					a{
+						&.hover,&.focus{
+							color: @primary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+} 
+
+.header {
+	.navbar-default{
+		.navbar-nav{
+			> li{
+				a{
+
+				&:hover,
+				&:focus{
+                      color: @primary-color;
+					}
+				}
+			}
+		}
+	}
+} 
+
+.module{
+	.module-title{
+         color: @primary-color;
+	}
+}
+
+.page-header{
+	.page-title{
+        color: @primary-color;
+	}
+} 
+
+.section-title{
+    color: @primary-color;
+}
+
+.brand-carousel{
+	.item{
+      color: @primary-color;
+	}
+} 
+
+.book-details{
+	.book-title{
+		a{
+			color: @primary-color;
+		}
+	}
+}
+
+#my-cart{
+	.module-heading{
+		h4{
+         color: @primary-color;
+		}
+	}
+} 
+
+#my-cart{
+	.module{
+		.module-body{
+			.order-detail{
+				.table-cart{
+					 > tbody{
+					 	> .cart-book{
+					 		.media{
+					 			.media-heading{
+					 				a{
+					 					color: @primary-color;
+					 				}
+					 			}
+					 		}
+					 		
+                        } 
+                    }
+                    > tfoot{
+                        > tr:last-child{
+                          	color: @primary-color; 
+                        }
+                        > tr:nth-child(2){
+                        	color: @primary-color;
+                        }
+                        
+                    }
+                }  
+			}
+		}
+	}
+}
+.book-detail-header{
+     .book-title{
+     	color: @primary-color; 
+    }
+    .book-author-name{
+    	color: @primary-color;
+    }
+}
+
+.navbar-nav{
+	.dropdown-menu{
+		.menu-header{
+           color: @primary-color;
+		}
+
+	}
+}
+.block-featured-author{
+	.module-title{
+		 color: @primary-color;
+	}
+	.module-body{
+		.author-details{
+			.author-name{
+				a{
+					color: @primary-color;
+				}
+			}
+		}
+	}
+}
+
+.star-rating{
+   .fa-star.color{
+         color: @primary-color;
+    }
+}
+
+.home.page{
+	.slider{
+		background: @primary-color;
+	}
+}
+.btn-navigation{
+	&:hover,
+	&:focus{
+      background: @primary-color;
+  }
+
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary{
+	background: @primary-color;
+	border:1px solid @primary-color-light;
+}
+
+.breadcrumb-container {
+	background: @primary-color-light;
+}
+
+.breadcrumb > li + li:before {
+	color: darken(@primary-color,15%);
+}
+
+#search .form-control,#notFound-search .form-control {
+	background: @primary-color-light;
+	border: @primary-color-light; 
+}
+
+#search .btn-search,#notFound-search .btn-search{
+	background: @primary-color-dark;
+	border: @primary-color-dark; 
+}
+
+#search .select-wrapper button,#notFound-search .select-wrapper button{
+	background: @primary-color-dark;
+	border: @primary-color-dark; 
+}
+
+.form-control::-moz-placeholder{
+	color: lighten(@primary-color, 8.3%);
+}
+.form-control::-webkit-input-placeholder{
+	color: lighten(@primary-color, 8.3%);
+}
+
+.book-detail-quantity .txt-quantity{
+	background: darken(@primary-color, 10.9%);
+}
+
+.book-detail-quantity .quant-input .arrow.plus{
+	background: @primary-color-dark;
+}
+
+.book-detail-quantity .quant-input .arrow.plus:hover{
+	background: @primary-color;
+}
+
+.book-detail-quantity .quant-input .arrow.minus{
+	background: @primary-color-light;
+}
+
+.book-detail-quantity .quant-input .arrow.minus:hover{
+	background: @primary-color;
+}
+
+.btn-primary-dark{
+	background: @primary-color-dark;
+}
+
+.btn-primary-light{
+	background: @primary-color-light;
+}
+
+.btn-primary-light:hover,.btn-primary-light:focus{
+	background: @primary-color-dark;
+}
+
+
+.book-additional-details{
+	.book-detail-tab {
+     background: @primary-color-dark
+    }
+
+}
+
+.book-detail-tab li.active a, .book-detail-tab li.active a:hover, .book-detail-tab li.active a:focus, .book-detail-tab li a:hover, .book-detail-tab li a:focus{
+	background: darken(@primary-color, 19%);
+}
+.subscribe-form{
+	.subscriber-name{
+		background: @primary-color-light;
+		border: @primary-color-light;
+	}
+}
+
+.navbar-footer{
+	.navbar-inner-text {
+      color: @primary-color-light;
+	}
+}
+
+.btn.dropdown-toggle.btn-default{
+	background: @primary-color-light;
+	border: @primary-color-light;
+}
+
+.bootstrap-select.btn-default:hover, .bootstrap-select.btn-default:focus, .bootstrap-select.btn-default:active, .bootstrap-select.btn-default.active, .bootstrap-select.open .dropdown-toggle.btn-default{
+	background: @primary-color-light;
+	border: @primary-color-light;
+}
+
+.header .navbar-default .btn-cart:hover,.header .navbar-default .btn-cart:focus{
+  background: @primary-color;
+} 
+	
+.navbar-footer{
+	.navbar-nav {
+		> li {
+			ul.language-block{
+				 button{
+					&:hover,
+					&:focus{
+						background: @primary-color;
+					    border: @primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#accordion  .panel-default  .panel-title > a:not(.collapsed) .step{ 
+    background: darken(@primary-color, 10.9%);
+}
+
+
+.input-group{
+	.input-group-addon-book{
+		background:@primary-color-light;
+		border: @primary-color-light;
+     }
+
+ }
+
+
+.book-radio:checked + label .radio-background .icon{
+	color:darken(@primary-color, 10.9%);
+}
+.panel-collapse{
+	.forgot-password a {
+	    color:@primary-color-dark;
+	    border-bottom:1px dotted @primary-color-dark;
+    }
+}
+
+.table-cart.cart-detail{
+	th.dark{
+		background: @primary-color-dark;
+	}
+}
+.table-cart.cart-detail{
+	th{
+		background: @primary-color-light;
+	}
+}
+
+.table-cart {
+	.quant-input {
+		.arrow.gradient{
+            background: @primary-color-light;				
+		
+		} 
+	}
+}	
+
+.table-cart {
+	.quant-input {
+		.arrow.gradient{
+			&:hover{
+									
+	        background: @primary-color;
+	    }
+					
+				
+			
+		} 
+	}
+}	
+
+
+
+.table-cart .txt-quantity,.table-cart > tbody .price.subtotal{
+	color: @primary-color-light;
+}
+.table-cart{
+	tfoot{
+		tr{
+			&:last-child{
+				color: @primary-color;
+			}
+		}
+	}
+}
+
+.sidebar{
+	.module {
+		.module-header{
+			background: @primary-color-light;
+		}
+	}
+}
+
+.category-list > li > ul > .active, .category-list > .sub-category-list > a{
+	color: darken(@primary-color, 10.9%);
+}
+
+#owl-main .owl-controls .owl-pagination .owl-page span{
+background: lighten(@primary-color, 20%);
+}
+
+#owl-main .owl-controls .owl-pagination .owl-page.active span{
+background: lighten(@primary-color, 40%);
+}
+
+.author-details{
+	.author-name{
+		 > a{
+			&:hover,
+			&:focus{
+				color: darken(@primary-color, 10%) !important;
+			}
+		}
+	}
+}	
+
+.book-details{
+	.book-title{
+		a{
+			&:hover,
+			&:focus{
+				color: darken(@primary-color, 10%);
+			}
+		}
+	}
+}
+.footer-widgets{
+	.module{
+		.module-body{
+			.list-link{
+				a{
+					&:hover,
+					&:focus{
+						color: @primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+.navbar-static-bottom{
+	#example{
+		li{
+			a{
+				&:hover,
+				&:focus{
+					color: @primary-color;
+				}
+			}
+		}
+	}
+}
+
+.book{
+	.book-cover:hover{
+		background: @primary-color;
+	}
+}
+
+.list-kybook{
+    > li{
+        &:before{
+            background-color: lighten(@primary-color, 28.5%);            
+        }
+    }
+}
+#owl-main{
+	.item{
+		background:@primary-color;
+	}
+}
+
+.slider-caption{
+     .btn-price{
+     	-moz-box-shadow:0px 3px darken(@primary-color, 10%);
+     	-webkit-box-shadow:0px 3px darken(@primary-color, 10%);
+     	box-shadow:0px 3px darken(@primary-color, 10%);
+     }
+ }
+ .selectpicker.dropdown-menu {
+	> li{
+		> a{
+			&:hover,
+			&:focus{
+				color: @primary-color;
+			}
+			
+		}
+	}
+}
+
+.grid-list-view-buttons li.active span,.grid-list-view-buttons li.active span:hover{
+color:@primary-color-light;
+}
+
+.grid-list-view-buttons li a span:hover,.grid-list-view-buttons li a span:focus{
+	color:@primary-color-light;
+}
+
+.book-pagination .active a, .book-pagination .active a:hover, .book-pagination .active a:focus, .book-pagination > li > a:hover, .book-pagination > li > a:focus{
+	background: @primary-color;
+	border: 1px solid @primary-color;
+}
+
+ .scrollup{
+ 	background:@primary-color;
+ }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url("images/ui-bg_glass_75_d75f33_1x400.png") repeat-x scroll 50% 50% @primary-color-light !important;
+    border: @primary-color-light !important;
+}
+.ui-widget-header {
+    background: url("images/ui-bg_highlight-soft_75_d75f33_1x100.png") repeat-x scroll 50% 50% @primary-color-light !important;
+}
+.table-cart > tbody .price.subtotal{
+	color: @primary-color-light;
+}
+
+.btn-flat:hover,.btn-flat:focus{
+	background: @primary-color-dark !important;
+}
+
+.index-dropdown-discount-name {
+	color:@primary-color;
+}

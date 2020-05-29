@@ -1,33 +1,37 @@
 const express = require("express");
+const keys = require("./config/keys");
+const stripe = require("stripe")(keys.stripeSecretKey);
+const mustacheExpress = require("mustache-express");
+const models = require("./models");
+// const bodyParser = require("body-parser");
+
+//Body Parser Middleware
+
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
+// Set Static Folder
+// app.use(express.static(`${__dirname}/public`));
+
 const app = express();
 require("dotenv").config();
-// const adminRouter = require('./routes/admin')
+
 const session = require("express-session");
 const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const adminRouter = require("./routes/admin");
-const addProductRouter = require("./routes/add-product");
-const ordersummaryRouter = require("./routes/ordersummary");
-const productsRouter = require("./routes/products");
-
-const mustacheExpress = require("mustache-express");
-const models = require("./models");
+const detailRouter = require("./routes/detail");
+const cartRouter = require("./routes/cart");
+const indexRouter = require("./routes/index");
+// const addProductRouter = require("./routes/add-product");
 app.use(express.urlencoded());
-// tell express to use mustache templating engine
+
 app.engine("mustache", mustacheExpress());
-// the pages are located in views directory
 app.set("views", "./views");
-// extension will be .mustache
 app.set("view engine", "mustache");
 
-app.use(
-  session({
-    secret: process.env.SECRET,
-    resave: false,
-    saveUninitialized: true,
-  })
-);
-
+app.use(express.static("js"));
+app.use(express.static("css"));
+app.use(express.static("assets"));
 // authentication function
 function auth(req, res, next) {
   if (req.session) {
@@ -40,22 +44,51 @@ function auth(req, res, next) {
     res.redirect("/login");
   }
 }
-
-app.use(express.static("js"));
-app.use(express.static("css"));
-
+app.use(
+  session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 app.use("/register", registerRouter);
 app.use("/login", loginRouter);
-app.use("/admin", adminRouter);
-app.use("/add-product", addProductRouter);
-app.use("/ordersummary", ordersummaryRouter);
-app.use("/products", productsRouter);
+app.use("/admin", auth, adminRouter);
+app.use("/cart", auth, cartRouter);
+app.use("/index", auth, indexRouter);
+app.use("/detail", auth, detailRouter);
+// Charge Route
+app.post("/charge", async (req, res) => {
+  let user_id = req.session.userid;
+  let balance = await models.Order.sum("price", {
+    where: { user_id: user_id },
+  });
+  let amount = balance * 100;
+  let customer = await stripe.customers.create({
+    email: req.body.stripeEmail,
+    source: req.body.stripeToken,
+  });
+  let charge = await stripe.charges.create({
+    amount: amount,
+    description: "Books",
+    currency: "usd",
+    customer: customer.id,
+  });
+  res.render("charge", charge);
+});
 
+// Charge Route
+app.get("/charge", (req, res) => {
+  res.render("charge", {
+    stripePublishableKey: keys.stripePublishableKey,
+  });
+});
 // POST route to signout
-app.post("/signout", (req, res) => {
+app.get("/signout", (req, res) => {
   req.session.destroy();
   res.redirect("/login");
 });
+
 // Check to see if the server is running
 app.listen(3000, () => {
   console.log("Server is on the run!");

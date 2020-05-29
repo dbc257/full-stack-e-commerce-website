@@ -1,5 +1,5 @@
 ///////////Variables
-let searchButton = document.querySelector(".search-button");
+let searchButton = document.querySelector("#search-button");
 let cardsContainer = document.querySelector(".cards-container");
 let initialGoogleObjects = [];
 let valuableGoogleObjects = [];
@@ -74,7 +74,8 @@ function createBookCards(objToCreateFrom) {
   objToCreateFrom.forEach(
     ({ Image, Title, Author, Category, Description, ISBN_10 }) =>
       (output += `
-              <div class="card" id=>
+              <p></p>
+              <div class="card">
                 <img class="card--avatar" src=${Image} />
                 <h4>${Title}</h4>
                 <p>By: ${Author}</p>
@@ -88,8 +89,8 @@ function createBookCards(objToCreateFrom) {
                 <input type='hidden' value='${Category}' name='bookCategory'>                
                 <input type='hidden' value='${Description}' name='bookDescription'>
                 <input type='hidden' value='${ISBN_10}' name='bookISBN_10'>
-                <input type='double' placeHolder='Enter Book Price' name='bookPrice'>
-                <button>Sumbit to Products Page</button>
+                <input class="form-control form-control-book" type='double' placeHolder='Enter Book Price' name='bookPrice'>
+                <button class="btn btn-success">Sumbit to Products Page</button>
                 </form>
               </div>
               <p></p>
@@ -126,3 +127,8 @@ searchButton.addEventListener("click", (e) => {
       console.log("error");
     });
 });
+
+// Set your publishable key: remember to change this to your live publishable key in production
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+var stripe = Stripe("pk_test_7OnQMNYvV0yDCxyuNk3Ep1sC00Z0byTNPl");
+var elements = stripe.elements();
