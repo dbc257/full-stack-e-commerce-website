@@ -89,7 +89,12 @@ app.get("/signout", (req, res) => {
   res.redirect("/login");
 });
 
-// Check to see if the server is running
-app.listen(3000, () => {
-  console.log("Server is on the run!");
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
 });
+// Check to see if the server is running
+// app.listen(3000, () => {
+//   console.log("Server is on the run!");
+// });
