@@ -1,7 +1,8 @@
 let express = require("express");
 let router = express.Router();
 let models = require("../models");
-// GET route to display Order Summary Page
+
+// GET route to display Cart
 router.get("/", (req, res) => {
   let user_id = req.session.userid;
   models.Order.findAll({
@@ -16,13 +17,13 @@ router.get("/", (req, res) => {
     ],
   }).then((results) => {
     let myProducts = results.map((o) => {
-      console.log(o);
+      // console.log(o.order_products.dataValues);
       return {
         order_id: o.dataValues.id,
-        product_id: o.dataValues.order_products,
+        product: o.order_products.dataValues,
       };
     });
-    console.log(myProducts);
+    // console.log(myProducts);
     res.render("cart", {
       userOrders: myProducts,
     });

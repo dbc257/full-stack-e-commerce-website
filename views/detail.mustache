@@ -227,7 +227,7 @@
                 <div class="primary-block clearfix">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="book-cover book detail-book-cover">
+                            <div >
                                 <img src={{image}} class="img-responsive" alt="" />
                                 <div class="fade"></div>
                             </div><!-- /.book-cover -->
@@ -251,7 +251,8 @@
                                     <div class="pull-right col-md-6 col-sm-7 col-xs-12">
                                         <div class="row product-actions">
                                             <form method="POST" action="/cart">
-                                            <input type="text" value="{{id}}" name="id" />
+                                            <input type="hidden" value="{{title}}" name="product_title" />
+                                            <input type="hidden" value="{{id}}" name="product_id" />
                                             <button class="pull-center btn btn-primary btn-checkout"><i class="icon-plus fa fa-plus-circle"></i>Add to Cart</button>
                                             </form>    
                                             </div><!-- /.col -->   
