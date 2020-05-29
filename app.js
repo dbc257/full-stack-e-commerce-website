@@ -51,11 +51,11 @@ app.use(
     saveUninitialized: true,
   })
 );
+app.use("/", auth, indexRouter);
 app.use("/register", registerRouter);
 app.use("/login", loginRouter);
 app.use("/admin", auth, adminRouter);
 app.use("/cart", auth, cartRouter);
-app.use("/index", auth, indexRouter);
 app.use("/detail", auth, detailRouter);
 // Charge Route
 app.post("/charge", async (req, res) => {
