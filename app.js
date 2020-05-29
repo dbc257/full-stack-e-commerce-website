@@ -89,6 +89,10 @@ app.get("/signout", (req, res) => {
   res.redirect("/login");
 });
 
+app.get("/hello", (req, res) => {
+  res.send("Hello World!");
+});
+
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
