@@ -50,13 +50,13 @@ app.use(express.static("assets"));
 
 app.use("/register", registerRouter);
 app.use("/login", loginRouter);
-app.use("/admin", adminRouter);
-app.use("/add-product", addProductRouter);
+app.use("/admin", auth, adminRouter);
+// app.use("/add-product", addProductRouter);
 // app.use("/ordersummary", ordersummaryRouter);
-app.use("/cart", cartRouter);
+app.use("/cart", auth, cartRouter);
 // app.use("/products", productsRouter);
-app.use("/index", indexRouter);
-app.use("/detail", detailRouter);
+app.use("/index", auth, indexRouter);
+app.use("/detail", auth, detailRouter);
 // POST route to signout
 app.post("/signout", (req, res) => {
   req.session.destroy();
@@ -66,9 +66,9 @@ app.post("/signout", (req, res) => {
 // app.get("/cart", (req, res) => {
 //   res.render("cart");
 // });
-app.get("/category", (req, res) => {
-  res.render("category");
-});
+// app.get("/category", (req, res) => {
+//   res.render("category");
+// });
 app.get("/checkout", (req, res) => {
   res.render("checkout");
 });

@@ -16,6 +16,10 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: { model: "Products", key: "id" },
       },
+      price: {
+        type: Sequelize.DOUBLE,
+        // references: { model: "Products", attribute: "price" },
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

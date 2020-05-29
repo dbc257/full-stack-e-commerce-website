@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
 // POST route to add a product to Order Summary Page
 router.post("/", (req, res) => {
   let detail_id = req.body.bookID;
-  console.log(detail_id);
+  // console.log(detail_id);
   models.Product.findByPk(detail_id).then((book) => {
     let bookArray = [book.dataValues];
     //     console.log(book)

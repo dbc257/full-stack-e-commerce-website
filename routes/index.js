@@ -5,7 +5,9 @@ let models = require("../models");
 // GET route to display all products
 router.get("/", (req, res) => {
   models.Product.findAll().then((products) => {
-    res.render("index", { allProducts: products });
+    res.render("index", {
+      allProducts: products,
+    });
   });
 });
 

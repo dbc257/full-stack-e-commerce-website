@@ -244,14 +244,14 @@
                                 <div class="detail-cart-button row clearfix">
                                     <div class="pull-left col-md-6 col-sm-5 col-xs-12">
                                         <div class="detail-book-price">
-                                            <span class="price">$ 9.99</span>
+                                            <span class="price">${{price}}</span>
                                         </div><!-- /.detail-book-price -->
                                     </div><!-- /.pull-left -->
 
                                     <div class="pull-right col-md-6 col-sm-7 col-xs-12">
                                         <div class="row product-actions">
                                             <form method="POST" action="/cart">
-                                            <input type="hidden" value="{{title}}" name="product_title" />
+                                            <input type="hidden" value="{{price}}" name="price" />
                                             <input type="hidden" value="{{id}}" name="product_id" />
                                             <button class="pull-center btn btn-primary btn-checkout"><i class="icon-plus fa fa-plus-circle"></i>Add to Cart</button>
                                             </form>    
