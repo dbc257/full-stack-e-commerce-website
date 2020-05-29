@@ -15,13 +15,14 @@ const models = require("./models");
 const app = express();
 require("dotenv").config();
 
+const indexRouter = require("./routes/index");
 const session = require("express-session");
 const registerRouter = require("./routes/register");
-const loginRouter = require("./routes/login");
+// const loginRouter = require("./routes/login");
 const adminRouter = require("./routes/admin");
 const detailRouter = require("./routes/detail");
 const cartRouter = require("./routes/cart");
-const indexRouter = require("./routes/index");
+
 // const addProductRouter = require("./routes/add-product");
 app.use(express.urlencoded());
 
@@ -38,10 +39,10 @@ function auth(req, res, next) {
     if (req.session.userid) {
       next();
     } else {
-      res.redirect("/login");
+      res.redirect("/");
     }
   } else {
-    res.redirect("/login");
+    res.redirect("/");
   }
 }
 app.use(
@@ -51,9 +52,40 @@ app.use(
     saveUninitialized: true,
   })
 );
-app.use("/", auth, indexRouter);
+
+var bcrypt = require("bcryptjs");
+// GET route to display Login Page
+app.get("/", (req, res) => {
+  res.render("login");
+});
+// POST route to login username and password
+app.post("/", (req, res) => {
+  let username = req.body.username;
+  let password = req.body.password;
+  models.User.findOne({
+    where: {
+      username: username,
+    },
+  }).then((user) => {
+    if (user == null) {
+      res.render("login", { messageError: "Username not found" });
+    } else {
+      if (bcrypt.compareSync(password, user.password)) {
+        // user password is correct
+        req.session.username = user.username;
+        req.session.userid = user.id;
+        res.redirect("/index");
+      } else {
+        // password not correct
+        res.render("login", { messageError: "Password is incorrect!" });
+      }
+    }
+  });
+});
+
+app.use("/index", auth, indexRouter);
 app.use("/register", registerRouter);
-app.use("/login", loginRouter);
+// app.use("/login", loginRouter);
 app.use("/admin", auth, adminRouter);
 app.use("/cart", auth, cartRouter);
 app.use("/detail", auth, detailRouter);
@@ -86,7 +118,7 @@ app.get("/charge", (req, res) => {
 // POST route to signout
 app.get("/signout", (req, res) => {
   req.session.destroy();
-  res.redirect("/login");
+  res.redirect("/");
 });
 
 app.get("/hello", (req, res) => {

@@ -15,7 +15,7 @@ router.post("/", (req, res) => {
   user
     .save()
     .then((savedUser) => {
-      res.redirect("/login");
+      res.redirect("/");
     })
     .catch(() => {
       res.render("register", { message: "Username is already registered." });
