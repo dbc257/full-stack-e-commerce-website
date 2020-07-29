@@ -205,6 +205,12 @@
                     </div><!-- /.navbar-header -->
                     <div class="collapse navbar-collapse" id="KYbook-navbar">
                         <ul class="nav navbar-nav navbar-right">
+                            {{#is_admin}} 
+                            <li class="hidden-sm"><a href="/admin">Admin</a></li>
+                            {{/is_admin}}
+                            {{^is_admin}} 
+                            
+                            {{/is_admin}}
                             <li class="hidden-sm"><a href="/index">Products</a></li>
                             <li class="hidden-sm"><a href="/">Login</a></li>
                             <li class="hidden-sm"><a href="/register">Register</a></li>

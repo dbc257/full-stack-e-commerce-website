@@ -45,6 +45,15 @@ function auth(req, res, next) {
     res.redirect("/");
   }
 }
+
+function admin(req, res, next) {
+  if (req.session.is_admin) {
+    next();
+  } else {
+    res.redirect("/");
+  }
+}
+
 app.use(
   session({
     secret: process.env.SECRET,
@@ -62,6 +71,7 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
+
   models.User.findOne({
     where: {
       username: username,
@@ -74,6 +84,7 @@ app.post("/", (req, res) => {
         // user password is correct
         req.session.username = user.username;
         req.session.userid = user.id;
+        req.session.is_admin = user.is_admin;
         res.redirect("/index");
       } else {
         // password not correct
@@ -86,7 +97,7 @@ app.post("/", (req, res) => {
 app.use("/index", auth, indexRouter);
 app.use("/register", registerRouter);
 // app.use("/login", loginRouter);
-app.use("/admin", auth, adminRouter);
+app.use("/admin", auth, admin, adminRouter);
 app.use("/cart", auth, cartRouter);
 app.use("/detail", auth, detailRouter);
 // Charge Route
