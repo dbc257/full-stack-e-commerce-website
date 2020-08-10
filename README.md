@@ -101,6 +101,6 @@ $ code .
 - ElephantSQL
 - Stripe API
 
-## Contributors
+## Software Developer
 
 - **David Carlisle**
