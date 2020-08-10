@@ -1,4 +1,4 @@
-# KY Bookstore
+# full-stack-e-commerce-website
 
 ## :moneybag: :green_book: :books: KY BOOKSTORE :books: :green_book: :moneybag:
 
