@@ -1,6 +1,6 @@
 # KY Bookstore
 
-## :green_book: :books: BUSINESS INTELLIGENCE APP :books: :green_book: :moneybag:
+## :green_book: :books: KY E-COMMERCE BOOKSTORE :books: :green_book: :moneybag:
 
 KY Online Bookstore enables users to shop through books and add a book to their cart. A user can either register their own username and password or simply use the "Guest Login" button to check out the website. The website is also setup to checkout with Stripe API.
 
