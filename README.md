@@ -14,7 +14,7 @@ KY Bookstore is an e-Commerce website that enables users to shop through books, 
 - :star: [Prerequisites](#prerequisites)
 - :star: [Installing](#installing)
 - :star: [Built With](#built-with)
-- :star: [Contributors](#contributors)
+- :star: [Software Developer](#software-developer)
 
 ## Website-Link
 
