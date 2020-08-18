@@ -2,10 +2,12 @@ let express = require("express");
 let router = express.Router();
 let models = require("../models");
 
+// GET route to display the admin page
 router.get("/", (req, res) => {
   res.render("admin");
 });
 
+// POST route to add products to the database
 router.post("/", (req, res) => {
   let image = req.body.bookImage;
   let title = req.body.bookTitle;
@@ -23,7 +25,6 @@ router.post("/", (req, res) => {
     isbn_10: isbn_10,
     price: price,
   });
-  // console.log(product);
   product.save().then(() => {
     res.render("admin", { title: title });
   });

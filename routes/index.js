@@ -5,7 +5,6 @@ let models = require("../models");
 // GET route to display all products
 router.get("/", async (req, res) => {
   let user_id = req.session.userid;
-
   let balance = await models.Order.sum("price", {
     where: { user_id: user_id },
   });

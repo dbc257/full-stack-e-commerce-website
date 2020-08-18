@@ -1,10 +1,12 @@
 let express = require("express");
 let router = express.Router();
 let models = require("../models");
+
 // GET route to display the add-post page
 router.get("/", (req, res) => {
   res.render("add-product");
 });
+
 // POST route to save a new product
 router.post("/", (req, res) => {
   let image = req.body.bookImage;
