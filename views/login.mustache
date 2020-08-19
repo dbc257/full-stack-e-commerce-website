@@ -219,63 +219,16 @@
     </header><!-- /.header -->
     <!-- ============================================================= HEADER : END ============================================================= -->
     <!-- ============================================================= LOGIN PAGE ============================================================= -->
-{{! <div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Sign In</h5>
-            <form class="form-signin">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputEmail">Email address</label>
-              </div>
-
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-              </div>
-
-              <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Remember password</label>
-              </div>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-              <hr class="my-4">
-              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> }}
-
-{{! <div class="align-content-center"> }}
-<br/>
-{{! <div style="display: flex; flex-direction: column;"> }}
-<div class=".col-sm|md|lg|xl" style="float: none;">
-    <div class="container">
-    {{! <div class="card"> }}
-        {{! <div id="collapseOne" class="panel-collapse collapse in">
-            <div class="panel-body"> }}
-
-                {{! <div class="row"> }}
-                    
-                    {{! <div class="col-md-12 d-flex justify-content-center text-center"> }}
-                    {{! <div class="col-md-8 col-sm-12 align-content-center text-center"> }}
-                    {{! <div class="col-sm-12 col-md-8 col-lg-7 mx-auto" style="float: right;"> d-flex justify-content-center }}
-                    {{! <div class=".col-sm|md|lg|xl" style="float: none;"> style="display: flex; flex-direction: column;"}}
-        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 mx-auto" style="float: none;">
-            <div class="card" >
-                <div class="card-body">    
-                    <h1 class="panel-subtitle text-center">Customer Login</h1>
-                    <br/>
-                    <div class="text-center">
-                        <form method="POST" action="/">
-                            {{! <div class="row"> }}
-                                {{! <div class="input-group margin-bottom-sm"> }}
-                                {{! <div class="col-md-6 col-sm-12 d-flex justify-content-center text-center"> }}
+    <br/>
+    <div class=".col-sm|md|lg|xl" style="float: none;">
+        <div class="container">
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 mx-auto" style="float: none;">
+                <div class="card" >
+                    <div class="card-body">    
+                        <h1 class="panel-subtitle text-center">Customer Login</h1>
+                        <br/>
+                        <div class="text-center">
+                            <form method="POST" action="/">
                                 <div class="justify-content-center text-center">
                                     <div class="input-group">
                                         <span class="input-group-addon input-group-addon-book">
@@ -283,42 +236,29 @@
                                         </span>
                                         <input name="username" class="form-control form-control-book" type="text" placeholder="Username">
                                     </div><!-- /.input-group -->
-                                {{! </div> }}
-                            {{! </div> }}
-                            {{! <br/> }}
-                        
-
-                            {{! <div class="row"> }}
-                                {{! <div class="col-md-6 col-sm-12 no-padding-right"> }}
-                                {{! <div class="col-md-6 d-flex justify-content-center text-center"> }}
                                     <div class="input-group">
                                         <span class="input-group-addon input-group-addon-book">
                                             <i class="fa fa-key fa-fw"></i>
                                         </span>
                                         <input name="password" class="form-control form-control-book" type="password" placeholder="Password" />
                                     </div><!-- /.input-group -->
-                                </div><!-- /.col -->                                          
-                            {{! </div><!-- /.row --> }}
-                            <br/>
-                            <button class="pull-center btn btn-primary btn-checkout">Sign In</button>
-                    </div>
-                    </form>
-                    <div class="d-flex justify-content-center text-center">
-                        <form method="POST" action="/"> 
-                            <input type="hidden" value="guest" name="username" />
-                            <input type="hidden" value="password" name="password" />
-                            <button class="pull-center btn btn-primary btn-checkout">Guest Login</button>                              
-                        </form>
-                    </div>
-                </div>
+                                </div><!-- /.justify-content-center -->                                          
+                                <br/>
+                                <button class="pull-center btn btn-primary btn-checkout">Sign In</button>
+                            </form>
+                        </div><!-- /.text-center -->      
+                        <div class="d-flex justify-content-center text-center">
+                            <form method="POST" action="/"> 
+                                <input type="hidden" value="guest" name="username" />
+                                <input type="hidden" value="password" name="password" />
+                                <button class="pull-center btn btn-primary btn-checkout">Guest Login</button>                              
+                            </form>
+                        </div><!-- /.justify-content-center -->      
+                    </div><!-- /.card-body --> 
+                </div><!-- /.col --> 
             </div><!-- /.col -->    
-        </div><!-- /.row -->
-   
-            {{! </div><!-- /.panel-body -->
-        </div><!-- /.panel-collapse --> }}
-    </div><!-- /.container -->     
-</div>        
-  
+        </div><!-- /.container -->     
+    </div><!-- /.col -->         
     <!-- ============================================================= LOGIN PAGE : END ============================================================= -->
     <!-- JavaScripts placed at the end of the document so the pages load faster -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
