@@ -22,9 +22,9 @@ KY Bookstore is an e-Commerce website that enables users to shop through books, 
 
 ## Screenshots
 
-<img width="1425" alt="Home/Login Page" src="https://user-images.githubusercontent.com/62611599/90674651-07be5880-e21f-11ea-8b7a-dd69f8d02076.png">
+<img width="1425" alt="Home/Login Page" src="https://user-images.githubusercontent.com/62611599/90674656-09881c00-e21f-11ea-9547-16d411d33f7e.png">
 
-<img width="1425" alt="Registration Page" src="https://user-images.githubusercontent.com/62611599/90674656-09881c00-e21f-11ea-9547-16d411d33f7e.png">
+<img width="1425" alt="Registration Page" src="https://user-images.githubusercontent.com/62611599/90674651-07be5880-e21f-11ea-8b7a-dd69f8d02076.png">
 
 <img width="1425" alt="Product Page" src="https://user-images.githubusercontent.com/62611599/89837109-e332f400-db2d-11ea-9925-10544e72cc7f.png">
 
