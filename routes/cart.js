@@ -25,13 +25,11 @@ router.get("/", async (req, res) => {
     ],
   });
   let myProducts = results.map((o) => {
-    // console.log(o.order_products.dataValues);
     return {
       order_id: o.dataValues.id,
       product: o.order_products.dataValues,
     };
   });
-  // console.log(myProducts);
   res.render("cart", {
     userOrders: myProducts,
     balance: balance,
@@ -39,14 +37,12 @@ router.get("/", async (req, res) => {
     stripePublishableKey: keys.stripePublishableKey,
   });
 });
-// });
 
 // POST route to add a product to Cart
 router.post("/", (req, res) => {
   let price = req.body.price;
   let product_id = req.body.product_id;
   let user_id = req.session.userid;
-  // let price = req.body.product.price;
   let order = models.Order.build({
     product_id: product_id,
     user_id: user_id,
