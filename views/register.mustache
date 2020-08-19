@@ -212,7 +212,74 @@
     </header><!-- /.header -->
     <!-- ============================================================= HEADER : END ============================================================= -->
     <!-- ============================================================= REGISTER PAGE ============================================================= -->
+    <br/>
+{{! <div style="display: flex; flex-direction: column;"> }}
+<div class=".col-sm|md|lg|xl" style="float: none;">
     <div class="container">
+    {{! <div class="card"> }}
+        {{! <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body"> }}
+
+                {{! <div class="row"> }}
+                    
+                    {{! <div class="col-md-12 d-flex justify-content-center text-center"> }}
+                    {{! <div class="col-md-8 col-sm-12 align-content-center text-center"> }}
+                    {{! <div class="col-sm-12 col-md-8 col-lg-7 mx-auto" style="float: right;"> d-flex justify-content-center }}
+                    {{! <div class=".col-sm|md|lg|xl" style="float: none;"> style="display: flex; flex-direction: column;"}}
+        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 mx-auto" style="float: none;">
+            <div class="card" >
+                <div class="card-body">    
+                    <h1 class="panel-subtitle text-center">Customer Registration</h1>
+                    <br/>
+                    <div class="text-center">
+                        <form method="POST" action="/register">
+                            {{! <div class="row"> }}
+                                {{! <div class="input-group margin-bottom-sm"> }}
+                                {{! <div class="col-md-6 col-sm-12 d-flex justify-content-center text-center"> }}
+                                <div class="justify-content-center text-center">
+                                    <div class="input-group">
+                                        <span class="input-group-addon input-group-addon-book">
+                                            <i class="fa fa-user fa-fw"></i>
+                                        </span>
+                                        <input name="username" class="form-control form-control-book" type="text" placeholder="Username">
+                                    </div><!-- /.input-group -->
+                                {{! </div> }}
+                            {{! </div> }}
+                            {{! <br/> }}
+                        
+
+                            {{! <div class="row"> }}
+                                {{! <div class="col-md-6 col-sm-12 no-padding-right"> }}
+                                {{! <div class="col-md-6 d-flex justify-content-center text-center"> }}
+                                    <div class="input-group">
+                                        <span class="input-group-addon input-group-addon-book">
+                                            <i class="fa fa-key fa-fw"></i>
+                                        </span>
+                                        <input name="password" class="form-control form-control-book" type="text" placeholder="Password" />
+                                    </div><!-- /.input-group -->
+                                </div><!-- /.col -->                                          
+                            {{! </div><!-- /.row --> }}
+                            <br/>
+                            <button class="pull-center btn btn-primary btn-checkout">Register Customer</button>
+                    </div>
+                    </form>
+                    <div class="d-flex justify-content-center text-center">
+                        <form method="POST" action="/"> 
+                            <input type="hidden" value="guest" name="username" />
+                            <input type="hidden" value="password" name="password" />
+                            <button class="pull-center btn btn-primary btn-checkout">Guest Login</button>                              
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /.col -->    
+        </div><!-- /.row -->
+   
+            {{! </div><!-- /.panel-body -->
+        </div><!-- /.panel-collapse --> }}
+    </div><!-- /.container -->     
+</div>        
+  
+    {{! <div class="container">
         <div id="collapseOne" class="panel-collapse collapse in">
             <div class="panel-body">
                 <div class="row">
@@ -256,7 +323,7 @@
                 </div><!-- /.row -->
             </div><!-- /.panel-body -->
         </div><!-- /.panel-collapse -->   
-    </div><!-- /.container -->             
+    </div><!-- /.container -->              }}
     <!-- ============================================================= REGISTER PAGE : END ============================================================= -->
     <!-- JavaScripts placed at the end of the document so the pages load faster -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
