@@ -1,6 +1,7 @@
 let express = require("express");
 let router = express.Router();
 let models = require("../models");
+// router.use(express.urlencoded({ extended: true }));
 
 // GET route to display all products
 router.get("/", async (req, res) => {

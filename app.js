@@ -1,6 +1,6 @@
 const express = require("express");
 const keys = require("./config/keys");
-const stripe = require("stripe")(keys.stripeSecretKey);
+const stripe = require("stripe")(keys.STRIPE_SECRET_TEST_KEY);
 const models = require("./models");
 const app = express();
 // const bodyParser = require("body-parser");
@@ -135,23 +135,45 @@ app.get("/charge", (req, res) => {
 });
 
 // POST Charge Page for checkout
+// app.post("/charge", async (req, res) => {
+//   let user_id = req.session.userid;
+//   let balance = await models.Order.sum("price", {
+//     where: { user_id: user_id },
+//   });
+//   let amount = balance * 100;
+//   let customer = await stripe.customers.create({
+//     email: req.body.stripeEmail,
+//     source: req.body.stripeToken,
+//   });
+//   let charge = await stripe.charges.create({
+//     amount: amount,
+//     description: "Books",
+//     currency: "usd",
+//     customer: customer.id,
+//   });
+//   res.render("charge", charge);
+// });
+
 app.post("/charge", async (req, res) => {
-  let user_id = req.session.userid;
-  let balance = await models.Order.sum("price", {
-    where: { user_id: user_id },
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ["card"],
+    line_items: [
+      {
+        price_data: {
+          product: "{{PRODUCT_ID}}",
+          unit_amount: 1500,
+          currency: "usd",
+        },
+        quantity: 1,
+      },
+    ],
+    mode: "payment",
+    success_url: "https://example.com/success",
+    cancel_url: "https://example.com/cancel",
   });
-  let amount = balance * 100;
-  let customer = await stripe.customers.create({
-    email: req.body.stripeEmail,
-    source: req.body.stripeToken,
+  res.render("charge", {
+    STRIPE_TEST_KEY: keys.STRIPE_TEST_KEY,
   });
-  let charge = await stripe.charges.create({
-    amount: amount,
-    description: "Books",
-    currency: "usd",
-    customer: customer.id,
-  });
-  res.render("charge", charge);
 });
 
 // GET Signout
