@@ -1,4 +1,4 @@
 module.exports = {
-  stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
-  stripeSecretKey: process.env.STRIPE_SECRET_KEY,
+  STRIPE_TEST_KEY: process.env.STRIPE_TEST_KEY,
+  STRIPE_SECRET_TEST_KEY: process.env.STRIPE_SECRET_TEST_KEY,
 };

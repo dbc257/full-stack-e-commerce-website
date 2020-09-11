@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/green.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    {{! <link rel="stylesheet" href="css/font-awesome.min.css"> }}
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -30,9 +30,10 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
+    
     <!-- Stripe API -->
     <script src="https://js.stripe.com/v3/"></script>
-    <script src="js/stripe.js"></script>
+    <script src="/stripe.js"></script>
 </head>
 <body>
     <!-- ============================================================= HEADER ============================================================= -->
@@ -284,7 +285,7 @@
                     <div class="col-md-12">
                         <form method="POST" action="/charge" >
                             <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                            data-key="{{stripePublishableKey}}"
+                            data-key="{{STRIPE_TEST_KEY}}"
                             data-name="Books"
                             data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                             data-locale="auto">
@@ -315,5 +316,6 @@
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
 </body>
 </html>

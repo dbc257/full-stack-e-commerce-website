@@ -1,8 +1,4 @@
 module.exports = {
-  stripePublishableKey: "pk_live_usJXjANlMlkuguoq0CRNtWlv00OEKZ4ihM",
-  stripeSecretKey: "sk_live_0fjuLZgucuFZ79MF1wCLLQXU00bmYzR5mT",
+  stripePublishableKey: "pk_test_7OnQMNYvV0yDCxyuNk3Ep1sC00Z0byTNPl",
+  stripeSecretKey: "sk_test_4TlD0jJVFwWmhRltBqGMBHQd00bpMuPH3u",
 };
-// module.exports = {
-//   stripePublishableKey: "pk_test_TYooMQauvdEDq54NiTphI7jx",
-//   stripeSecretKey: "sk_test_4TlD0jJVFwWmhRltBqGMBHQd00bpMuPH3u",
-// };

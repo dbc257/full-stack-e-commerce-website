@@ -34,7 +34,7 @@ router.get("/", async (req, res) => {
     userOrders: myProducts,
     balance: balance,
     quantity: quantity,
-    stripePublishableKey: keys.stripePublishableKey,
+    STRIPE_TEST_KEY: keys.STRIPE_TEST_KEY,
   });
 });
 

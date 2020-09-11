@@ -103,7 +103,7 @@ app.use("/cart", auth, cartRouter);
 // GET Charge Page for checkout
 app.get("/charge", (req, res) => {
   res.render("charge", {
-    stripePublishableKey: keys.stripePublishableKey,
+    STRIPE_TEST_KEY: keys.STRIPE_TEST_KEY,
   });
 });
 
