@@ -3,6 +3,7 @@ const keys = require("./config/keys");
 const stripe = require("stripe")(keys.stripeSecretKey);
 const models = require("./models");
 const app = express();
+// const bodyParser = require("body-parser");
 var bcrypt = require("bcryptjs");
 require("dotenv").config();
 
@@ -11,7 +12,11 @@ app.engine("mustache", mustacheExpress());
 app.set("views", "./views");
 app.set("view engine", "mustache");
 
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+
 app.use(express.static("js"));
 app.use(express.static("css"));
 app.use(express.static("assets"));
@@ -39,14 +44,36 @@ function admin(req, res, next) {
 }
 
 // create user session
-const session = require("express-session");
+const cookieSession = require("cookie-session");
+
 app.use(
-  session({
-    secret: process.env.SECRET,
-    resave: false,
-    saveUninitialized: true,
+  cookieSession({
+    name: "session",
+    keys: [process.env.SECRET],
+
+    // Cookie Options
+    maxAge: 24 * 60 * 60 * 1000, // 24 hours
   })
 );
+// const cookieSession = require("cookie-session");
+// app.use(
+//   require("cookie-session")({
+//     // Cookie config, take a look at the docs...
+
+//     secret: process.env.SECRET,
+//     resave: false,
+//     saveUninitialized: true,
+//   })
+// );
+
+// const session = require("express-session");
+// app.use(
+//   session({
+//     secret: process.env.SECRET,
+//     resave: false,
+//     saveUninitialized: true,
+//   })
+// );
 
 // GET route to display Login Page
 app.get("/", (req, res) => {
@@ -129,7 +156,8 @@ app.post("/charge", async (req, res) => {
 
 // GET Signout
 app.get("/signout", (req, res) => {
-  req.session.destroy();
+  req.sessionCookie = null;
+  // req.sessionCookie.destroy();
   res.redirect("/");
 });
 
