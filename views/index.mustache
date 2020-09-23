@@ -230,10 +230,10 @@
             <div class="module block-relate-books module-block">
                 <div class="module-heading">
                     <h2 class="module-title">Books</h2>
-                    <div class="customNavigation">
+                    {{! <div class="customNavigation">
                         <a href="#" data-target="#relate-book-carousel" class="btn btn-navigation left-nav-arrow owl-prev"><i class='icon fa fa-caret-left'></i></a>
                         <a href="#" data-target="#relate-book-carousel" class="btn btn-navigation right-nav-arrow owl-next"><i class='icon fa fa-caret-right'></i></a>  
-                    </div><!-- /.customNavigation -->
+                    </div><!-- /.customNavigation --> }}
                     <p class="module-subtitle"></p>
                 </div><!-- /.module-heading -->
                 <div class="module-body">
@@ -241,6 +241,7 @@
                         <div id="relate-book-carousel" class="owl-carousel home-owl-carousel relate-books">
                             {{#allProducts}} 
                             <div class="item item-carousel single-book">
+                            {{! <div class="item single-book"> }}
                                 <div class="book">
                                     <div class="book-cover">
                                         <img alt="" src={{image}}>
