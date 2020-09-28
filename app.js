@@ -155,7 +155,7 @@ app.get("/charge", (req, res) => {
 // });
 
 app.post("/charge", async (req, res) => {
-  const session = await stripe.checkout.sessions.create({
+  const session = await stripe.checkout.session.create({
     payment_method_types: ["card"],
     line_items: [
       {
