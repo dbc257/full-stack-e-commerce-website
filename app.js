@@ -155,7 +155,7 @@ app.get("/charge", (req, res) => {
 // });
 
 app.post("/charge", async (req, res) => {
-  const session = await stripe.checkout.session.create({
+  const stripeSession = await stripe.checkout.session.create({
     payment_method_types: ["card"],
     line_items: [
       {
@@ -181,6 +181,10 @@ app.get("/signout", (req, res) => {
   req.sessionCookie = null;
   // req.sessionCookie.destroy();
   res.redirect("/");
+});
+
+app.get("/checkout", (req, res) => {
+  res.render("checkout");
 });
 
 // Check if server 8080 is running
