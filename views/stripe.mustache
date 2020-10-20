@@ -1,0 +1,61 @@
+<form method="POST" action="/charge" >
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="{{STRIPE_TEST_KEY}}"
+                            data-name="Books"
+                            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                            data-locale="auto">
+                            </script>
+                            <script>
+                            // Hide default stripe button
+                            document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                            </script>
+                            <input type="hidden" value="{{balance}}" name="amount" />
+                            <button type="submit" class="pull-right btn btn-primary btn-checkout">Checkout &nbsp;<i class="fa fa-chevron-right"></i></button>
+                        </form>
+
+    <div class="content">
+        <div class="breadcrumb-container">
+            <div class="container">
+                <ul class="breadcrumb pull-left">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="category">Books</a></li>
+                    <li class="active">Shopping cart</li>
+                </ul><!-- /.breadcrumb -->
+
+                <!-- ========================================= BREADCRUMB SEARCH BOX ========================================= -->
+                <ul class="list-unstyled search-box pull-right">
+                    <li data-target="#search" data-toggle="sub-header"><button type="button" class="btn btn-primary-dark search-button"><i class="fa fa-search icon"></i></button>
+                        <div class="row search-action sub-header" id="search">
+                            <div class="col-sm-8 col-xs-12 no-padding-right">
+                                <div class="input-group">
+                                    <span class="input-group-btn"><button class="btn btn-search" type="button"><i class="fa fa-search icon"></i></button></span>
+                                    <input type="text" class="form-control search-book" placeholder="Search books...">
+                                </div><!-- /.input-group -->
+                            </div><!-- /.col -->
+
+                            <div class="col-sm-4 col-xs-12 select-wrapper" style="padding:0px;">
+                                <select id="id_select" class="selectpicker">
+                                    <option selected>All Category</option>
+                                    <option>Books</option>
+                                    <option>Textbooks</option>
+                                    <option>Audiobooks</option>
+                                    <option>Magazines</option>
+                                    <option>Kids</option>
+                                </select>
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </li>
+                </ul><!-- /.search-box -->
+                <!-- ========================================= BREADCRUMB SEARCH BOX : END ========================================= -->        
+
+            </div><!-- /.container -->
+        </div><!-- /.breadcrumb-container -->
+
+<div class="row field-row form-group">
+                                                <div id="shipping-account" class="col-xs-12">
+                                                    <label>
+                                                        <input type="checkbox"> Create Account?
+                                                    </label>
+                                                    - you will receive email with temporary generated password after login you need to change it. 
+                                                </div><!-- /.col -->
+                                            </div><!-- /.row -->

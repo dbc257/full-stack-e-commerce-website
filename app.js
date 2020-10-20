@@ -127,12 +127,17 @@ app.use("/detail", auth, detailRouter);
 const cartRouter = require("./routes/cart");
 app.use("/cart", auth, cartRouter);
 
+app.get("/checkout", (req, res) => {
+  res.render("checkout")
+})
 // GET Charge Page for checkout
 app.get("/charge", (req, res) => {
-  res.render("charge", {
-    STRIPE_TEST_KEY: keys.STRIPE_TEST_KEY,
-  });
-});
+  res.render("charge")
+})
+
+// , {
+//   STRIPE_TEST_KEY: keys.STRIPE_TEST_KEY,
+// });}
 
 // POST Charge Page for checkout
 // app.post("/charge", async (req, res) => {
