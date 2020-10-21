@@ -1,0 +1,62 @@
+/* COMMON STYLES */
+#menu {
+  background-color: blue;
+  display: flex;
+  padding: 10px;
+  color: whitesmoke;
+  width: 100%;
+}
+
+#menu div {
+  margin: 10px;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+}
+
+#wim-hof-method {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#wim-hof-method div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Large Mobile Devices + Tablets */
+@media only screen and (min-width: 481px) {
+  #wim-hof-method img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Mobile Devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .banner {
+    display: none;
+  }
+
+  #menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #wim-hof-method {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #wim-hof-method img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+  }
+}

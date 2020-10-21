@@ -713,7 +713,7 @@ a:active {
   -moz-box-shadow: 0 24px 8px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: 0 24px 8px rgba(0, 0, 0, 0.17);
   box-shadow: 0 24px 8px rgba(0, 0, 0, 0.17);
-  content: "";
+  /* content: ""; */
   height: 13px;
   left: -4px;
   /* -9px;*/
@@ -755,7 +755,14 @@ a:active {
   padding: 0px;
 }
 .books {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.books div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .book {
   display: inline-block;

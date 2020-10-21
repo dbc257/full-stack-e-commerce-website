@@ -30,6 +30,7 @@
 
     <!-- Icons/Glyphs -->
     <link rel="stylesheet" href="css/elegant-fonts.css">
+    {{! <link rel="stylesheet" href="css/products.css"> }}
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -227,7 +228,7 @@
         
     <!-- ========================================= BOOKS MODULE ========================================= -->
     <div class="container">
-        <div class="wow fadeInUp">
+        {{! <div class="wow fadeInUp"> }}
             <div class="module block-relate-books module-block">
                 <div class="module-heading">
                     <h2 class="module-title">Books</h2>
@@ -239,15 +240,16 @@
                 </div><!-- /.module-heading -->
                 <div class="module-body">
                     <div class="books">
-                        <div id="relate-book-carousel" class="owl-carousel home-owl-carousel relate-books">
+                        {{! <div id="relate-book-carousel" class="owl-carousel home-owl-carousel relate-books"> }}
                             {{#allProducts}} 
-                            <div class="item item-carousel single-book">
+                            {{! <div class="item item-carousel single-book"> }}
                             {{! <div class="item single-book"> }}
-                                <div class="book">
+                        
+                                <div class="card" style="display: table-row; padding: 10px 30px 60px 30px;">
                                     <div class="book-cover">
                                         <img alt="" src={{image}}>
-                                        <div class="fade">
-                                        </div>
+                                        {{! <div class="fade">
+                                        </div> }}
                                         <div class="book-price">
                                             <span class="price">$ {{price}}</span>
                                         </div><!-- /.book-price -->
@@ -265,14 +267,14 @@
                                         </form>
                                     </div><!-- /.book-details -->
                                 </div><!-- /.book -->                       
-                            </div><!-- /.item -->
+                            {{! </div><!-- /.item --> }}
                             <br/>
                             {{/allProducts}} 
-                        </div><!-- /#relate-book-carousel -->                   
+                        {{! </div><!-- /#relate-book-carousel -->                    }}
                     </div><!-- /.books -->
                 </div><!-- /.module-body -->
             </div><!-- /.module -->
-        </div><!-- /.fade-->
+        {{! </div><!-- /.fade--> }}
     </div><!-- /.container -->
     <!-- ========================================= BOOKS MODULE : END ========================================= -->
     <!-- JavaScripts placed at the end of the document so the pages load faster -->
