@@ -92,11 +92,12 @@ $ code .
 ## Built With
 
 - Hypertext Markup Language (HTML)
+- Mustache.js
 - Cascading Style Sheets (CSS)
+- JavaScript (JS)
 - Node.js
 - Express.js
-- Mustache.js
-- bcryt.js
+- bcrypt.js
 - PostgreSQL
 - ElephantSQL
 
