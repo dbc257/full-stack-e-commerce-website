@@ -69,7 +69,7 @@ You need preferably the latest version of Chrome, and text editor.
 To get started follow this guide:
 ON LINUX/UNIX
 
-FOR DEVELOPMENT PURPOSES
+#### FOR DEVELOPMENT PURPOSES
 
 In your terminal clone repo to your local machine using git clone:
 
