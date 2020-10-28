@@ -2,7 +2,7 @@
 
 ## :moneybag: :green_book: :books: KY BOOKSTORE :books: :green_book: :moneybag:
 
-KY Bookstore is an e-Commerce website that enables users to shop through books, add a book to their cart, and checkout using Stripe API. A user can either register their own username and password, or they can simply use the "Guest Login" button to navigate the website without registering.
+KY Bookstore is an e-Commerce website that enables users to shop through books, add a book to their cart, and checkout. A user can either register their own username and password, or they can simply use the "Guest Login" button to navigate the website without registering.
 
 ## Summary
 
@@ -34,7 +34,7 @@ KY Bookstore is an e-Commerce website that enables users to shop through books, 
 
 <img width="1425" alt="Cart Page Example" src="https://user-images.githubusercontent.com/62611599/89837237-25f4cc00-db2e-11ea-9a6b-0c80da605473.png">
 
-<img width="1425" alt="Stripe API Checkout Example" src="https://user-images.githubusercontent.com/62611599/89837268-3dcc5000-db2e-11ea-8892-08d97bdee08b.png">
+<!-- <img width="1425" alt="Stripe API Checkout Example" src="https://user-images.githubusercontent.com/62611599/89837268-3dcc5000-db2e-11ea-8892-08d97bdee08b.png"> -->
 
 <img width="1425" alt="Purchase Confirmation Page" src="https://user-images.githubusercontent.com/62611599/89837390-7f5cfb00-db2e-11ea-8d12-e9bd26f87d99.png">
 
@@ -69,7 +69,7 @@ You need preferably the latest version of Chrome, and text editor.
 To get started follow this guide:
 ON LINUX/UNIX
 
-# FOR DEVELOPMENT PURPOSES
+FOR DEVELOPMENT PURPOSES
 
 In your terminal clone repo to your local machine using git clone:
 
@@ -99,7 +99,6 @@ $ code .
 - bcryt.js
 - PostgreSQL
 - ElephantSQL
-- Stripe API
 
 ## Software Developer
 
