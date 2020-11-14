@@ -1,6 +1,6 @@
 const express = require("express");
-const keys = require("./config/keys");
-const stripe = require("stripe")(keys.STRIPE_SECRET_TEST_KEY);
+// const keys = require("./config/config.env");
+// const stripe = require("stripe")(keys.STRIPE_SECRET_TEST_KEY);
 const models = require("./models");
 const app = express();
 // const bodyParser = require("body-parser");
@@ -15,11 +15,30 @@ app.set("view engine", "mustache");
 // app.use(express.urlencoded());
 app.use(express.urlencoded({ extended: true }));
 // app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
+app.use(bodyParser());
 
 app.use(express.static("js"));
 app.use(express.static("css"));
 app.use(express.static("assets"));
+
+const { Sequelize } = require("sequelize")
+
+const sequelize = new Sequelize(
+  `${process.env.USERNAME}`,
+  `${process.env.PASSWORD}`,
+  `${process.env.DATABASE}`,
+  {
+    host: `${process.env.HOST}`,
+    dialect: "postgres",
+  }
+);
+
+try {
+  sequelize.authenticate();
+  console.log('Connected to DB')
+} catch (error) {
+  console.log('Unable to connect to DB')
+}
 
 // User authentication function
 function auth(req, res, next) {
