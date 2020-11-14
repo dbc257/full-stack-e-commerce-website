@@ -1,18 +1,18 @@
 {
   "development": {
-    "username": "USERNAME",
-    "password": "PASSWORD",
-    "database": "DATABASE",
-    "host": "HOST",
-    "dialect": "DIALECT",
+    "username": USERNAME,
+    "password": PASSWORD,
+    "database": DATABASE,
+    "host": HOST,
+    "dialect": DIALECT,
     "operatorsAliases": false
   },
   "production": {
-    "username": "USERNAME",
-    "password": "PASSWORD",
-    "database": "DATABASE",
-    "host": "HOST",
-    "dialect": "DIALECT",
+    "username": USERNAME,
+    "password": PASSWORD,
+    "database": DATABASE,
+    "host": HOST,
+    "dialect": DIALECT,
     "operatorsAliases": false
   }
 }
