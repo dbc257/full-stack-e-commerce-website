@@ -1,8 +1,8 @@
 let express = require("express");
 let router = express.Router();
 let models = require("../models");
-const keys = require("../config/keys");
-const stripe = require("stripe")(keys.stripeSecretKey);
+// const keys = require("../config/keys");
+// const stripe = require("stripe")(keys.stripeSecretKey);
 
 // GET route to display Cart
 router.get("/", async (req, res) => {
@@ -34,7 +34,6 @@ router.get("/", async (req, res) => {
     userOrders: myProducts,
     balance: balance,
     quantity: quantity,
-    STRIPE_TEST_KEY: keys.STRIPE_TEST_KEY,
   });
 });
 

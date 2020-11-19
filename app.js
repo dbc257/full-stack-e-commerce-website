@@ -15,7 +15,7 @@ app.set("view engine", "mustache");
 // app.use(express.urlencoded());
 app.use(express.urlencoded({ extended: true }));
 // app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser());
+// app.use(bodyParser());
 
 app.use(express.static("js"));
 app.use(express.static("css"));
@@ -179,25 +179,23 @@ app.get("/charge", (req, res) => {
 // });
 
 app.post("/charge", async (req, res) => {
-  const stripeSession = await stripe.checkout.session.create({
-    payment_method_types: ["card"],
-    line_items: [
-      {
-        price_data: {
-          product: "{{PRODUCT_ID}}",
-          unit_amount: 1500,
-          currency: "usd",
-        },
-        quantity: 1,
-      },
-    ],
-    mode: "payment",
-    success_url: "https://example.com/success",
-    cancel_url: "https://example.com/cancel",
-  });
-  res.render("charge", {
-    STRIPE_TEST_KEY: keys.STRIPE_TEST_KEY,
-  });
+  // const stripeSession = await stripe.checkout.session.create({
+  //   payment_method_types: ["card"],
+  //   line_items: [
+  //     {
+  //       price_data: {
+  //         product: "{{PRODUCT_ID}}",
+  //         unit_amount: 1500,
+  //         currency: "usd",
+  //       },
+  //       quantity: 1,
+  //     },
+  //   ],
+  //   mode: "payment",
+  //   success_url: "https://example.com/success",
+  //   cancel_url: "https://example.com/cancel",
+  // });
+  res.render("charge");
 });
 
 // GET Signout
