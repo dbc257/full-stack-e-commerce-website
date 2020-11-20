@@ -21,24 +21,24 @@ app.use(express.static("js"));
 app.use(express.static("css"));
 app.use(express.static("assets"));
 
-const { Sequelize } = require("sequelize")
+// const { Sequelize } = require("sequelize")
 
-const sequelize = new Sequelize(
-  `${process.env.USERNAME}`,
-  `${process.env.PASSWORD}`,
-  `${process.env.DATABASE}`,
-  {
-    host: `${process.env.HOST}`,
-    dialect: "postgres",
-  }
-);
+// const sequelize = new Sequelize(
+//   `${process.env.USERNAME}`,
+//   `${process.env.PASSWORD}`,
+//   `${process.env.DATABASE}`,
+//   {
+//     host: `${process.env.HOST}`,
+//     dialect: "postgres",
+//   }
+// );
 
-try {
-  sequelize.authenticate();
-  console.log('Connected to DB')
-} catch (error) {
-  console.log('Unable to connect to DB')
-}
+// try {
+//   sequelize.authenticate();
+//   console.log('Connected to DB')
+// } catch (error) {
+//   console.log('Unable to connect to DB')
+// }
 
 // User authentication function
 function auth(req, res, next) {
